@@ -4,3 +4,13 @@ version = "1.0.0"
 edition = "2021"
 
 [dependencies]
+ron = "0.8.0"
+markdown-it = "0.2.0"
+
+[dependencies.serde]
+version = "1.0.143"
+features = ["derive"]
+
+[dependencies.tagger]
+git = "https://github.com/timjrd/tagger"
+branch = "unwrap"

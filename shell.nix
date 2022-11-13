@@ -20,13 +20,20 @@ let
     overlays = [(import nixpkgs-mozilla)];
   };
 
+  cert = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
+
 in pkgs.mkShell {
+
+  NIX_SSL_CERT_FILE = cert;
+  SSL_CERT_FILE = cert;
+  GIT_SSL_CAINFO = cert;
+
   packages = [
     (pkgs.rustChannelOf {
 
       channel = "stable";
-      date = "2022-08-11"; # see https://forge.rust-lang.org
-      sha256 = "sha256-KXx+ID0y4mg2B3LHp7IyaiMrdexF6octADnAtFIOjrY=";
+      date = "2022-11-03"; # see https://forge.rust-lang.org
+      sha256 = "sha256-DzNEaW724O8/B8844tt5AVHmSjSQ3cmzlU4BP90oRlY=";
 
     }).rust
   ];

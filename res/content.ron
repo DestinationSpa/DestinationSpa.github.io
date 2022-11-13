@@ -1,0 +1,142 @@
+(
+    home: (
+        title: "Spa Bien",
+        subtitle: "Institut de beauté à Brive-La-Gaillarde",
+        note: Some("`BLACK FRIDAY` **0.1%** de réduction *everywhere*"),
+    ),
+
+    introduction: (
+        title: "Présentation de Spa Bien",
+        text: r#"
+
+Pierre de Saxe-Cobourg-Gotha (connu également sous les prénoms de
+Pedro Augusto), prince du Brésil et prince de Saxe-Cobourg, est né à
+Rio de Janeiro, au Brésil, le 19 mars 1866, et mort à Tulln an der
+Donau, en Autriche, le 6 juillet 1934.
+
+Aîné des petits-enfants de l'empereur **Pierre II du Brésil**, le
+prince Pierre est, selon l'article 117 de la Constitution de 1824,
+l'héritier présomptif en second du souverain jusqu'à la naissance de
+son cousin, Pierre d'Orléans-Bragance, en
+[1875](fr.wikipedia.org/wiki/1875). Après cette date, Pierre n'admet
+pas d'être rétrogradé dans l'ordre de succession au trône.
+
+"#,
+    ),
+
+    images: (
+        title: "Photos de la maisonette",
+        note: Some("`NOUVEAU` découvrez notre aquarium"),
+
+        images: [
+            ("01.jpg", "Le salon."),
+            ("02.jpg", "La salle à manger."),
+            ("03.jpg", "La cuisine."),
+            ("04.jpg", "La salle de bain."),
+        ],
+    ),
+
+    contacts: (
+        title: "Contacts",
+        note: Some("`ATTENTION` mon téléphone est cassé"),
+
+        phone: "01 02 03 04 05",
+        email: "abc@xyz.com",
+
+        location: (
+            address: "12 Rue Saint-Merri",
+            postcode: "75004",
+            city: "Paris",
+        ),
+
+        socials: (
+            facebook: Some("facebook.com/DanielThrasherOfficial"),
+            instagram: Some("instagram.com/danielthrasher"),
+        ),
+    ),
+
+    hours: (
+        title: "Horaires",
+        note: Some("`ATTENTION` non en fait rien pardon"),
+
+        monday:    (Some((10,00, 12,00)), Some((14,00, 19,00))),
+        tuesday:   (Some((10,00, 12,00)), Some((14,00, 19,00))),
+        wednesday: (Some((10,00, 12,00)), Some((14,00, 19,00))),
+        thursday:  (Some((10,00, 12,00)), Some((14,00, 19,00))),
+        friday:    (Some((10,00, 12,00)), None),
+        saturday:  (None, Some((14,00, 19,00))),
+        sunday:    (None, None),
+    ),
+
+    benefits: (
+        title: "Prestations",
+
+        categories: [
+            (
+                title: "Les trucs pas trop trop cher.",
+                note: Some("`NOTE` coucou ça va"),
+
+                image: ("07.jpg", "un truc de spa"),
+                description: r#"
+
+Retrouvez ici les trucs pas trop trop cher mais un peu quand même faut
+pas déconner.
+
+"#,
+
+                benefits: [
+                    (
+                        title: "~Skin Plus 800~",
+                        note: Some("`INDISPONIBLE` jusqu'au 1er janvier 2049"),
+
+                        price: (39,00),
+                        book: "fr.wikipedia.org/wiki/Aaron_Carter",
+                        description: "Ça c'est très bien, allez viens.",
+                    ),
+
+                    (
+                        title: "Skin Good 600",
+                        note: None,
+
+                        price: (18,50),
+                        book: "fr.wikipedia.org/wiki/Balakh_Sher_Mazari",
+                        description: "Ça c'est pas mal du tout je te promet.",
+                    )
+                ]
+            ),
+
+            (
+                title: "Les trucs plus cher.",
+                note: Some("`OFFRE` offre bien mais non cumulable"),
+
+                image: ("08.jpg", "un truc de spa"),
+                description: r#"
+
+Retrouvez ici les trucs chers et vraiment bien. Si vous avez des sous
+venez les dépenser chez moi, en plus je suis trop cool.
+
+"#,
+
+                benefits: [
+                    (
+                        title: "Skin Ultra 900",
+                        note: None,
+
+                        price: (74,90),
+                        book: "fr.wikipedia.org/wiki/Mauro_Forghieri",
+                        description: "Presque le nec plus ultra mais pas tout à fait.",
+                    ),
+
+                    (
+                        title: "Skin *Hyper* 950X",
+                        note: Some("`ATTENTION` c'est vraiment tip top"),
+
+                        price: (107,00),
+                        book: "fr.wikipedia.org/wiki/Francis_Rion",
+                        description: "Le nec plus ultra. C'est trop de la balle.",
+                    )
+                ]
+            )
+        ]
+    )
+)
