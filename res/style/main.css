@@ -1,0 +1,92 @@
+@font-face {
+    font-family: fengardoneue;
+    src: url(../font/fengardoneue_regular-webfont.woff);
+}
+
+body {
+    --background: #FFF4DE;
+    --foreground: #684427;
+
+    background-color: var(--background);
+    font-family: fengardoneue, sans;
+    margin: 0 auto;
+    max-width: 42cm;
+    padding: 3%;
+    color: var(--foreground);
+}
+
+strong {
+    font-weight: bold;
+}
+
+em {
+    font-style: italic;
+}
+
+body > * {
+    margin-bottom: 1cm;
+}
+
+body > :last-child {
+    margin-bottom: 0;
+}
+
+body > h1 {
+    font-size: 470%;
+    text-align: center;
+    margin-bottom: 0.5cm;
+}
+
+body > h2 {
+    font-size: 180%;
+    text-align: center;
+}
+
+body > .note {
+    text-align: center;
+    font-size: 120%;
+}
+
+body > .note code {
+    background-color: var(--foreground);
+    color: var(--background);
+    display: inline-block;
+    margin: 0 4px;
+    padding: 4px 8px;
+}
+
+body > div {
+}
+
+body > div > * {
+    border-right: 3px solid var(--foreground);
+    display: inline-block;
+    width: 33%;
+    padding: 0.3cm 0;
+}
+
+body > div > :last-child {
+    border-right: none;
+}
+
+section[id] {
+}
+
+h3 {
+    font-size: 180%;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+body > section:not([id]) {
+    border-top: 3px solid var(--foreground);
+}
+
+section[id] :not(:first-child) {
+    display: none;
+}
+
+section[id]:target :not(:first-child) {
+    display: initial;
+}

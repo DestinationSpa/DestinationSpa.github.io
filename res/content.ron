@@ -2,11 +2,11 @@
     home: (
         title: "Spa Bien",
         subtitle: "Institut de beauté à Brive-La-Gaillarde",
-        note: Some("`BLACK FRIDAY` **0.1%** de réduction *everywhere*"),
+        note: Some("`BLACK FRIDAY` **0.1**% de réduction *everywhere*"),
     ),
 
     introduction: (
-        title: "Présentation de Spa Bien",
+        title: "Présentation",
         text: r#"
 
 Pierre de Saxe-Cobourg-Gotha (connu également sous les prénoms de
@@ -22,11 +22,6 @@ son cousin, Pierre d'Orléans-Bragance, en
 pas d'être rétrogradé dans l'ordre de succession au trône.
 
 "#,
-    ),
-
-    images: (
-        title: "Photos de la maisonette",
-        note: Some("`NOUVEAU` découvrez notre aquarium"),
 
         images: [
             ("01.jpg", "Le salon."),
@@ -38,7 +33,6 @@ pas d'être rétrogradé dans l'ordre de succession au trône.
 
     contacts: (
         title: "Contacts",
-        note: Some("`ATTENTION` mon téléphone est cassé"),
 
         phone: "01 02 03 04 05",
         email: "abc@xyz.com",
@@ -57,7 +51,6 @@ pas d'être rétrogradé dans l'ordre de succession au trône.
 
     hours: (
         title: "Horaires",
-        note: Some("`ATTENTION` non en fait rien pardon"),
 
         monday:    (Some((10,00, 12,00)), Some((14,00, 19,00))),
         tuesday:   (Some((10,00, 12,00)), Some((14,00, 19,00))),
@@ -74,9 +67,8 @@ pas d'être rétrogradé dans l'ordre de succession au trône.
         categories: [
             (
                 title: "Les trucs pas trop trop cher.",
-                note: Some("`NOTE` coucou ça va"),
+                image: Some(("07.jpg", "un truc de spa")),
 
-                image: ("07.jpg", "un truc de spa"),
                 description: r#"
 
 Retrouvez ici les trucs pas trop trop cher mais un peu quand même faut
@@ -86,8 +78,7 @@ pas déconner.
 
                 benefits: [
                     (
-                        title: "~Skin Plus 800~",
-                        note: Some("`INDISPONIBLE` jusqu'au 1er janvier 2049"),
+                        title: "Skin Plus 800",
 
                         price: (39,00),
                         book: "fr.wikipedia.org/wiki/Aaron_Carter",
@@ -96,7 +87,6 @@ pas déconner.
 
                     (
                         title: "Skin Good 600",
-                        note: None,
 
                         price: (18,50),
                         book: "fr.wikipedia.org/wiki/Balakh_Sher_Mazari",
@@ -107,9 +97,8 @@ pas déconner.
 
             (
                 title: "Les trucs plus cher.",
-                note: Some("`OFFRE` offre bien mais non cumulable"),
+                image: None,
 
-                image: ("08.jpg", "un truc de spa"),
                 description: r#"
 
 Retrouvez ici les trucs chers et vraiment bien. Si vous avez des sous
@@ -120,7 +109,7 @@ venez les dépenser chez moi, en plus je suis trop cool.
                 benefits: [
                     (
                         title: "Skin Ultra 900",
-                        note: None,
+                        image: Some(("08.jpg", "un truc de spa")),
 
                         price: (74,90),
                         book: "fr.wikipedia.org/wiki/Mauro_Forghieri",
@@ -129,7 +118,7 @@ venez les dépenser chez moi, en plus je suis trop cool.
 
                     (
                         title: "Skin *Hyper* 950X",
-                        note: Some("`ATTENTION` c'est vraiment tip top"),
+                        image: Some(("09.jpg", "un truc de spa")),
 
                         price: (107,00),
                         book: "fr.wikipedia.org/wiki/Francis_Rion",

@@ -6,7 +6,6 @@ use serde::Deserialize;
 pub struct Website {
     home: Home,
     introduction: Introduction,
-    images: Images,
     contacts: Contacts,
     hours: Hours,
     benefits: Benefits,
@@ -23,19 +22,12 @@ struct Home {
 struct Introduction {
     title: Title,
     text: Text,
-}
-
-#[derive(Deserialize)]
-struct Images {
-    title: Title,
-    note: Note,
     images: Vec<Image>,
 }
 
 #[derive(Deserialize)]
 struct Contacts {
     title: Title,
-    note: Note,
     phone: Phone,
     email: Email,
     location: Location,
@@ -62,19 +54,22 @@ struct Social(Option<String>);
 #[derive(Deserialize)]
 struct Hours {
     title: Title,
-    note: Note,
-    monday: Hour,
-    tuesday: Hour,
-    wednesday: Hour,
-    thursday: Hour,
-    friday: Hour,
-    saturday: Hour,
-    sunday: Hour,
+    monday: Day,
+    tuesday: Day,
+    wednesday: Day,
+    thursday: Day,
+    friday: Day,
+    saturday: Day,
+    sunday: Day,
 }
 
 #[derive(Deserialize)]
 #[serde(transparent)]
-struct Hour((Option<(u8, u8, u8, u8)>, Option<(u8, u8, u8, u8)>));
+struct Day((HalfDay, HalfDay));
+
+#[derive(Deserialize)]
+#[serde(transparent)]
+struct HalfDay(Option<(u8, u8, u8, u8)>);
 
 #[derive(Deserialize)]
 struct Benefits {
@@ -85,7 +80,7 @@ struct Benefits {
 #[derive(Deserialize)]
 struct Category {
     title: Title,
-    image: Image,
+    image: Option<Image>,
     description: Text,
     benefits: Vec<Benefit>,
 }
@@ -93,6 +88,7 @@ struct Category {
 #[derive(Deserialize)]
 struct Benefit {
     title: Title,
+    image: Option<Image>,
     price: Price,
     book: Book,
     description: Text,
