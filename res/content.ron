@@ -1,7 +1,7 @@
 (
     home: (
-        title: "Spa Bien",
-        subtitle: "Institut de beauté à Brive-La-Gaillarde",
+        title: "Destination Spa",
+        subtitle: "Institut de beauté à Beautiran",
         note: Some("`BLACK FRIDAY` **0.1**% de réduction *everywhere*"),
     ),
 
@@ -62,7 +62,7 @@ pas d'être rétrogradé dans l'ordre de succession au trône.
     ),
 
     benefits: (
-        title: "Prestations",
+        title: "Les Soins",
 
         categories: [
             (
