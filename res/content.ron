@@ -45,7 +45,7 @@ pas d'être rétrogradé dans l'ordre de succession au trône.
         ),
 
         contacts: (
-            phone: "01 02 03 04 05",
+            phone: "+33 1 02 03 04 05",
             email: "abc@xyz.com",
 
             location: (
