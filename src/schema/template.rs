@@ -37,20 +37,28 @@ impl Website {
                         r.attr("href", "res/style/home.css");
                         r.attr("rel", "stylesheet");
                     });
+
+                    r.single("link", |r| {
+                        r.attr("href", "res/style/benefits.css");
+                        r.attr("rel", "stylesheet");
+                    });
                 });
 
                 r.elem("body", no_attr()).build(|r| {
                     r.elem("header", no_attr()).build(|r| {
-                        self.home.title.render(r, 1);
-                        self.home.subtitle.render(r, 2);
-                        self.home.note.render(r);
+                        r.elem("div", no_attr()).build(|r| {
+                            self.home.title.render(r, 1, None);
+                            self.home.subtitle.render(r, 2, None);
+                            self.home.note.render(r);
+                        });
                     });
 
                     r.elem("main", no_attr()).build(|r| {
-                        self.introduction.render(r);
-                        self.hours.render(r);
-                        self.contacts.render(r);
-                        self.benefits.render(r);
+                        r.elem("div", no_attr()).build(|r| {
+                            self.benefits.render(r);
+                            self.infos.render(r);
+                            self.introduction.render(r);
+                        });
                     });
                 });
             });
@@ -66,40 +74,55 @@ impl Introduction {
             .build(|r| {
                 r.elem("a", |r| {
                     r.attr("href", format!("#{}", id));
-                    r.attr("class", "row");
                 }).build(|r| {
-                    self.title.render(r, 3);
-                    self.text.render(r);
+                    self.title.render(r, 3, Some(""));
+                });
+
+                r.elem("div", |r| {
+                    r.attr("class", "left");
+                }).build(|r| {
                     for image in &self.images {
                         image.render(r, true);
                     }
                 });
+
+                r.elem("div", |r| {
+                    r.attr("class", "right");
+                }).build(|r| {
+                    self.text.render(r);
+                });
+            });
+    }
+}
+
+impl Infos {
+    fn render(&self, r: &mut Renderer) {
+        let id = "infos";
+        r.elem("section", |r| {
+            r.attr("id", id);
+        }).build(|r| {
+            r.elem("a", |r| {
+                r.attr("href", format!("#{}", id));
+            }).build(|r| {
+                self.title.render(r, 3, Some(""));
+            });
+
+            self.hours.render(r);
+            self.contacts.render(r);
         });
     }
 }
 
 impl Contacts {
     fn render(&self, r: &mut Renderer) {
-        let id = "contacts";
-        r.elem("section", |r| {
-            r.attr("id", id);
-        })
-            .build(|r| {
-                r.elem("a", |r| {
-                    r.attr("href", format!("#{}", id));
-                    r.attr("class", "row");
-                }).build(|r| {
-                    self.title.render(r, 3);
-                    r.elem("address", no_attr()).build(|r| {
-                        r.elem("ul", no_attr()).build(|r| {
-                            self.phone.render(r);
-                            self.email.render(r);
-                            self.location.render(r);
-                        });
-                    });
-                    self.socials.render(r);
-                });
+        r.elem("address", no_attr()).build(|r| {
+            r.elem("ul", no_attr()).build(|r| {
+                self.phone.render(r);
+                self.email.render(r);
+                self.location.render(r);
             });
+        });
+        self.socials.render(r);
     }
 }
 
@@ -145,27 +168,15 @@ impl Social {
 
 impl Hours {
     fn render(&self, r: &mut Renderer) {
-        let id = "hours";
-        r.elem("section", |r| {
-            r.attr("id", id);
-        }).build(|r| {
-            r.elem("a", |r| {
-                r.attr("href", format!("#{}", id));
-                r.attr("class", "row");
-            }).build(|r| {
-
-            self.title.render(r, 3);
-            r.elem("table", no_attr()).build(|r| {
-                r.elem("tbody", no_attr()).build(|r| {
-                    self.monday.render(r, "lundi");
-                    self.tuesday.render(r, "mardi");
-                    self.wednesday.render(r, "mercredi");
-                    self.thursday.render(r, "jeudi");
-                    self.friday.render(r, "vendredi");
-                    self.saturday.render(r, "samedi");
-                    self.sunday.render(r, "dimanche");
-                });
-            });
+        r.elem("table", no_attr()).build(|r| {
+            r.elem("tbody", no_attr()).build(|r| {
+                self.monday.render(r, "lundi");
+                self.tuesday.render(r, "mardi");
+                self.wednesday.render(r, "mercredi");
+                self.thursday.render(r, "jeudi");
+                self.friday.render(r, "vendredi");
+                self.saturday.render(r, "samedi");
+                self.sunday.render(r, "dimanche");
             });
         });
     }
@@ -201,14 +212,13 @@ impl Benefits {
         }).build(|r| {
             r.elem("a", |r| {
                 r.attr("href", format!("#{}", id));
-                r.attr("class", "row");
             }).build(|r| {
-            
-            self.title.render(r, 3);
+                self.title.render(r, 3, Some(""));
+            });
+
             for (i, category) in self.categories.iter().enumerate() {
                 category.render(r, i);
             }
-            });
         });
     }
 }
@@ -224,7 +234,7 @@ impl Category {
                 r.attr("class", "row");
             }).build(|r| {
                 r.elem("div", no_attr()).build(|r| {
-                    self.title.render(r, 4);
+                    self.title.render(r, 4, Some("benefits"));
                     self.description.render(r);
                 });
 
@@ -245,7 +255,7 @@ impl Benefit {
             r.attr("class", "row");
         }).build(|r| {
             r.elem("div", no_attr()).build(|r| {
-                self.title.render(r, 5);
+                self.title.render(r, 5, None);
                 self.description.render(r);
                 self.book.render(r);
             });
@@ -356,9 +366,23 @@ impl Text {
 }
 
 impl Title {
-    fn render(&self, r: &mut Renderer, level: u8) {
+    fn render(&self, r: &mut Renderer, level: u8, back: Option<&str>) {
         r.elem(format!("h{}", level), no_attr()).build(|r| {
-            self.0.render(r);
+
+            if let Some(id) = back {
+                r.elem("a", |r| {
+                    r.attr("class", "back");
+                    r.attr("href", format!("#{}", id));
+                }).build(|r| {
+                    r.put_raw("←");
+                });
+
+                r.elem("span", no_attr()).build(|r| {
+                    self.0.render(r);
+                });
+            } else {
+                self.0.render(r);
+            }
         });
     }
 }

@@ -24,45 +24,45 @@ pas d'être rétrogradé dans l'ordre de succession au trône.
 "#,
 
         images: [
-            ("01.jpg", "Le salon."),
-            ("02.jpg", "La salle à manger."),
-            ("03.jpg", "La cuisine."),
-            ("04.jpg", "La salle de bain."),
+            ("01.jpg", "salon"),
+            ("02.jpg", "salle à manger"),
+            ("04.jpg", "salle de bain"),
+            ("03.jpg", "cuisine"),
         ],
     ),
 
-    contacts: (
-        title: "Contacts",
+    infos: (
+        title: "Horaires & Contacts",
 
-        phone: "01 02 03 04 05",
-        email: "abc@xyz.com",
-
-        location: (
-            address: "12 Rue Saint-Merri",
-            postcode: "75004",
-            city: "Paris",
+        hours: (
+            monday:    (None, None),
+            tuesday:   (Some((10,00, 12,00)), Some((14,00, 19,00))),
+            wednesday: (Some((10,00, 12,00)), Some((14,00, 19,00))),
+            thursday:  (Some((10,00, 12,00)), Some((14,00, 19,00))),
+            friday:    (Some((10,00, 12,00)), None),
+            saturday:  (None, Some((14,00, 19,00))),
+            sunday:    (None, None),
         ),
 
-        socials: (
-            facebook: Some("facebook.com/DanielThrasherOfficial"),
-            instagram: Some("instagram.com/danielthrasher"),
+        contacts: (
+            phone: "01 02 03 04 05",
+            email: "abc@xyz.com",
+
+            location: (
+                address: "12 Rue Saint-Merri",
+                postcode: "75004",
+                city: "Paris",
+            ),
+
+            socials: (
+                facebook: Some("facebook.com/DanielThrasherOfficial"),
+                instagram: Some("instagram.com/danielthrasher"),
+            ),
         ),
-    ),
-
-    hours: (
-        title: "Horaires",
-
-        monday:    (Some((10,00, 12,00)), Some((14,00, 19,00))),
-        tuesday:   (Some((10,00, 12,00)), Some((14,00, 19,00))),
-        wednesday: (Some((10,00, 12,00)), Some((14,00, 19,00))),
-        thursday:  (Some((10,00, 12,00)), Some((14,00, 19,00))),
-        friday:    (Some((10,00, 12,00)), None),
-        saturday:  (None, Some((14,00, 19,00))),
-        sunday:    (None, None),
     ),
 
     benefits: (
-        title: "Les Soins",
+        title: "Voir les Soins",
 
         categories: [
             (

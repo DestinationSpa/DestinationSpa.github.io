@@ -6,8 +6,7 @@ use serde::Deserialize;
 pub struct Website {
     home: Home,
     introduction: Introduction,
-    contacts: Contacts,
-    hours: Hours,
+    infos: Infos,
     benefits: Benefits,
 }
 
@@ -26,8 +25,14 @@ struct Introduction {
 }
 
 #[derive(Deserialize)]
-struct Contacts {
+struct Infos {
     title: Title,
+    contacts: Contacts,
+    hours: Hours,
+}
+
+#[derive(Deserialize)]
+struct Contacts {
     phone: Phone,
     email: Email,
     location: Location,
@@ -53,7 +58,6 @@ struct Social(Option<String>);
 
 #[derive(Deserialize)]
 struct Hours {
-    title: Title,
     monday: Day,
     tuesday: Day,
     wednesday: Day,
