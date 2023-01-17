@@ -97,7 +97,7 @@ pas déconner.
 
             (
                 title: "Les trucs plus cher",
-                image: None,
+                image: Some(("01.jpg", "un truc de spa")),
 
                 description: r#"
 

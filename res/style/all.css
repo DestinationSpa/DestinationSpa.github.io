@@ -145,7 +145,7 @@ main {
 
     background-color: var(--l1);
     color: var(--d4);
-    box-shadow: 0 0 4cm var(--l6);
+    box-shadow: 0 0 6cm var(--l4);
 }
 
 main > div > section h3 {
@@ -251,7 +251,7 @@ section:target > a, section:target > a {
 
     background-color: var(--l1);
     color: var(--d4);
-    box-shadow: 0 0 1.6cm var(--l3);
+    box-shadow: 0 0 3cm var(--l3);
 }
 
 h3, h4 {
@@ -309,7 +309,7 @@ section:target > a > h3 > span, section:target > a > h4 > span {
     height: 5.2cm;
 
     border-radius: 0.6cm;
-    box-shadow: 0 0 25px var(--l6);
+    box-shadow: 0 0 25px var(--l5);
 }
 
 #introduction:target figure {
@@ -392,7 +392,7 @@ tbody {
     margin-right: 1cm;
 
 
-    box-shadow: 0 0 30px var(--l3);
+    box-shadow: 0 0 2cm var(--l3);
     background-color: var(--l1);
 
     padding-left: 0.8cm;
@@ -437,8 +437,8 @@ address li {
 
 .socials img {
     background-color: var(--l1);
-    box-shadow: 0 0 0.7cm var(--l4);
-    border-radius: 99cm;
+    box-shadow: 0 0 1cm var(--l4);
+    border-radius: 100cm;
     height: 1.6cm;
 }
 
@@ -475,8 +475,8 @@ address li {
     display: inline-block;
     vertical-align: top;
 
-    width: 14cm;
-    height: 4.5cm;
+    width: 15.5cm;
+    height: 5cm;
 
     margin: 1cm;
 
@@ -498,8 +498,8 @@ address li {
 
 #benefits:target > section > .row:first-child > figure > img {
     object-fit: cover;
-    width: 4.5cm;
-    height: 4.5cm;
+    width: 5cm;
+    height: 5cm;
 
     border-radius: 0.6cm;
     box-shadow: 0 0 40px var(--l3);
@@ -513,7 +513,7 @@ address li {
 }
 
 #benefits:target > section > .row:first-child > div > p {
-    font-size: 107%;
+    font-size: 121%;
     text-align: justify;
 }
 
