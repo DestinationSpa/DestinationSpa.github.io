@@ -249,14 +249,14 @@ impl Category {
                 r.attr("href", format!("#{}", id));
                 r.attr("class", "row");
             }).build(|r| {
+                if let Some(image) = &self.image {
+                    image.render(r, false);
+                }
+
                 r.elem("div", no_attr()).build(|r| {
                     self.title.render(r, 4, Some("benefits"));
                     self.description.render(r);
                 });
-
-                if let Some(image) = &self.image {
-                    image.render(r, false);
-                }
             });
             for benefit in &self.benefits {
                 benefit.render(r);

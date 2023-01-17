@@ -66,7 +66,7 @@ pas d'être rétrogradé dans l'ordre de succession au trône.
 
         categories: [
             (
-                title: "Les trucs pas trop trop cher.",
+                title: "Les trucs pas trop trop cher",
                 image: Some(("07.jpg", "un truc de spa")),
 
                 description: r#"
@@ -96,7 +96,7 @@ pas déconner.
             ),
 
             (
-                title: "Les trucs plus cher.",
+                title: "Les trucs plus cher",
                 image: None,
 
                 description: r#"

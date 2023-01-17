@@ -40,6 +40,12 @@ img {
 
 
 
+
+
+
+
+
+
 @font-face {
     font-family: main;
     src: url(../font/fengardoneue_regular-webfont.woff);
@@ -294,11 +300,15 @@ section:target > a > h3 > span, section:target > a > h4 > span {
     margin-left: 2cm;
     margin-right: 2cm;
     margin-bottom: 0.5cm;
-    font-size: 120%;
+    font-size: 150%;
 }
 
 #introduction:target img {
-    height: 4cm;
+    object-fit: cover;
+    width: 5.2cm;
+    height: 5.2cm;
+
+    border-radius: 0.6cm;
     box-shadow: 0 0 25px var(--l6);
 }
 
@@ -318,6 +328,29 @@ section:target > a > h3 > span, section:target > a > h4 > span {
     font-weight: bold;
     font-size: 110%;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -357,6 +390,15 @@ table {
 tbody {
     display: inline-block;
     margin-right: 1cm;
+
+
+    box-shadow: 0 0 30px var(--l3);
+    background-color: var(--l1);
+
+    padding-left: 0.8cm;
+    padding-top: 0.55cm;
+
+    border-radius: 0.6cm;
 }
 
 td, th {
@@ -399,3 +441,81 @@ address li {
     border-radius: 99cm;
     height: 1.6cm;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#benefits:target {
+    text-align: center;
+}
+
+#benefits:target > section {
+    text-align: left;
+    display: inline-block;
+    vertical-align: top;
+
+    width: 14cm;
+    height: 4.5cm;
+
+    margin: 1cm;
+
+    box-shadow: 0 0 40px var(--l3);
+    background-color: var(--l1);
+
+    border-radius: 0.6cm;
+}
+
+#benefits:target > section .back {
+    display: none;
+}
+
+#benefits:target > section > .row:first-child {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+#benefits:target > section > .row:first-child > figure > img {
+    object-fit: cover;
+    width: 4.5cm;
+    height: 4.5cm;
+
+    border-radius: 0.6cm;
+    box-shadow: 0 0 40px var(--l3);
+}
+
+#benefits:target > section > .row:first-child > div {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#benefits:target > section > .row:first-child > div > p {
+    font-size: 107%;
+    text-align: justify;
+}
+
+
+
