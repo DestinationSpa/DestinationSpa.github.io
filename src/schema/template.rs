@@ -128,9 +128,13 @@ impl Contacts {
 impl Location {
     fn render(&self, r: &mut Renderer) {
         r.elem("li", no_attr()).build(|r| {
-            r.elem("pre", no_attr()).build(|r| {
-                r.elem("code", no_attr()).build(|r| {
-                    r.put_raw(format!("{}\n{} {}", self.address, self.postcode, self.city));
+            r.elem("a", |r| {
+                r.attr("href", format!("geo:{},{}", self.latitude, self.longitude));
+            }).build(|r| {
+                r.elem("pre", no_attr()).build(|r| {
+                    r.elem("code", no_attr()).build(|r| {
+                        r.put_raw(format!("{}\n{} {}", self.address, self.postcode, self.city));
+                    });
                 });
             });
         });
@@ -270,17 +274,21 @@ impl Benefit {
         r.elem("div", |r| {
             r.attr("class", "row");
         }).build(|r| {
-            r.elem("div", no_attr()).build(|r| {
-                self.title.render(r, 5, None);
-                self.description.render(r);
-                self.book.render(r);
-            });
-
-            self.price.render(r);
-
             if let Some(image) = &self.image {
                 image.render(r, false);
             }
+
+            r.elem("div", no_attr()).build(|r| {
+                self.title.render(r, 5, None);
+                self.description.render(r);
+
+                r.elem("div", no_attr()).build(|r| {
+                    r.elem("div", no_attr()).build(|r| {
+                        self.price.render(r);
+                        self.book.render(r);
+                    });
+                });
+            });
         });
     }
 }
@@ -291,7 +299,9 @@ impl Book {
             r.attr("href", https(&self.0));
             r.attr("class", "book");
         }).build(|r| {
-            r.put_raw("réserver ce soin");
+            r.elem("span", no_attr()).build(|r| {
+                r.put_raw("réserver");
+            });
         });
     }
 }

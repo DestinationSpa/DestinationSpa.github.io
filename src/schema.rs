@@ -44,6 +44,8 @@ struct Location {
     address: String,
     postcode: String,
     city: String,
+    latitude: String,
+    longitude: String,
 }
 
 #[derive(Deserialize)]
