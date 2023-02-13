@@ -20,17 +20,38 @@ impl Website {
                         ));
                     });
 
+                    r.single("link", |r| {
+                        r.attr("rel", "preload");
+                        r.attr("as", "font");
+                        r.attr("type", "font/woff");
+                        r.attr("crossorigin", "anonymous");
+                        r.attr("href", "./res/font/fengardoneue_regular-webfont.woff");
+                    });
+
+
+                    r.single("link", |r| {
+                        r.attr("rel", "preload");
+                        r.attr("as", "image");
+                        r.attr("href", "./res/images/back.svg");
+                    });
+
+                    r.single("link", |r| {
+                        r.attr("rel", "preload");
+                        r.attr("as", "image");
+                        r.attr("href", "./res/images/back.hover.svg");
+                    });
+
                     r.elem("style", no_attr()).build(|r| {
                         r.put_raw("");
                     });
 
                     r.single("link", |r| {
-                        r.attr("href", "res/style/all.css");
                         r.attr("rel", "stylesheet");
+                        r.attr("href", "./res/style/all.css");
 
-                        let todo = "clean/split this messy stylesheet
+                        let todo = "Clean/split this messy stylesheet
                         and include it inline into this HTML file
-                        (minified and prefixed)";
+                        (minified and prefixed).";
 
                     });
                 });
@@ -129,7 +150,7 @@ impl Location {
     fn render(&self, r: &mut Renderer) {
         r.elem("li", no_attr()).build(|r| {
             r.elem("a", |r| {
-                r.attr("href", format!("geo:{},{}", self.latitude, self.longitude));
+                r.attr("href", format!("https://maps.google.com/maps?z=10&t=m&q=loc:{}+{}", self.latitude, self.longitude));
             }).build(|r| {
                 r.elem("pre", no_attr()).build(|r| {
                     r.elem("code", no_attr()).build(|r| {
@@ -160,8 +181,8 @@ impl Social {
                     r.attr("href", https(&social));
                 }).build(|r| {
                     r.single("img", |r| {
-                        r.attr("src", format!("res/images/{}.svg", name));
-                        r.attr("alt", format!("logo de {}", name));
+                        r.attr("src", format!("./res/images/{}.svg", name));
+                        r.attr("alt", format!("page {}", name));
                     })
                 });
             });
@@ -322,7 +343,7 @@ impl Image {
     fn render(&self, r: &mut Renderer, caption: bool) {
         r.elem("figure", no_attr()).build(|r| {
             r.single("img", |r| {
-                r.attr("src", format!("res/images/{}", self.0.0));
+                r.attr("src", format!("./res/images/{}", self.0.0));
                 r.attr("alt", &self.0.1);
             });
 
@@ -396,11 +417,9 @@ impl Title {
         r.elem(format!("h{}", level), no_attr()).build(|r| {
 
             if let Some(id) = back {
-                r.elem("a", |r| {
+                r.single("a", |r| {
                     r.attr("class", "back");
                     r.attr("href", format!("#{}", id));
-                }).build(|r| {
-                    r.put_raw("←");
                 });
 
                 r.elem("span", no_attr()).build(|r| {

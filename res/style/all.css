@@ -1,6 +1,14 @@
+@font-face {
+    unicode-range: U+20-5F, U+61-7A, U+7C, U+A0, U+A7, U+A9, U+AB, U+B2-B3, U+BB, U+C0, U+C2, U+C6-CB, U+CE-CF, U+D4, U+D9, U+DB-DC, U+E0, U+E2, U+E6-EB, U+EE-EF, U+F4, U+F9, U+FB-FC, U+FF, U+152-153, U+178, U+2B3, U+2E2, U+1D48-1D49, U+2010-2011, U+2013-2014, U+2019, U+201C-201D, U+2020-2021, U+2026, U+202F-2030, U+20AC, U+2212;
+
+    font-family: main;
+    font-display: swap;
+    src: url('../font/fengardoneue_regular-webfont.woff') format('woff');
+}
+
 * {
     color: inherit;
-    font-family: inherit;
+    font-family: main, sans-serif;
     font-size: inherit;
     font-style: inherit;
     font-weight: inherit;
@@ -45,11 +53,6 @@ img {
 
 
 
-
-@font-face {
-    font-family: main;
-    src: url(../font/fengardoneue_regular-webfont.woff);
-}
 
 html {
     height: 100%;
@@ -103,7 +106,6 @@ body {
     background-color: var(--l0);
     color: var(--d0);
     display: flex;
-    font-family: main, sans;
     height: 100%;
 }
 
@@ -137,7 +139,6 @@ header > div > .note {
     background-color: var(--d4);
     color: var(--l6);
     display: inline-block;
-    font-family: mono;
     margin-top: 0.5cm;
     padding: 10px 20px;
     border-radius: 0.6cm;
@@ -152,7 +153,6 @@ header > div > .note code {
 main {
     padding-left: 1cm;
     text-align: left;
-
     background-color: var(--l1);
     color: var(--d4);
     box-shadow: 0 0 7cm var(--l9);
@@ -233,27 +233,23 @@ section:target {
 }
 
 .back {
-    border: 4px solid var(--lf);
-    color: var(--lf);
-
-    font-weight: normal;
-    font-size: 125%;
-
     margin: 50px;
     margin-right: 70px;
     margin-left: 0;
 
-    width: 50px;
-    line-height: 50px;
     border-radius: 100cm;
-    text-align: center;
-
     vertical-align: middle;
+
+    width: 50px;
+    height: 50px;
+    background-size: 50px;
+    background-image: url("../images/back.svg");
+    border: 4px solid var(--lf);
 }
 
 .back:hover {
+    background-image: url("../images/back.hover.svg");
     border-color: var(--de);
-    color: var(--de);
 }
 
 section:target > a, section:target > a {
