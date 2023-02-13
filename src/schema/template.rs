@@ -138,7 +138,16 @@ impl Contacts {
                 r.elem("ul", no_attr()).build(|r| {
                     self.phone.render(r);
                     self.email.render(r);
-                    self.location.render(r);
+
+                    let latitude = &self.location.latitude;
+                    let longitude = &self.location.longitude;
+                    let query = &self.location.query.join("+");
+
+                    self.location.render(r, format!("https://maps.google.com/maps?ll={},{}&q={}", latitude, longitude, query));
+                    self.location.render(r, format!("http://maps.google.com/maps?ll={},{}&q={}", latitude, longitude, query));
+
+                    self.location.render(r, format!("https://maps.google.com/maps?ll={},{}", latitude, longitude));
+                    self.location.render(r, format!("http://maps.google.com/maps?ll={},{}", latitude, longitude));
                 });
             });
             self.socials.render(r);
@@ -147,10 +156,10 @@ impl Contacts {
 }
 
 impl Location {
-    fn render(&self, r: &mut Renderer) {
+    fn render(&self, r: &mut Renderer, href: String) {
         r.elem("li", no_attr()).build(|r| {
             r.elem("a", |r| {
-                r.attr("href", format!("https://maps.google.com/maps?ll={},{}&q={}", self.latitude, self.longitude, self.query.join("+")));
+                r.attr("href", href);
             }).build(|r| {
                 r.elem("pre", no_attr()).build(|r| {
                     r.elem("code", no_attr()).build(|r| {
