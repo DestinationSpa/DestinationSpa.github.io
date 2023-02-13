@@ -46,6 +46,7 @@ struct Location {
     city: String,
     latitude: String,
     longitude: String,
+    query: Vec<String>,
 }
 
 #[derive(Deserialize)]

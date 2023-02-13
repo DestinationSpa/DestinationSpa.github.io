@@ -150,7 +150,7 @@ impl Location {
     fn render(&self, r: &mut Renderer) {
         r.elem("li", no_attr()).build(|r| {
             r.elem("a", |r| {
-                r.attr("href", format!("https://maps.google.com/maps?z=10&t=m&q=loc:{}+{}", self.latitude, self.longitude));
+                r.attr("href", format!("https://maps.google.com/maps?ll={},{}&q={}", self.latitude, self.longitude, self.query.join("+")));
             }).build(|r| {
                 r.elem("pre", no_attr()).build(|r| {
                     r.elem("code", no_attr()).build(|r| {

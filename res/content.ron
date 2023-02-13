@@ -53,8 +53,9 @@ pas d'être rétrogradé dans l'ordre de succession au trône.
                 postcode: "75004",
                 city: "Paris",
 
-                latitude: "23.12421",
-                longitude: "-82.38607",
+                latitude: "44.70009746166743",
+                longitude: "-0.45002383119270406",
+                query: ["destination", "spa", "beautiran", "france"],
             ),
 
             socials: (
