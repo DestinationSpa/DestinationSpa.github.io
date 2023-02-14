@@ -6,14 +6,14 @@ let
 
   nixpkgs = github {
     repo = "nixos/nixpkgs";
-    rev = "5c211b4"; # nixos-22.05 2022-08-12
-    sha256 = "1r6wj98wb16217g6hsk13qwwpx5zwd1nq4fnx6an6ljmv5mq5mc3";
+    rev = "a45a891"; # nixos-22.11 @ 2023-02-13
+    sha256 = "1z4iyfgqsqs90g3xmh21n4ydv88p5s8s0klf1x1cbjx4r7q8h6wf";
   };
 
   nixpkgs-mozilla = github {
     repo = "mozilla/nixpkgs-mozilla";
-    rev = "0508a66"; # master 2022-07-07
-    sha256 = "1nswjmya72g0qriidc2pkl54zn5sg0xp36vdq0ylspca56izivxc";
+    rev = "85eb0ba"; # master @ 2023-02-02
+    sha256 = "15a7zd7nrnfgjzs8gq2cpkxg7l3c38jradkxxyaf136kkqhlc0k4";
   };
 
   pkgs = import nixpkgs {
@@ -32,8 +32,8 @@ in pkgs.mkShell {
     (pkgs.rustChannelOf {
 
       channel = "stable";
-      date = "2022-11-03"; # see https://forge.rust-lang.org
-      sha256 = "sha256-DzNEaW724O8/B8844tt5AVHmSjSQ3cmzlU4BP90oRlY=";
+      date = "2023-01-26"; # see https://forge.rust-lang.org
+      sha256 = "sha256-riZUc+R9V35c/9e8KJUE+8pzpXyl0lRXt3ZkKlxoY0g=";
 
     }).rust
   ];

@@ -139,8 +139,8 @@ impl Contacts {
                     self.phone.render(r);
                     self.email.render(r);
 
-                    let latitude = &self.location.latitude;
-                    let longitude = &self.location.longitude;
+                    let latitude = keep_decimals(6, &self.location.latitude);
+                    let longitude = keep_decimals(6, &self.location.longitude);
                     let query = &self.location.query.join("+");
 
                     self.location.render(r, format!("https://maps.google.com/maps?ll={},{}&q={}", latitude, longitude, query));
@@ -153,6 +153,11 @@ impl Contacts {
             self.socials.render(r);
         });
     }
+}
+
+fn keep_decimals(decimals: usize, number: &str) -> String {
+    let (int, frac) = number.split_once('.').unwrap();
+    format!("{}.{}", int, &frac[..decimals])
 }
 
 impl Location {
