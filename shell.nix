@@ -36,5 +36,8 @@ in pkgs.mkShell {
       sha256 = "sha256-riZUc+R9V35c/9e8KJUE+8pzpXyl0lRXt3ZkKlxoY0g=";
 
     }).rust
+
+    pkgs.nodePackages.prettier
+    pkgs.php
   ];
 }

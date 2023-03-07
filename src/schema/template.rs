@@ -11,69 +11,65 @@ impl Website {
             r.attr("xmlns", "http://www.w3.org/1999/xhtml");
             r.attr("lang", "fr");
         })
-            .build(|r| {
-                r.elem("head", no_attr()).build(|r| {
-                    r.elem("title", no_attr()).build(|r| {
-                        r.put_raw(format!(
-                            "{} - {}",
-                            self.home.title.0 .0, self.home.subtitle.0 .0
-                        ));
-                    });
+        .build(|r| {
+            r.elem("head", no_attr()).build(|r| {
+                r.elem("title", no_attr()).build(|r| {
+                    r.put_raw(format!(
+                        "{} - {}",
+                        self.home.title.0 .0, self.home.subtitle.0 .0
+                    ));
+                });
 
-                    r.single("link", |r| {
-                        r.attr("rel", "preload");
-                        r.attr("as", "font");
-                        r.attr("type", "font/woff");
-                        r.attr("crossorigin", "anonymous");
-                        r.attr("href", "./res/font/fengardoneue_regular-webfont.woff");
-                    });
+                r.single("link", |r| {
+                    r.attr("rel", "preload");
+                    r.attr("as", "font");
+                    r.attr("type", "font/woff");
+                    r.attr("crossorigin", "anonymous");
+                    r.attr("href", "./res/font/fengardoneue_regular-webfont.woff");
+                });
 
+                r.single("link", |r| {
+                    r.attr("rel", "preload");
+                    r.attr("as", "image");
+                    r.attr("href", "./res/images/back.svg");
+                });
 
-                    r.single("link", |r| {
-                        r.attr("rel", "preload");
-                        r.attr("as", "image");
-                        r.attr("href", "./res/images/back.svg");
-                    });
+                r.single("link", |r| {
+                    r.attr("rel", "preload");
+                    r.attr("as", "image");
+                    r.attr("href", "./res/images/back.hover.svg");
+                });
 
-                    r.single("link", |r| {
-                        r.attr("rel", "preload");
-                        r.attr("as", "image");
-                        r.attr("href", "./res/images/back.hover.svg");
-                    });
+                r.elem("style", no_attr()).build(|r| {
+                    r.put_raw("");
+                });
 
-                    r.elem("style", no_attr()).build(|r| {
-                        r.put_raw("");
-                    });
+                r.single("link", |r| {
+                    r.attr("rel", "stylesheet");
+                    r.attr("href", "./res/style/all.css");
 
-                    r.single("link", |r| {
-                        r.attr("rel", "stylesheet");
-                        r.attr("href", "./res/style/all.css");
+                    let todo = "Clean/split this messy stylesheet and include it inline into this HTML file (minified and prefixed). Also, generate the color palette/gradient from step colors.";
+                });
+            });
 
-                        let todo = "Clean/split this messy stylesheet
-                        and include it inline into this HTML file
-                        (minified and prefixed).";
-
+            r.elem("body", no_attr()).build(|r| {
+                r.elem("header", no_attr()).build(|r| {
+                    r.elem("div", no_attr()).build(|r| {
+                        self.home.title.render(r, 1, None);
+                        self.home.subtitle.render(r, 2, None);
+                        self.home.note.render(r);
                     });
                 });
 
-                r.elem("body", no_attr()).build(|r| {
-                    r.elem("header", no_attr()).build(|r| {
-                        r.elem("div", no_attr()).build(|r| {
-                            self.home.title.render(r, 1, None);
-                            self.home.subtitle.render(r, 2, None);
-                            self.home.note.render(r);
-                        });
-                    });
-
-                    r.elem("main", no_attr()).build(|r| {
-                        r.elem("div", no_attr()).build(|r| {
-                            self.benefits.render(r);
-                            self.infos.render(r);
-                            self.introduction.render(r);
-                        });
+                r.elem("main", no_attr()).build(|r| {
+                    r.elem("div", no_attr()).build(|r| {
+                        self.benefits.render(r);
+                        self.infos.render(r);
+                        self.introduction.render(r);
                     });
                 });
             });
+        });
     }
 }
 
@@ -83,29 +79,32 @@ impl Introduction {
         r.elem("section", |r| {
             r.attr("id", id);
         })
+        .build(|r| {
+            r.elem("a", |r| {
+                r.attr("href", format!("#{}", id));
+            })
             .build(|r| {
-                r.elem("a", |r| {
-                    r.attr("href", format!("#{}", id));
-                }).build(|r| {
-                    self.title.render(r, 3, Some(""));
+                self.title.render(r, 3, Some(""));
+            });
+
+            r.elem("div", no_attr()).build(|r| {
+                r.elem("div", |r| {
+                    r.attr("class", "left");
+                })
+                .build(|r| {
+                    for image in &self.images {
+                        image.render(r, true);
+                    }
                 });
 
-                r.elem("div", no_attr()).build(|r| {
-                    r.elem("div", |r| {
-                        r.attr("class", "left");
-                    }).build(|r| {
-                        for image in &self.images {
-                            image.render(r, true);
-                        }
-                    });
-
-                    r.elem("div", |r| {
-                        r.attr("class", "right");
-                    }).build(|r| {
-                        self.text.render(r);
-                    });
+                r.elem("div", |r| {
+                    r.attr("class", "right");
+                })
+                .build(|r| {
+                    self.text.render(r);
                 });
             });
+        });
     }
 }
 
@@ -114,10 +113,12 @@ impl Infos {
         let id = "infos";
         r.elem("section", |r| {
             r.attr("id", id);
-        }).build(|r| {
+        })
+        .build(|r| {
             r.elem("a", |r| {
                 r.attr("href", format!("#{}", id));
-            }).build(|r| {
+            })
+            .build(|r| {
                 self.title.render(r, 3, Some(""));
             });
 
@@ -133,7 +134,8 @@ impl Contacts {
     fn render(&self, r: &mut Renderer) {
         r.elem("div", |r| {
             r.attr("class", "right");
-        }).build(|r| {
+        })
+        .build(|r| {
             r.elem("address", no_attr()).build(|r| {
                 r.elem("ul", no_attr()).build(|r| {
                     self.phone.render(r);
@@ -150,8 +152,17 @@ impl Location {
     fn render(&self, r: &mut Renderer) {
         r.elem("li", no_attr()).build(|r| {
             r.elem("a", |r| {
-                r.attr("href", format!("https://maps.google.com/maps?ll={},{}&q={}", self.latitude, self.longitude, self.query.join("+")));
-            }).build(|r| {
+                r.attr(
+                    "href",
+                    format!(
+                        "https://maps.google.com/maps?ll={},{}&q={}",
+                        self.latitude,
+                        self.longitude,
+                        self.query.join("+")
+                    ),
+                );
+            })
+            .build(|r| {
                 r.elem("pre", no_attr()).build(|r| {
                     r.elem("code", no_attr()).build(|r| {
                         r.put_raw(format!("{}\n{} {}", self.address, self.postcode, self.city));
@@ -166,7 +177,8 @@ impl Socials {
     fn render(&self, r: &mut Renderer) {
         r.elem("ul", |r| {
             r.attr("class", "socials");
-        }).build(|r| {
+        })
+        .build(|r| {
             self.facebook.render(r, "facebook");
             self.instagram.render(r, "instagram");
         });
@@ -179,7 +191,8 @@ impl Social {
             r.elem("li", no_attr()).build(|r| {
                 r.elem("a", |r| {
                     r.attr("href", https(&social));
-                }).build(|r| {
+                })
+                .build(|r| {
                     r.single("img", |r| {
                         r.attr("src", format!("./res/images/{}.svg", name));
                         r.attr("alt", format!("page {}", name));
@@ -194,11 +207,11 @@ impl Hours {
     fn render(&self, r: &mut Renderer) {
         r.elem("table", |r| {
             r.attr("class", "left");
-        }).build(|r| {
+        })
+        .build(|r| {
             r.elem("tbody", no_attr()).build(|r| {
                 r.elem("tr", no_attr()).build(|r| {
-                    r.elem("th", no_attr()).build(|_| {
-                    });
+                    r.elem("th", no_attr()).build(|_| {});
                     r.elem("th", no_attr()).build(|r| {
                         r.put_raw("matin");
                     });
@@ -225,8 +238,8 @@ impl Day {
             r.elem("th", no_attr()).build(|r| {
                 r.put_raw(day);
             });
-            self.0.0.render(r);
-            self.0.1.render(r);
+            self.0 .0.render(r);
+            self.0 .1.render(r);
         });
     }
 }
@@ -250,10 +263,12 @@ impl Benefits {
         let id = "benefits";
         r.elem("section", |r| {
             r.attr("id", id);
-        }).build(|r| {
+        })
+        .build(|r| {
             r.elem("a", |r| {
                 r.attr("href", format!("#{}", id));
-            }).build(|r| {
+            })
+            .build(|r| {
                 self.title.render(r, 3, Some(""));
             });
 
@@ -269,11 +284,13 @@ impl Category {
         let id = format!("category{}", i);
         r.elem("section", |r| {
             r.attr("id", &id);
-        }).build(|r| {
+        })
+        .build(|r| {
             r.elem("a", |r| {
                 r.attr("href", format!("#{}", id));
                 r.attr("class", "row");
-            }).build(|r| {
+            })
+            .build(|r| {
                 if let Some(image) = &self.image {
                     image.render(r, false);
                 }
@@ -294,7 +311,8 @@ impl Benefit {
     fn render(&self, r: &mut Renderer) {
         r.elem("div", |r| {
             r.attr("class", "row");
-        }).build(|r| {
+        })
+        .build(|r| {
             if let Some(image) = &self.image {
                 image.render(r, false);
             }
@@ -319,7 +337,8 @@ impl Book {
         r.elem("a", |r| {
             r.attr("href", https(&self.0));
             r.attr("class", "book");
-        }).build(|r| {
+        })
+        .build(|r| {
             r.elem("span", no_attr()).build(|r| {
                 r.put_raw("réserver");
             });
@@ -332,7 +351,8 @@ impl Email {
         r.elem("li", no_attr()).build(|r| {
             r.elem("a", |r| {
                 r.attr("href", format!("mailto:{}", self.0));
-            }).build(|r| {
+            })
+            .build(|r| {
                 r.put_raw(&self.0);
             });
         });
@@ -343,13 +363,13 @@ impl Image {
     fn render(&self, r: &mut Renderer, caption: bool) {
         r.elem("figure", no_attr()).build(|r| {
             r.single("img", |r| {
-                r.attr("src", format!("./res/images/{}", self.0.0));
-                r.attr("alt", &self.0.1);
+                r.attr("src", format!("./res/images/{}", self.0 .0));
+                r.attr("alt", &self.0 .1);
             });
 
             if caption {
                 r.elem("figcaption", no_attr()).build(|r| {
-                    r.put_raw(&self.0.1);
+                    r.put_raw(&self.0 .1);
                 });
             }
         });
@@ -381,7 +401,8 @@ impl Phone {
             r.elem("a", |r| {
                 let tel: String = self.0.split_whitespace().collect();
                 r.attr("href", format!("tel:{tel}"));
-            }).build(|r| {
+            })
+            .build(|r| {
                 r.put_raw(&self.0);
             });
         });
@@ -392,15 +413,16 @@ impl Price {
     fn render(&self, r: &mut Renderer) {
         r.elem("span", |r| {
             r.attr("class", "price");
-        }).build(|r| {
+        })
+        .build(|r| {
             r.elem("span", no_attr()).build(|r| {
-                r.put_raw(self.0.0);
+                r.put_raw(self.0 .0);
             });
             r.elem("span", no_attr()).build(|r| {
                 r.put_raw('€');
             });
             r.elem("span", no_attr()).build(|r| {
-                r.put_raw(format!("{:02}", self.0.1));
+                r.put_raw(format!("{:02}", self.0 .1));
             });
         });
     }
@@ -415,7 +437,6 @@ impl Text {
 impl Title {
     fn render(&self, r: &mut Renderer, level: u8, back: Option<&str>) {
         r.elem(format!("h{}", level), no_attr()).build(|r| {
-
             if let Some(id) = back {
                 r.single("a", |r| {
                     r.attr("class", "back");
@@ -458,9 +479,5 @@ fn parse_md(block: bool, input: &str) -> String {
     escape::add(parser);
     link::add(parser);
 
-    parser
-        .parse(input)
-        .xrender()
-        .trim()
-        .to_string()
+    parser.parse(input).xrender().trim().to_string()
 }
