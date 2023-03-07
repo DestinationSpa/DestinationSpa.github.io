@@ -138,16 +138,7 @@ impl Contacts {
                 r.elem("ul", no_attr()).build(|r| {
                     self.phone.render(r);
                     self.email.render(r);
-
-                    let latitude = keep_decimals(6, &self.location.latitude);
-                    let longitude = keep_decimals(6, &self.location.longitude);
-                    let query = &self.location.query.join("+");
-
-                    self.location.render(r, format!("https://maps.google.com/maps?ll={},{}&q={}", latitude, longitude, query));
-                    self.location.render(r, format!("http://maps.google.com/maps?ll={},{}&q={}", latitude, longitude, query));
-
-                    self.location.render(r, format!("https://maps.google.com/maps?ll={},{}", latitude, longitude));
-                    self.location.render(r, format!("http://maps.google.com/maps?ll={},{}", latitude, longitude));
+                    self.location.render(r);
                 });
             });
             self.socials.render(r);
@@ -155,16 +146,11 @@ impl Contacts {
     }
 }
 
-fn keep_decimals(decimals: usize, number: &str) -> String {
-    let (int, frac) = number.split_once('.').unwrap();
-    format!("{}.{}", int, &frac[..decimals])
-}
-
 impl Location {
-    fn render(&self, r: &mut Renderer, href: String) {
+    fn render(&self, r: &mut Renderer) {
         r.elem("li", no_attr()).build(|r| {
             r.elem("a", |r| {
-                r.attr("href", href);
+                r.attr("href", format!("https://maps.google.com/maps?ll={},{}&q={}", self.latitude, self.longitude, self.query.join("+")));
             }).build(|r| {
                 r.elem("pre", no_attr()).build(|r| {
                     r.elem("code", no_attr()).build(|r| {
