@@ -211,7 +211,7 @@ impl Hours {
         .build(|r| {
             r.elem("tbody", no_attr()).build(|r| {
                 r.elem("tr", no_attr()).build(|r| {
-                    r.elem("th", no_attr()).build(|_| {});
+                    r.single("th", no_attr());
                     r.elem("th", no_attr()).build(|r| {
                         r.put_raw("matin");
                     });
@@ -438,9 +438,12 @@ impl Title {
     fn render(&self, r: &mut Renderer, level: u8, back: Option<&str>) {
         r.elem(format!("h{}", level), no_attr()).build(|r| {
             if let Some(id) = back {
-                r.single("a", |r| {
+                r.single("span", |r| {
                     r.attr("class", "back");
-                    r.attr("href", format!("#{}", id));
+                    r.attr(
+                        "onclick",
+                        format!("window.location.href='#{}';return false;", id),
+                    );
                 });
 
                 r.elem("span", no_attr()).build(|r| {
@@ -452,12 +455,6 @@ impl Title {
         });
     }
 }
-
-// fn separator(r: &mut Renderer) {
-//     r.elem("div", |r| {
-//         r.attr("class", "separator");
-//     })
-// }
 
 fn https(url: &str) -> String {
     format!("https://{url}")
