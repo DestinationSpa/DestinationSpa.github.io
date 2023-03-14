@@ -2,4 +2,4 @@
 #! nix-shell --pure -i bash
 
 cargo fmt
-prettier --write res/style
+prettier --write res/style.css

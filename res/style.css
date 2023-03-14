@@ -13,7 +13,7 @@
 
   font-family: main;
   font-display: swap;
-  src: url("../font/fengardoneue_regular-webfont.woff") format("woff");
+  src: url("./font/fengardoneue_regular-webfont.woff") format("woff");
 }
 
 /*****************************************
@@ -96,10 +96,12 @@ html {
 }
 
 body {
+  overflow: hidden;
   align-items: stretch;
   background-color: var(--l0);
   color: var(--d0);
   display: flex;
+  flex-wrap: wrap;
   height: 100%;
 }
 
@@ -107,6 +109,7 @@ header,
 main {
   flex: 1;
   display: flex;
+  min-width: 12cm;
   align-items: center;
 }
 
@@ -121,12 +124,12 @@ header {
 }
 
 header > div > h1 {
-  font-size: 444%;
+  font-size: 410%;
   color: var(--d0);
 }
 
 header > div > h2 {
-  font-size: 222%;
+  font-size: 210%;
   margin-top: 0.1cm;
   color: var(--d5);
 }
@@ -161,6 +164,18 @@ main > div > section h3 {
 
 main > div > section:last-child h3 {
   margin-bottom: 0;
+}
+
+@media (max-width: 26cm) {
+  header,
+  main {
+    text-align: center;
+    padding: 0 0.5cm;
+  }
+
+  main {
+    border-radius: 0.6cm 0.6cm 0 0;
+  }
 }
 
 /*****************************************
@@ -215,12 +230,12 @@ section:target {
   width: 50px;
   height: 50px;
   background-size: 50px;
-  background-image: url("../images/back.svg");
+  background-image: url("./images/back.svg");
   border: 4px solid var(--lf);
 }
 
 .back:hover {
-  background-image: url("../images/back.hover.svg");
+  background-image: url("./images/back.hover.svg");
   border-color: var(--de);
 }
 

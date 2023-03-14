@@ -38,6 +38,8 @@ in pkgs.mkShell {
     }).rust
 
     pkgs.nodePackages.prettier
+    pkgs.lightningcss
     pkgs.php
+    pkgs.ghc
   ];
 }

@@ -20,6 +20,11 @@ impl Website {
                     ));
                 });
 
+                r.single("meta", |r| {
+                    r.attr("name", "viewport");
+                    r.attr("content", "width=device-width, initial-scale=1.0");
+                });
+
                 r.single("link", |r| {
                     r.attr("rel", "preload");
                     r.attr("as", "font");
@@ -31,24 +36,12 @@ impl Website {
                 r.single("link", |r| {
                     r.attr("rel", "preload");
                     r.attr("as", "image");
-                    r.attr("href", "./res/images/back.svg");
-                });
-
-                r.single("link", |r| {
-                    r.attr("rel", "preload");
-                    r.attr("as", "image");
                     r.attr("href", "./res/images/back.hover.svg");
-                });
-
-                r.elem("style", no_attr()).build(|r| {
-                    r.put_raw("");
                 });
 
                 r.single("link", |r| {
                     r.attr("rel", "stylesheet");
-                    r.attr("href", "./res/style/all.css");
-
-                    let todo = "Clean/split this messy stylesheet and include it inline into this HTML file (minified and prefixed). Also, generate the color palette/gradient from step colors.";
+                    r.attr("href", "./res/style.min.css");
                 });
             });
 
