@@ -124,22 +124,23 @@ header {
 }
 
 header > div > h1 {
-  font-size: 410%;
+  font-size: 420%;
   color: var(--d0);
 }
 
 header > div > h2 {
-  font-size: 210%;
-  margin-top: 0.1cm;
+  font-size: 220%;
+  margin-top: 0.3cm;
   color: var(--d5);
 }
 
 header > div > .note {
+  font-size: 110%;
   background-color: var(--d4);
   color: var(--l6);
   display: inline-block;
-  margin-top: 0.5cm;
-  padding: 10px 20px;
+  margin-top: 0.8cm;
+  padding: 8px 16px;
   border-radius: 0.6cm;
   text-align: center;
 }
@@ -159,7 +160,7 @@ main {
 }
 
 main > div > section h3 {
-  margin-bottom: 1cm;
+  margin-bottom: 1.5cm;
 }
 
 main > div > section:last-child h3 {
@@ -220,8 +221,8 @@ section:target {
 }
 
 .back {
-  margin: 50px;
-  margin-right: 70px;
+  margin: 1.5cm;
+  margin-right: 1.3cm;
   margin-left: 0;
 
   border-radius: 100cm;
@@ -254,7 +255,7 @@ section:target > a {
 
 h3,
 h4 {
-  font-size: 222%;
+  font-size: 180%;
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -274,7 +275,6 @@ section:target > a h3 > span,
 section:target > a h4 > span {
   display: inline-block;
   vertical-align: middle;
-  margin-right: 70px;
   border-bottom: 4px solid var(--lf);
 }
 
@@ -470,10 +470,10 @@ address a:hover {
   display: inline-block;
   vertical-align: top;
 
-  width: 16cm;
+  width: 12.7cm;
   height: 6cm;
 
-  margin: 1cm;
+  margin: 0.65cm;
 
   box-shadow: 0 0 40px var(--l6);
   background-color: var(--l1);
@@ -508,7 +508,7 @@ address a:hover {
 }
 
 #benefits:target > section > .row:first-child > div > p {
-  font-size: 115%;
+  font-size: 105%;
   text-align: justify;
 }
 
@@ -532,10 +532,9 @@ address a:hover {
 
 [id^="category"]:target div.row {
   display: inline-flex;
-  min-width: 14cm;
-  max-width: 18cm;
+  width: 12.7cm;
 
-  margin: 1cm;
+  margin: 0.65cm;
   text-align: left;
 
   border-radius: 0.6cm;
@@ -563,14 +562,14 @@ address a:hover {
 }
 
 [id^="category"]:target h5 {
-  font-size: 220%;
+  font-size: 165%;
   padding: 0 20px;
   padding-top: 20px;
   padding-bottom: 10px;
 }
 
 [id^="category"]:target p {
-  font-size: 120%;
+  font-size: 105%;
   margin-bottom: auto;
   padding: 0 20px;
   padding-bottom: 20px;
@@ -592,10 +591,10 @@ address a:hover {
 [id^="category"]:target .book {
   display: flex;
   align-items: center;
-  font-size: 120%;
+  font-size: 110%;
   font-weight: bold;
 
-  padding: 5px 30px;
+  padding: 8px 16px;
   border-radius: 0.6cm;
 
   color: var(--l3);
@@ -610,11 +609,11 @@ address a:hover {
 }
 
 [id^="category"]:target .price {
-  padding: 10px 20px;
+  padding: 8px 16px;
 }
 
 [id^="category"]:target .price > :first-child {
-  font-size: 220%;
+  font-size: 200%;
   color: var(--d3);
 }
 
