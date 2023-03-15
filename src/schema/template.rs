@@ -22,7 +22,10 @@ impl Website {
 
                 r.single("meta", |r| {
                     r.attr("name", "viewport");
-                    r.attr("content", "width=device-width, initial-scale=1.0");
+                    r.attr(
+                        "content",
+                        "width=device-width, initial-scale=1.0, user-scalable=no",
+                    );
                 });
 
                 r.single("link", |r| {
@@ -431,12 +434,15 @@ impl Title {
     fn render(&self, r: &mut Renderer, level: u8, back: Option<&str>) {
         r.elem(format!("h{}", level), no_attr()).build(|r| {
             if let Some(id) = back {
-                r.single("span", |r| {
+                r.elem("span", |r| {
                     r.attr("class", "back");
                     r.attr(
                         "onclick",
                         format!("window.location.href='#{}';return false;", id),
                     );
+                })
+                .build(|r| {
+                    r.single("span", no_attr());
                 });
 
                 r.elem("span", no_attr()).build(|r| {

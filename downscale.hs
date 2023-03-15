@@ -10,7 +10,7 @@ mediaQuery :: Int -> Int -> String
 mediaQuery orig target = concat
   [ "@media "
   , "(max-width: " ++ show target ++ "mm) { "
-  , "html { "
+  , "body { "
   , "width: " ++ show (100/ratio) ++ "%; "
   , "height: " ++ show (100/ratio) ++ "%; "
   , "transform-origin: top left; "

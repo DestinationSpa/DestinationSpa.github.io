@@ -91,18 +91,19 @@ body {
 ******************************************
 *****************************************/
 
-html {
+html,
+body {
   height: 100%;
+  min-width: 80mm;
+  overflow: hidden;
 }
 
 body {
-  overflow: hidden;
   align-items: stretch;
   background-color: var(--l0);
   color: var(--d0);
   display: flex;
   flex-wrap: wrap;
-  height: 100%;
 }
 
 header,
@@ -111,6 +112,7 @@ main {
   display: flex;
   min-width: 12cm;
   align-items: center;
+  padding: 1.25cm 0;
 }
 
 header > div,
@@ -171,7 +173,7 @@ main > div > section:last-child h3 {
   header,
   main {
     text-align: center;
-    padding: 0 0.5cm;
+    padding: 1.25cm 0.5cm;
   }
 
   main {
@@ -204,6 +206,8 @@ section:target > * {
 
 section:target .back {
   display: inline-block;
+  border-bottom: none;
+  margin-left: -100.25cm;
 }
 
 section:target {
@@ -218,12 +222,17 @@ section:target {
   height: 100%;
 
   overflow: scroll;
+
+  box-sizing: border-box;
+  padding-bottom: 0.65cm;
 }
 
-.back {
-  margin: 1.5cm;
-  margin-right: 1.3cm;
-  margin-left: 0;
+.back > span {
+  display: block;
+
+  margin: 1.6cm;
+  margin-right: 1.2cm;
+  margin-left: 100cm;
 
   border-radius: 100cm;
   vertical-align: middle;
@@ -235,7 +244,7 @@ section:target {
   border: 4px solid var(--lf);
 }
 
-.back:hover {
+.back:hover > span {
   background-image: url("./images/back.hover.svg");
   border-color: var(--de);
 }
@@ -245,7 +254,7 @@ section:target > a {
   display: block;
   text-align: center;
 
-  margin-bottom: 1.5cm;
+  margin-bottom: 0.65cm;
 
   background-color: var(--l1);
   color: var(--d4);
