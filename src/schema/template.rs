@@ -49,19 +49,21 @@ impl Website {
             });
 
             r.elem("body", no_attr()).build(|r| {
-                r.elem("header", no_attr()).build(|r| {
-                    r.elem("div", no_attr()).build(|r| {
-                        self.home.title.render(r, 1, None);
-                        self.home.subtitle.render(r, 2, None);
-                        self.home.note.render(r);
+                r.elem("div", no_attr()).build(|r| {
+                    r.elem("header", no_attr()).build(|r| {
+                        r.elem("div", no_attr()).build(|r| {
+                            self.home.title.render(r, 1, None);
+                            self.home.subtitle.render(r, 2, None);
+                            self.home.note.render(r);
+                        });
                     });
-                });
 
-                r.elem("main", no_attr()).build(|r| {
-                    r.elem("div", no_attr()).build(|r| {
-                        self.benefits.render(r);
-                        self.infos.render(r);
-                        self.introduction.render(r);
+                    r.elem("main", no_attr()).build(|r| {
+                        r.elem("div", no_attr()).build(|r| {
+                            self.benefits.render(r);
+                            self.infos.render(r);
+                            self.introduction.render(r);
+                        });
                     });
                 });
             });
@@ -118,28 +120,21 @@ impl Infos {
                 self.title.render(r, 3, Some(""));
             });
 
-            r.elem("div", no_attr()).build(|r| {
-                self.hours.render(r);
-                self.contacts.render(r);
-            });
+            self.hours.render(r);
+            self.contacts.render(r);
         });
     }
 }
 
 impl Contacts {
     fn render(&self, r: &mut Renderer) {
-        r.elem("div", |r| {
-            r.attr("class", "right");
-        })
-        .build(|r| {
-            r.elem("address", no_attr()).build(|r| {
-                r.elem("ul", no_attr()).build(|r| {
-                    self.phone.render(r);
-                    self.email.render(r);
-                    self.location.render(r);
-                });
+        r.elem("address", no_attr()).build(|r| {
+            r.elem("ul", no_attr()).build(|r| {
+                self.phone.render(r);
+                self.email.render(r);
+                self.location.render(r);
+                self.socials.render(r);
             });
-            self.socials.render(r);
         });
     }
 }
@@ -171,12 +166,14 @@ impl Location {
 
 impl Socials {
     fn render(&self, r: &mut Renderer) {
-        r.elem("ul", |r| {
-            r.attr("class", "socials");
-        })
-        .build(|r| {
-            self.facebook.render(r, "facebook");
-            self.instagram.render(r, "instagram");
+        r.elem("li", no_attr()).build(|r| {
+            r.elem("ul", |r| {
+                r.attr("class", "socials");
+            })
+            .build(|r| {
+                self.facebook.render(r, "facebook");
+                self.instagram.render(r, "instagram");
+            });
         });
     }
 }
@@ -201,10 +198,7 @@ impl Social {
 
 impl Hours {
     fn render(&self, r: &mut Renderer) {
-        r.elem("table", |r| {
-            r.attr("class", "left");
-        })
-        .build(|r| {
+        r.elem("table", no_attr()).build(|r| {
             r.elem("tbody", no_attr()).build(|r| {
                 r.elem("tr", no_attr()).build(|r| {
                     r.single("th", no_attr());

@@ -98,7 +98,10 @@ body {
   overflow: hidden;
 }
 
-body {
+body > div {
+  height: 100%;
+  overflow: scroll;
+
   align-items: stretch;
   background-color: var(--l0);
   color: var(--d0);
@@ -347,36 +350,26 @@ section:target > a h4 > span {
 ******************************************
 *****************************************/
 
-#infos:target > div {
-  display: block;
-  margin: auto;
-  max-width: 30cm;
+#infos:target {
+  text-align: center;
 }
 
-#infos:target .left {
+#infos:target table,
+#infos:target address {
   display: inline-block;
-  vertical-align: top;
-  width: 50%;
-}
-
-#infos:target .right {
-  display: inline-block;
-  vertical-align: top;
-  width: 50%;
-}
-
-#infos:target .right > * {
-  margin-left: 1cm;
+  vertical-align: middle;
+  box-sizing: border-box;
+  width: 12.7cm;
+  margin: 0.65cm;
 }
 
 table {
-  font-size: 130%;
+  font-size: 125%;
   text-align: right;
 }
 
 tbody {
-  display: inline-block;
-  margin-right: 1cm;
+  display: block;
 
   box-shadow: 0 0 2cm var(--l7);
   background-color: var(--l2);
@@ -414,21 +407,20 @@ td span {
 }
 
 address {
-  display: inline-block;
   border-radius: 0.6cm;
   box-shadow: 0 0 30px var(--l5);
-  padding: 20px 30px;
-  margin-bottom: 1.1cm;
+  padding: 20px 0;
   background-color: var(--l1);
+  text-align: center;
 }
 
-address li {
+address > ul > li {
   margin-bottom: 0.6cm;
   font-weight: bold;
   font-size: 160%;
 }
 
-address li:last-child {
+address > ul > li:last-child {
   margin-bottom: 0;
 }
 
@@ -448,16 +440,25 @@ address a:hover {
   margin-right: 0.6cm;
 }
 
+.socials li:last-child {
+  margin-right: 0;
+}
+
 .socials img {
   background-color: var(--l1);
   box-shadow: 0 0 1cm var(--l7);
   border-radius: 100cm;
-  height: 1.6cm;
 }
 
 .socials a:hover img {
   background-color: var(--l2);
   box-shadow: 0 0 1cm var(--la);
+}
+
+.socials,
+.socials li,
+.socials img {
+  height: 1.6cm;
 }
 
 /*****************************************
