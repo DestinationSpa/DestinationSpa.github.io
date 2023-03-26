@@ -38,11 +38,11 @@ pas d'être rétrogradé dans l'ordre de succession au trône.
 
         hours: (
             monday:    (None, None),
-            tuesday:   (Some((09,30, 19,00))),
-            wednesday: (Some((09,30, 19,00))),
-            thursday:  (Some((09,30, 19,00))),
-            friday:    (Some((09,30, 19,00))),
-            saturday:  (Some((09,30, 17,00))),
+            tuesday:   (Some((09,30, 99,99)), Some((99,99, 19,00))),
+            wednesday: (Some((09,30, 99,99)), Some((99,99, 19,00))),
+            thursday:  (Some((09,30, 99,99)), Some((99,99, 19,00))),
+            friday:    (Some((09,30, 99,99)), Some((99,99, 19,00))),
+            saturday:  (Some((09,30, 99,99)), Some((99,99, 17,00))),
             sunday:    (None, None),
         ),
 
@@ -93,7 +93,6 @@ Pesonalisables car aucune autre peau ressemle à la votre.
 - Le Réparateur : Peau déshydratée avec zones de sécheresse, taches pigmentaires, rides de structures marquées.
 - Le revitalisant : Peau déshydradtée et trés sèche, taches pigmentaires, perte de tonicité, peau fine."#,
                     ),
-kikyg
                     (
                         title: "Soin primordial 1h",
 
@@ -116,7 +115,7 @@ kikyg
                         price: (39,00),
                         book: "fr.wikipedia.org/wiki/Balakh_Sher_Mazari",
                         description: "Massage ancestral venant du Kerala. Des techniques anti-âge au massage cranien, il permet d'évacuer la fatigue et de lâcher prise",
-                    )
+                    ),
                     (
                         title: "Massage traditionnel Indien du visage 30min",
 
@@ -147,7 +146,7 @@ Découvrez les differentes destination de nos soins corps.
                         price: (100,00),
                         book: "fr.wikipedia.org/wiki/Mauro_Forghieri",
                         description: "Exfoliation traditionnelle au savon nor avec gant de kessa et un modelage oriental à l'huile d'argan.",
-                    )
+                    ),
                     (
                         title: "Rituel Sabi Sabi en terre d'Afrique Bio 1h45",
                         image: Some(("09.jpg", "un truc de spa")),
@@ -155,7 +154,7 @@ Découvrez les differentes destination de nos soins corps.
                         price: (115,00),
                         book: "fr.wikipedia.org/wiki/Francis_Rion",
                         description: "Gommage aux graines de baobab, enveloppement aux huiles essentielles et modelage sabi sabi Africain.",
-                    )
+                    ),
                     (
                         title: "Croisisère bien-être en Polynésie 1h45",
                         image: Some(("09.jpg", "un truc de spa")),
@@ -163,7 +162,7 @@ Découvrez les differentes destination de nos soins corps.
                         price: (115,00),
                         book: "fr.wikipedia.org/wiki/Francis_Rion",
                         description: "Gommage au sable fin de Bora bora, enveloppement maori au beurre de mangue et modelage Polynésien.",
-                    )
+                    ),
                     (
                         title: "Rite holistic en Amazonie 1h45",
                         image: Some(("09.jpg", "un truc de spa")),
@@ -171,7 +170,7 @@ Découvrez les differentes destination de nos soins corps.
                         price: (115,00),
                         book: "fr.wikipedia.org/wiki/Francis_Rion",
                         description: "Gommage à la cassonade aux noix du Brésil, enveloppement anti-stress à l'acérola et modelage au bambou.",
-                    )
+                    ),
                     (
                         title: "Hammam 30min",
                         image: Some(("09.jpg", "un truc de spa")),
@@ -182,7 +181,7 @@ Découvrez les differentes destination de nos soins corps.
                     )
                 ]
 
-            )
+            ),
             (
                 title: "Modelages",
                 image: Some(("01.jpg", "un truc de spa")),
@@ -201,7 +200,7 @@ Découvrez les differentes modelges corps et ou visage.
                         price: (109,00),
                         book: "fr.wikipedia.org/wiki/Mauro_Forghieri",
                         description: "Modelage signature corps et visage, alliant plusieurs techniques de modelage du monde.",
-                    )
+                    ),
                     (
                         title: "Modelage Polynésien 60 min",
                         image: Some(("09.jpg", "un truc de spa")),
@@ -209,7 +208,7 @@ Découvrez les differentes modelges corps et ou visage.
                         price: (75,00),
                         book: "fr.wikipedia.org/wiki/Francis_Rion",
                         description: "Modelage relaxant, enveloppant suivant le rythme des vagues.",
-                    )
+                    ),
                     (
                         title: "Modelage oriental 60 min",
                         image: Some(("09.jpg", "un truc de spa")),
@@ -217,7 +216,7 @@ Découvrez les differentes modelges corps et ou visage.
                         price: (75,00),
                         book: "fr.wikipedia.org/wiki/Francis_Rion",
                         description: "Modelage vivifiant dont les mouvements sont inspirés de la danse orientale",
-                    )
+                    ),
                     (
                         title: "Modelage Africain 60 min",
                         image: Some(("09.jpg", "un truc de spa")),
@@ -225,7 +224,7 @@ Découvrez les differentes modelges corps et ou visage.
                         price: (75,00),
                         book: "fr.wikipedia.org/wiki/Francis_Rion",
                         description: "Détends les muscles et les tensions pour alleger le corps et l'esprit.",
-                    )
+                    ),
                     (
                         title: "Modelage holistic au bambou 60 min",
                         image: Some(("09.jpg", "un truc de spa")),
@@ -233,7 +232,7 @@ Découvrez les differentes modelges corps et ou visage.
                         price: (78,00),
                         book: "fr.wikipedia.org/wiki/Francis_Rion",
                         description: "Modelage déonractat, défatiguant qui disout les tensions physiques.",
-                    )
+                    ),
                     (
                         title: "Escale Bien-être 30 min",
                         image: Some(("09.jpg", "un truc de spa")),
@@ -241,7 +240,7 @@ Découvrez les differentes modelges corps et ou visage.
                         price: (39,00),
                         book: "fr.wikipedia.org/wiki/Francis_Rion",
                         description: "Modelage signature du dos.",
-                    )
+                    ),
                     (
                         title: "Massage Traditionnel Indien du Visage 30 min",
                         image: Some(("09.jpg", "un truc de spa")),
@@ -251,7 +250,7 @@ Découvrez les differentes modelges corps et ou visage.
                         description: "Massage ancestral venant du Kerala. Des techniques anti-âge au massage cranien, il permet d'évacuer la fatigue et de lâcher prise.",
                     )
                 ]
-            )
+            ),
             (
                 title: "Soins Enfants et Adolescents",
                 image: Some(("01.jpg", "un truc de spa")),
@@ -270,7 +269,7 @@ Tout les soins adaptés pour les peaux jeunes et sensible des enfants, à partir
                         price: (28,00),
                         book: "fr.wikipedia.org/wiki/Mauro_Forghieri",
                         description: "Modelage en douceur du dos, pour les enfants à partir de 6 ans.",
-                    )
+                    ),
                     (
                         title: "Soin du dos anti-stress 60 min",
                         image: Some(("09.jpg", "un truc de spa")),
@@ -281,7 +280,7 @@ Tout les soins adaptés pour les peaux jeunes et sensible des enfants, à partir
                         un enveloppement doux adapté à votre peau. Le soin se termne par un modelage du dos relaxant idéale lors pérode stressante 
                         comme les examens ou le passage en classe supérieure. Ce soin est également adapté pour les pré-adultes, qui passe leurs derniers
                         dîplome avant de rentré dans la vie active.",
-                    )
+                    ),
                     (
                         title: "Soin du visage Détox 50 min",
                         image: Some(("09.jpg", "un truc de spa")),
@@ -292,7 +291,7 @@ Tout les soins adaptés pour les peaux jeunes et sensible des enfants, à partir
                         Dès 12 ans.",
                     )
                 ]
-            )
+            ),
               (
                 title: "Les épilations",
                 image: Some(("01.jpg", "un truc de spa")),
@@ -310,7 +309,8 @@ Découvrez nos épilation réalisé avec de la cire à la résine de pins et au 
 
                         price: (9,00),
                         book: "fr.wikipedia.org/wiki/Mauro_Forghieri",
-                    )
+                        description: "",
+                    ),
                     (
                         title: "Sourcils création de ligne",
                         image: Some(("09.jpg", "un truc de spa")),
@@ -319,84 +319,95 @@ Découvrez nos épilation réalisé avec de la cire à la résine de pins et au 
                         book: "fr.wikipedia.org/wiki/Francis_Rion",
                         description: "Après avoir pris les mesures de vos sourcils, nous venons épiler à la cire et à la pince les sourcils pur leurs
                         redonner une ligne. Cette prestation permet d'embellir le regard et de corriger l'asymetrie de vos sourcils.",
-                    )
+                    ),
                     (
                         title: "Lèvres supérieur",
                         image: Some(("09.jpg", "un truc de spa")),
 
                         price: (9,00),
                         book: "fr.wikipedia.org/wiki/Francis_Rion",
-                    )
+                        description: "",
+                    ),
                     (
                         title: "Visage",
                         image: Some(("09.jpg", "un truc de spa")),
 
                         price: (20,00),
                         book: "fr.wikipedia.org/wiki/Francis_Rion",
-                    )
+                        description: "",
+                    ),
                     (
                         title: "Aisselles",
                         image: Some(("09.jpg", "un truc de spa")),
 
                         price: (13,00),
                         book: "fr.wikipedia.org/wiki/Francis_Rion",
-                    )
+                        description: "",
+                    ),
                     (
                         title: "1/2 jambes",
                         image: Some(("09.jpg", "un truc de spa")),
 
                         price: (20,00),
                         book: "fr.wikipedia.org/wiki/Francis_Rion",
-                    )
+                        description: "",
+                    ),
                     (
                         title: "Jambes entières",
                         image: Some(("09.jpg", "un truc de spa")),
 
                         price: (30,00),
                         book: "fr.wikipedia.org/wiki/Francis_Rion",
-                    )
+                        description: "",
+                    ),
                     (
                         title: "Maillot Classique",
                         image: Some(("09.jpg", "un truc de spa")),
 
                         price: (16,00),
                         book: "fr.wikipedia.org/wiki/Francis_Rion",
-                    )
+                        description: "",
+                    ),
                     (
                         title: "Maillot échancré/ brésilien",
                         image: Some(("09.jpg", "un truc de spa")),
 
                         price: (20,00),
                         book: "fr.wikipedia.org/wiki/Francis_Rion",
-                    )
+                        description: "",
+                    ),
                     (
                         title: "Maillot Semi-intégral / intégral",
                         image: Some(("09.jpg", "un truc de spa")),
 
                         price: (32,00),
                         book: "fr.wikipedia.org/wiki/Francis_Rion",
-                    )
+                        description: "",
+                    ),
                     (
                         title: "Bras",
                         image: Some(("09.jpg", "un truc de spa")),
 
                         price: (20,00),
                         book: "fr.wikipedia.org/wiki/Francis_Rion",
-                    )
+                        description: "",
+                    ),
                     (
                         title: "Dos ou Torse",
                         image: Some(("09.jpg", "un truc de spa")),
 
                         price: (32,00),
                         book: "fr.wikipedia.org/wiki/Francis_Rion",
-                    )
+                        description: "",
+                    ),
                     (
                         title: "Forfait : Sourcils + Lèvres",
                         image: Some(("09.jpg", "un truc de spa")),
 
                         price: (15,00),
                         book: "fr.wikipedia.org/wiki/Francis_Rion",
-                    )
+                        description: "",
+                    ),
                     (
                         title: "Forfait : 1/2 jambes + maillot + aisselles",
                         image: Some(("09.jpg", "un truc de spa")),
@@ -406,7 +417,7 @@ Découvrez nos épilation réalisé avec de la cire à la résine de pins et au 
 
                         description: "Suplément maillot échancré/bresilien +10€
                         Suplément maillot semi-intégral/intégral +15€",
-                    )
+                    ),
                     (
                         title: "Forfait : Jambes entières + maillot + aisselles",
                         image: Some(("09.jpg", "un truc de spa")),
