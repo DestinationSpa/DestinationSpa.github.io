@@ -1,29 +1,25 @@
 (
     home: (
         title: "Destination Spa",
-        subtitle: "Institut de beauté - Spa à Beautiran",
-        note: Some("`Fêtes des mères`Pensez au billet cadeau"),
+        subtitle: "Institut de Beauté & Spa à Beautiran",
+        note: Some("`fêtes des mères` pensez au billet cadeau 🎫"),
     ),
 
     introduction: (
-        title: "L'institut",
+        title: "l'institut",
         text: r#"
 
-Marine, esthéticienne ....
+            Marine, esthéticienne.
 
-Destination Spa, institut de beauté et spa vous propose des moments de détente au hammam
-et des soins esthétiques (épilations - soin du visage bio - modelages et rituels du monde)
+            *Destination Spa*, institut de beauté et spa, vous propose
+            des moments de détente au hammam et des soins
+            esthétiques : épilations, soin du visage bio, modelages et
+            rituels du monde.
 
-Laissez vous voyager jusqu'a différente destination de soin
+            Laissez vous voyager jusqu'à différentes destinations de
+            soin.
 
-Aîné des petits-enfants de l'empereur **Pierre II du Brésil**, le
-prince Pierre est, selon l'article 117 de la Constitution de 1824,
-l'héritier présomptif en second du souverain jusqu'à la naissance de
-son cousin, Pierre d'Orléans-Bragance, en
-[1875](fr.wikipedia.org/wiki/1875). Après cette date, Pierre n'admet
-pas d'être rétrogradé dans l'ordre de succession au trône.
-
-"#,
+        "#,
 
         images: [
             ("01.jpg", "salon"),
@@ -34,7 +30,7 @@ pas d'être rétrogradé dans l'ordre de succession au trône.
     ),
 
     infos: (
-        title: "Horaires & Contacts",
+        title: "horaires & contacts",
 
         hours: (
             monday:    (None, None),
@@ -47,11 +43,11 @@ pas d'être rétrogradé dans l'ordre de succession au trône.
         ),
 
         contacts: (
-            phone: "+33 5 57 54 87 23",
+            phone: "05 57 54 87 23",
             email: "destinationspa.beautiran@gmail.com",
 
             location: (
-                address: "62 route nationale 113",
+                address: "62 ROUTE NATIONALE 113",
                 postcode: "33640",
                 city: "BEAUTIRAN",
 
@@ -61,375 +57,429 @@ pas d'être rétrogradé dans l'ordre de succession au trône.
             ),
 
             socials: (
-                facebook: Some("https://www.facebook.com/DestinationSpa.InstitutdeBeaute"),
-                instagram: Some("https://www.instagram.com/destinationspa33/"),
+                facebook: Some("facebook.com/DestinationSpa.InstitutdeBeaute"),
+                instagram: Some("instagram.com/destinationspa33"),
             ),
         ),
     ),
 
     benefits: (
-        title: "Les Soins",
+        title: "les soins",
 
         categories: [
             (
-                title: "Soin du visage Bio",
+                title: "soins du visage bio",
                 image: Some(("07.jpg", "un truc de spa")),
-
                 description: r#"
 
-Soin du visage bio, Spécialisés en anti-age ave la marque Ekia. 
-Pesonalisables car aucune autre peau ressemle à la votre.
+                    Soins du visage bio spécialisés en anti-age avec
+                    la marque *Ekia*. Personnalisables car aucune autre
+                    peau ne ressemble à la votre.
 
-"#,
+                "#,
 
                 benefits: [
                     (
-                        title: "Soin Aboslu 1h10",
-
+                        title: "Soin absolu `1h10`",
+                        book: "localhost",
                         price: (89,00),
-                        book: "fr.wikipedia.org/wiki/Aaron_Carter",
-                        description: r#"A chaque début de soin, un daignostic d peau est réalsé afin d'établir le soin le plus adapté à votre peau
-- Le stimulant : Peau déshydratée, rides d'expression peu marquées, manque déclat
-- Le Réparateur : Peau déshydratée avec zones de sécheresse, taches pigmentaires, rides de structures marquées.
-- Le revitalisant : Peau déshydradtée et trés sèche, taches pigmentaires, perte de tonicité, peau fine."#,
-                    ),
-                    (
-                        title: "Soin primordial 1h",
+                        description: r#"
 
+                            À chaque début de soin, un diagnostic est
+                            réalisé afin d'établir le soin le plus
+                            adapté à votre peau :
+
+                            **LE STIMULANT** Peau déshydratée, rides
+                            d'expression peu marquées, manque d'éclat.
+
+                            **LE RÉPARATEUR** Peau déshydratée avec
+                            zones de sécheresse, taches pigmentaires,
+                            rides de structures marquées.
+
+                            **LE REVITALISANT** Peau déshydratée et
+                            très sèche, taches pigmentaires, perte de
+                            tonicité, peau fine.
+
+                        "#,
+                    ),(
+                        title: "Soin primordial `1h`",
+                        book: "localhost",
                         price: (79,00),
-                        book: "fr.wikipedia.org/wiki/Balakh_Sher_Mazari",
-                        description: "Peau fatiguée, manque d'éclat, prmeières rides",
-                    ),
+                        description: r#"
 
-                    (
-                        title: "Soin Détox 50min",
+                            Peau fatiguée, manque d'éclat, premières
+                            rides.
 
+                        "#,
+                    ),(
+                        title: "Soin détox `50min`",
+                        book: "localhost",
                         price: (59,00),
-                        book: "fr.wikipedia.org/wiki/Balakh_Sher_Mazari",
-                        description: "Peau inflammée avec imperfections, pores obstrués, marques de fatigue",
-                    ),
+                        description: r#"
 
-                    (
-                        title: "Massage traditionnel Indien du visage 30min",
+                            Peau inflammée avec imperfections, pores
+                            obstrués, marques de fatigue.
 
+                        "#,
+                    ),(
+                        title: "Massage traditionnel indien du visage `30min`",
+                        book: "localhost",
                         price: (39,00),
-                        book: "fr.wikipedia.org/wiki/Balakh_Sher_Mazari",
-                        description: "Massage ancestral venant du Kerala. Des techniques anti-âge au massage cranien, il permet d'évacuer la fatigue et de lâcher prise",
+                        description: r#"
+
+                            Massage ancestral venant du Kerala. Des
+                            techniques anti-âge au massage crânien, il
+                            permet d'évacuer la fatigue et de lâcher
+                            prise.
+
+                        "#,
                     ),
-                    (
-                        title: "Massage traditionnel Indien du visage 30min",
-
-                        price: (39,00),
-                        book: "fr.wikipedia.org/wiki/Balakh_Sher_Mazari",
-                        description: "Massage ancestral venant du Kerala. Des techniques anti-âge au massage cranien, il permet d'évacuer la fatigue et de lâcher prise",
-                    )
-                
-
-                ]
-            ),
-
-            (
-                title: "Rituels corps",
+                ],
+            ),(
+                title: "rituels corps",
                 image: Some(("01.jpg", "un truc de spa")),
-
                 description: r#"
 
-Découvrez les differentes destination de nos soins corps.
+                    Découvrez les différentes destination de nos soins
+                    corps.
 
-"#,
+                "#,
 
                 benefits: [
                     (
-                        title: "Rite du Hammam 1h30",
+                        title: "Rite du hammam `1h30`",
                         image: Some(("08.jpg", "un truc de spa")),
-
+                        book: "localhost",
                         price: (100,00),
-                        book: "fr.wikipedia.org/wiki/Mauro_Forghieri",
-                        description: "Exfoliation traditionnelle au savon nor avec gant de kessa et un modelage oriental à l'huile d'argan.",
-                    ),
-                    (
-                        title: "Rituel Sabi Sabi en terre d'Afrique Bio 1h45",
-                        image: Some(("09.jpg", "un truc de spa")),
+                        description: r#"
 
+                            Exfoliation traditionnelle au savon noir
+                            avec gant de kessa et un modelage oriental
+                            à l'huile d'argan.
+
+                        "#,
+                    ),(
+                        title: "Rituel Sabi Sabi en terre d'Afrique bio `1h45`",
+                        image: Some(("09.jpg", "un truc de spa")),
+                        book: "localhost",
                         price: (115,00),
-                        book: "fr.wikipedia.org/wiki/Francis_Rion",
-                        description: "Gommage aux graines de baobab, enveloppement aux huiles essentielles et modelage sabi sabi Africain.",
-                    ),
-                    (
-                        title: "Croisisère bien-être en Polynésie 1h45",
-                        image: Some(("09.jpg", "un truc de spa")),
+                        description: r#"
 
+                            Gommage aux graines de baobab,
+                            enveloppement aux huiles essentielles et
+                            modelage Sabi Sabi africain.
+
+                        "#,
+                    ),(
+                        title: "Croisière bien-être en Polynésie `1h45`",
+                        image: Some(("09.jpg", "un truc de spa")),
+                        book: "localhost",
                         price: (115,00),
-                        book: "fr.wikipedia.org/wiki/Francis_Rion",
-                        description: "Gommage au sable fin de Bora bora, enveloppement maori au beurre de mangue et modelage Polynésien.",
-                    ),
-                    (
-                        title: "Rite holistic en Amazonie 1h45",
-                        image: Some(("09.jpg", "un truc de spa")),
+                        description: r#"
 
+                            Gommage au sable fin de Bora Bora,
+                            enveloppement maori au beurre de mangue et
+                            modelage polynésien.
+
+                        "#,
+                    ),(
+                        title: "Rite holistic en Amazonie `1h45`",
+                        image: Some(("09.jpg", "un truc de spa")),
+                        book: "localhost",
                         price: (115,00),
-                        book: "fr.wikipedia.org/wiki/Francis_Rion",
-                        description: "Gommage à la cassonade aux noix du Brésil, enveloppement anti-stress à l'acérola et modelage au bambou.",
-                    ),
-                    (
-                        title: "Hammam 30min",
-                        image: Some(("09.jpg", "un truc de spa")),
+                        description: r#"
 
+                            Gommage à la cassonade aux noix du Brésil,
+                            enveloppement anti-stress à l'acérola et
+                            modelage au bambou.
+
+                        "#,
+                    ),(
+                        title: "Hammam `30min`",
+                        image: Some(("09.jpg", "un truc de spa")),
+                        book: "localhost",
                         price: (30,00),
-                        book: "fr.wikipedia.org/wiki/Francis_Rion",
-                        description: "Profiter des bien faits de la vapeur associé l'aromathérapie.",
-                    )
-                ]
+                        description: r#"
 
-            ),
-            (
-                title: "Modelages",
+                            Profiter des bien faits de la vapeur
+                            associé l'aromathérapie.
+
+                        "#,
+                    ),
+                ],
+            ),(
+                title: "modelages",
                 image: Some(("01.jpg", "un truc de spa")),
-
                 description: r#"
 
-Découvrez les differentes modelges corps et ou visage.
+                    Découvrez les différents modelages corps et/ou
+                    visage.
 
-"#,
+                "#,
 
                 benefits: [
                     (
-                        title: "Tour du monde en 90 minutes",
+                        title: "Tour du monde en `90min`",
                         image: Some(("08.jpg", "un truc de spa")),
-
+                        book: "localhost",
                         price: (109,00),
-                        book: "fr.wikipedia.org/wiki/Mauro_Forghieri",
-                        description: "Modelage signature corps et visage, alliant plusieurs techniques de modelage du monde.",
-                    ),
-                    (
-                        title: "Modelage Polynésien 60 min",
-                        image: Some(("09.jpg", "un truc de spa")),
+                        description: r#"
 
+                            Modelage signature corps et visage alliant
+                            plusieurs techniques de modelage du monde.
+
+                        "#,
+                    ),(
+                        title: "Modelage polynésien `60min`",
+                        image: Some(("09.jpg", "un truc de spa")),
+                        book: "localhost",
                         price: (75,00),
-                        book: "fr.wikipedia.org/wiki/Francis_Rion",
-                        description: "Modelage relaxant, enveloppant suivant le rythme des vagues.",
-                    ),
-                    (
-                        title: "Modelage oriental 60 min",
-                        image: Some(("09.jpg", "un truc de spa")),
+                        description: r#"
 
+                            Modelage relaxant et enveloppant suivant
+                            le rythme des vagues.
+
+                        "#,
+                    ),(
+                        title: "Modelage oriental `60min`",
+                        image: Some(("09.jpg", "un truc de spa")),
+                        book: "localhost",
                         price: (75,00),
-                        book: "fr.wikipedia.org/wiki/Francis_Rion",
-                        description: "Modelage vivifiant dont les mouvements sont inspirés de la danse orientale",
-                    ),
-                    (
-                        title: "Modelage Africain 60 min",
-                        image: Some(("09.jpg", "un truc de spa")),
+                        description: r#"
 
+                            Modelage vivifiant dont les mouvements
+                            sont inspirés de la danse orientale.
+
+                        "#,
+                    ),(
+                        title: "Modelage africain `60min`",
+                        image: Some(("09.jpg", "un truc de spa")),
+                        book: "localhost",
                         price: (75,00),
-                        book: "fr.wikipedia.org/wiki/Francis_Rion",
-                        description: "Détends les muscles et les tensions pour alleger le corps et l'esprit.",
-                    ),
-                    (
-                        title: "Modelage holistic au bambou 60 min",
-                        image: Some(("09.jpg", "un truc de spa")),
+                        description: r#"
 
+                            Détends les muscles et les tensions pour
+                            alléger le corps et l'esprit.
+
+                        "#,
+                    ),(
+                        title: "Modelage holistic au bambou `60min`",
+                        image: Some(("09.jpg", "un truc de spa")),
+                        book: "localhost",
                         price: (78,00),
-                        book: "fr.wikipedia.org/wiki/Francis_Rion",
-                        description: "Modelage déonractat, défatiguant qui disout les tensions physiques.",
-                    ),
-                    (
-                        title: "Escale Bien-être 30 min",
-                        image: Some(("09.jpg", "un truc de spa")),
+                        description: r#"
 
-                        price: (39,00),
-                        book: "fr.wikipedia.org/wiki/Francis_Rion",
-                        description: "Modelage signature du dos.",
-                    ),
-                    (
-                        title: "Massage Traditionnel Indien du Visage 30 min",
-                        image: Some(("09.jpg", "un truc de spa")),
+                            Modelage décontractant, défatiguant qui
+                            dissout les tensions physiques.
 
+                        "#,
+                    ),(
+                        title: "Escale bien-être `30min`",
+                        image: Some(("09.jpg", "un truc de spa")),
+                        book: "localhost",
                         price: (39,00),
-                        book: "fr.wikipedia.org/wiki/Francis_Rion",
-                        description: "Massage ancestral venant du Kerala. Des techniques anti-âge au massage cranien, il permet d'évacuer la fatigue et de lâcher prise.",
-                    )
-                ]
-            ),
-            (
-                title: "Soins Enfants et Adolescents",
+                        description: r#"
+
+                            Modelage signature du dos.
+
+                        "#,
+                    ),
+                ],
+            ),(
+                title: "soins enfants et adolescents",
                 image: Some(("01.jpg", "un truc de spa")),
-
                 description: r#"
 
-Tout les soins adaptés pour les peaux jeunes et sensible des enfants, à partir de 6 ans.
+                    Tout les soins adaptés pour les peaux jeunes et
+                    sensible des enfants, à partir de 6 ans.
 
-"#,
+                "#,
 
                 benefits: [
                     (
-                        title: "Ma mini escale bien être 20 min",
+                        title: "Ma mini escale bien être `20min`",
                         image: Some(("08.jpg", "un truc de spa")),
-
+                        book: "localhost",
                         price: (28,00),
-                        book: "fr.wikipedia.org/wiki/Mauro_Forghieri",
-                        description: "Modelage en douceur du dos, pour les enfants à partir de 6 ans.",
-                    ),
-                    (
-                        title: "Soin du dos anti-stress 60 min",
-                        image: Some(("09.jpg", "un truc de spa")),
+                        description: r#"
 
+                            Modelage en douceur du dos, pour les
+                            enfants à partir de 6 ans.
+
+                        "#,
+                    ),(
+                        title: "Soin du dos anti-stress `60min`",
+                        image: Some(("09.jpg", "un truc de spa")),
+                        book: "localhost",
                         price: (60,00),
-                        book: "fr.wikipedia.org/wiki/Francis_Rion",
-                        description: "Soin du dos recommandé à partir de 12 ans, ce soin permet de détoxfié la peau en douceur avec un gommage et
-                        un enveloppement doux adapté à votre peau. Le soin se termne par un modelage du dos relaxant idéale lors pérode stressante 
-                        comme les examens ou le passage en classe supérieure. Ce soin est également adapté pour les pré-adultes, qui passe leurs derniers
-                        dîplome avant de rentré dans la vie active.",
-                    ),
-                    (
-                        title: "Soin du visage Détox 50 min",
+                        description: r#"
+
+                            Soin du dos recommandé à partir de 12 ans,
+                            ce soin permet de détoxifier la peau en
+                            douceur avec un gommage et un
+                            enveloppement doux adapté à votre peau. Le
+                            soin se termine par un modelage du dos
+                            relaxant idéale lors de période stressante
+                            comme les examens ou le passage en classe
+                            supérieure. Ce soin est également adapté
+                            pour les pré-adultes, qui passe leurs
+                            derniers diplôme avant de rentrer dans la
+                            vie active.
+
+                        "#,
+                    ),(
+                        title: "Soin du visage détox `50min`",
                         image: Some(("09.jpg", "un truc de spa")),
-
+                        book: "localhost",
                         price: (59,00),
-                        book: "fr.wikipedia.org/wiki/Francis_Rion",
-                        description: "Soin détoxfiant pour retrouver un grain de peau plus lisse et des imperfections atténués. Nettoyage de peau en douceur
-                        Dès 12 ans.",
-                    )
-                ]
-            ),
-              (
-                title: "Les épilations",
-                image: Some(("01.jpg", "un truc de spa")),
+                        description: r#"
 
+                            Soin détoxifiant pour retrouver un grain de
+                            peau plus lisse et des imperfections
+                            atténués. Nettoyage de peau en douceur dès
+                            12 ans.
+
+                        "#,
+                    ),
+                ],
+            ),(
+                title: "les épilations",
+                image: Some(("01.jpg", "un truc de spa")),
                 description: r#"
 
-Découvrez nos épilation réalisé avec de la cire à la résine de pins et au beurre de karité pour les peaux sensibles.
+                    Découvrez nos épilation réalisé avec de la cire à
+                    la résine de pins et au beurre de karité pour les
+                    peaux sensibles.
 
-"#,
+                "#,
 
                 benefits: [
                     (
                         title: "Sourcils entretien",
                         image: Some(("08.jpg", "un truc de spa")),
-
+                        book: "localhost",
                         price: (9,00),
-                        book: "fr.wikipedia.org/wiki/Mauro_Forghieri",
                         description: "",
-                    ),
-                    (
+
+                    ),(
                         title: "Sourcils création de ligne",
                         image: Some(("09.jpg", "un truc de spa")),
-
+                        book: "localhost",
                         price: (15,00),
-                        book: "fr.wikipedia.org/wiki/Francis_Rion",
-                        description: "Après avoir pris les mesures de vos sourcils, nous venons épiler à la cire et à la pince les sourcils pur leurs
-                        redonner une ligne. Cette prestation permet d'embellir le regard et de corriger l'asymetrie de vos sourcils.",
-                    ),
-                    (
+                        description: r#"
+
+                            Après avoir pris les mesures de vos
+                            sourcils, nous venons épiler à la cire et
+                            à la pince les sourcils pour leurs
+                            redonner une ligne. Cette prestation
+                            permet d'embellir le regard et de corriger
+                            l'asymétrie de vos sourcils.
+
+                        "#,
+                    ),(
                         title: "Lèvres supérieur",
                         image: Some(("09.jpg", "un truc de spa")),
-
+                        book: "localhost",
                         price: (9,00),
-                        book: "fr.wikipedia.org/wiki/Francis_Rion",
                         description: "",
-                    ),
-                    (
+
+                    ),(
                         title: "Visage",
                         image: Some(("09.jpg", "un truc de spa")),
-
+                        book: "localhost",
                         price: (20,00),
-                        book: "fr.wikipedia.org/wiki/Francis_Rion",
                         description: "",
-                    ),
-                    (
+
+                    ),(
                         title: "Aisselles",
                         image: Some(("09.jpg", "un truc de spa")),
-
+                        book: "localhost",
                         price: (13,00),
-                        book: "fr.wikipedia.org/wiki/Francis_Rion",
                         description: "",
-                    ),
-                    (
-                        title: "1/2 jambes",
-                        image: Some(("09.jpg", "un truc de spa")),
 
+                    ),(
+                        title: "Demi-jambes",
+                        image: Some(("09.jpg", "un truc de spa")),
+                        book: "localhost",
                         price: (20,00),
-                        book: "fr.wikipedia.org/wiki/Francis_Rion",
                         description: "",
-                    ),
-                    (
+
+                    ),(
                         title: "Jambes entières",
                         image: Some(("09.jpg", "un truc de spa")),
-
+                        book: "localhost",
                         price: (30,00),
-                        book: "fr.wikipedia.org/wiki/Francis_Rion",
                         description: "",
-                    ),
-                    (
-                        title: "Maillot Classique",
-                        image: Some(("09.jpg", "un truc de spa")),
 
+                    ),(
+                        title: "Maillot classique",
+                        image: Some(("09.jpg", "un truc de spa")),
+                        book: "localhost",
                         price: (16,00),
-                        book: "fr.wikipedia.org/wiki/Francis_Rion",
                         description: "",
-                    ),
-                    (
-                        title: "Maillot échancré/ brésilien",
-                        image: Some(("09.jpg", "un truc de spa")),
 
+                    ),(
+                        title: "Maillot échancré ou brésilien",
+                        image: Some(("09.jpg", "un truc de spa")),
+                        book: "localhost",
                         price: (20,00),
-                        book: "fr.wikipedia.org/wiki/Francis_Rion",
                         description: "",
-                    ),
-                    (
-                        title: "Maillot Semi-intégral / intégral",
-                        image: Some(("09.jpg", "un truc de spa")),
 
+                    ),(
+                        title: "Maillot semi-intégral ou intégral",
+                        image: Some(("09.jpg", "un truc de spa")),
+                        book: "localhost",
                         price: (32,00),
-                        book: "fr.wikipedia.org/wiki/Francis_Rion",
                         description: "",
-                    ),
-                    (
+
+                    ),(
                         title: "Bras",
                         image: Some(("09.jpg", "un truc de spa")),
-
+                        book: "localhost",
                         price: (20,00),
-                        book: "fr.wikipedia.org/wiki/Francis_Rion",
                         description: "",
-                    ),
-                    (
-                        title: "Dos ou Torse",
-                        image: Some(("09.jpg", "un truc de spa")),
 
+                    ),(
+                        title: "Dos ou torse",
+                        image: Some(("09.jpg", "un truc de spa")),
+                        book: "localhost",
                         price: (32,00),
-                        book: "fr.wikipedia.org/wiki/Francis_Rion",
                         description: "",
-                    ),
-                    (
-                        title: "Forfait : Sourcils + Lèvres",
-                        image: Some(("09.jpg", "un truc de spa")),
 
+                    ),(
+                        title: "`FORFAIT` Sourcils et lèvres",
+                        image: Some(("09.jpg", "un truc de spa")),
+                        book: "localhost",
                         price: (15,00),
-                        book: "fr.wikipedia.org/wiki/Francis_Rion",
                         description: "",
-                    ),
-                    (
-                        title: "Forfait : 1/2 jambes + maillot + aisselles",
-                        image: Some(("09.jpg", "un truc de spa")),
 
+                    ),(
+                        title: "`FORFAIT` Demi-jambes, maillot et aisselles",
+                        image: Some(("09.jpg", "un truc de spa")),
+                        book: "localhost",
                         price: (38,00),
-                        book: "fr.wikipedia.org/wiki/Francis_Rion",
+                        description: r#"
 
-                        description: "Suplément maillot échancré/bresilien +10€
-                        Suplément maillot semi-intégral/intégral +15€",
-                    ),
-                    (
-                        title: "Forfait : Jambes entières + maillot + aisselles",
+                            Suplément maillot
+                            échancré ou bresilien `10€`. Suplément
+                            maillot semi-intégral ou intégral `15€`.
+
+                        "#,
+                    ),(
+                        title: "`FORFAIT` Jambes entières, maillot et aisselles",
                         image: Some(("09.jpg", "un truc de spa")),
-
+                        book: "localhost",
                         price: (47,00),
-                        book: "fr.wikipedia.org/wiki/Francis_Rion",
+                        description: r#"
 
-                        description: "Suplément maillot échancré/bresilien +10€
-                        Suplément maillot semi-intégral/intégral +15€",
-                    )
-                ]
-            )
-        ]
-    )
+                            Suplément maillot
+                            échancré ou bresilien `10€`. Suplément
+                            maillot semi-intégral ou intégral `15€`.
+
+                        "#,
+                    ),
+                ],
+            ),
+        ],
+    ),
 )
