@@ -263,7 +263,7 @@ dependencies = [
 [[package]]
 name = "tagger"
 version = "4.3.3"
-source = "git+https://github.com/timjrd/tagger?branch=unwrap#9193da2cdb1dbf7fde5d1dc7fa484ca32b3820e9"
+source = "git+https://github.com/destinationspa/tagger?branch=unwrap#9193da2cdb1dbf7fde5d1dc7fa484ca32b3820e9"
 
 [[package]]
 name = "unicode-general-category"

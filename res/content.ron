@@ -1,27 +1,25 @@
 (
     home: (
         title: "Destination Spa",
-        subtitle: "Institut de beauté à Beautiran",
-        note: Some("`BLACK FRIDAY` **0.1**% de réduction *everywhere*"),
+        subtitle: "Institut de Beauté & Spa à Beautiran",
+        note: Some("`fêtes des mères` pensez au billet cadeau 🎫"),
     ),
 
     introduction: (
-        title: "Présentation",
+        title: "l'institut",
         text: r#"
 
-Pierre de Saxe-Cobourg-Gotha (connu également sous les prénoms de
-Pedro Augusto), prince du Brésil et prince de Saxe-Cobourg, est né à
-Rio de Janeiro, au Brésil, le 19 mars 1866, et mort à Tulln an der
-Donau, en Autriche, le 6 juillet 1934.
+            Marine, esthéticienne.
 
-Aîné des petits-enfants de l'empereur **Pierre II du Brésil**, le
-prince Pierre est, selon l'article 117 de la Constitution de 1824,
-l'héritier présomptif en second du souverain jusqu'à la naissance de
-son cousin, Pierre d'Orléans-Bragance, en
-[1875](fr.wikipedia.org/wiki/1875). Après cette date, Pierre n'admet
-pas d'être rétrogradé dans l'ordre de succession au trône.
+            *Destination Spa*, institut de beauté et spa, vous propose
+            des moments de détente au hammam et des soins
+            esthétiques : épilations, soin du visage bio, modelages et
+            rituels du monde.
 
-"#,
+            Laissez vous voyager jusqu'à différentes destinations de
+            soin.
+
+        "#,
 
         images: [
             ("01.jpg", "salon"),
@@ -32,26 +30,26 @@ pas d'être rétrogradé dans l'ordre de succession au trône.
     ),
 
     infos: (
-        title: "Horaires & Contacts",
+        title: "horaires & contacts",
 
         hours: (
             monday:    (None, None),
-            tuesday:   (Some((10,00, 12,00)), Some((14,00, 19,00))),
-            wednesday: (Some((10,00, 12,00)), Some((14,00, 19,00))),
-            thursday:  (Some((10,00, 12,00)), Some((14,00, 19,00))),
-            friday:    (Some((10,00, 12,00)), None),
-            saturday:  (None, Some((14,00, 19,00))),
+            tuesday:   (Some((09,30, 99,99)), Some((99,99, 19,00))),
+            wednesday: (Some((09,30, 99,99)), Some((99,99, 19,00))),
+            thursday:  (Some((09,30, 99,99)), Some((99,99, 19,00))),
+            friday:    (Some((09,30, 99,99)), Some((99,99, 19,00))),
+            saturday:  (Some((09,30, 99,99)), Some((99,99, 17,00))),
             sunday:    (None, None),
         ),
 
         contacts: (
-            phone: "+33 1 02 03 04 05",
-            email: "abc@xyz.com",
+            phone: "05 57 54 87 23",
+            email: "destinationspa.beautiran@gmail.com",
 
             location: (
-                address: "12 Rue Saint-Merri",
-                postcode: "75004",
-                city: "Paris",
+                address: "62 ROUTE NATIONALE 113",
+                postcode: "33640",
+                city: "BEAUTIRAN",
 
                 latitude: "44.700089783530224",
                 longitude: "-0.4500258189318575",
@@ -59,77 +57,429 @@ pas d'être rétrogradé dans l'ordre de succession au trône.
             ),
 
             socials: (
-                facebook: Some("facebook.com/DanielThrasherOfficial"),
-                instagram: Some("instagram.com/danielthrasher"),
+                facebook: Some("facebook.com/DestinationSpa.InstitutdeBeaute"),
+                instagram: Some("instagram.com/destinationspa33"),
             ),
         ),
     ),
 
     benefits: (
-        title: "Les Soins",
+        title: "les soins",
 
         categories: [
             (
-                title: "Les trucs pas trop cher",
+                title: "soins du visage bio",
                 image: Some(("07.jpg", "un truc de spa")),
-
                 description: r#"
 
-Retrouvez ici les trucs pas trop trop cher mais un peu quand même faut
-pas déconner.
+                    Soins du visage bio spécialisés en anti-age avec
+                    la marque *Ekia*. Personnalisables car aucune autre
+                    peau ne ressemble à la votre.
 
-"#,
+                "#,
 
                 benefits: [
                     (
-                        title: "Skin Plus 800",
+                        title: "Soin absolu `1h10`",
+                        book: "localhost",
+                        price: (89,00),
+                        description: r#"
 
+                            À chaque début de soin, un diagnostic est
+                            réalisé afin d'établir le soin le plus
+                            adapté à votre peau :
+
+                            **LE STIMULANT** Peau déshydratée, rides
+                            d'expression peu marquées, manque d'éclat.
+
+                            **LE RÉPARATEUR** Peau déshydratée avec
+                            zones de sécheresse, taches pigmentaires,
+                            rides de structures marquées.
+
+                            **LE REVITALISANT** Peau déshydratée et
+                            très sèche, taches pigmentaires, perte de
+                            tonicité, peau fine.
+
+                        "#,
+                    ),(
+                        title: "Soin primordial `1h`",
+                        book: "localhost",
+                        price: (79,00),
+                        description: r#"
+
+                            Peau fatiguée, manque d'éclat, premières
+                            rides.
+
+                        "#,
+                    ),(
+                        title: "Soin détox `50min`",
+                        book: "localhost",
+                        price: (59,00),
+                        description: r#"
+
+                            Peau inflammée avec imperfections, pores
+                            obstrués, marques de fatigue.
+
+                        "#,
+                    ),(
+                        title: "Massage traditionnel indien du visage `30min`",
+                        book: "localhost",
                         price: (39,00),
-                        book: "fr.wikipedia.org/wiki/Aaron_Carter",
-                        description: "Ça c'est très bien, allez viens.",
+                        description: r#"
+
+                            Massage ancestral venant du Kerala. Des
+                            techniques anti-âge au massage crânien, il
+                            permet d'évacuer la fatigue et de lâcher
+                            prise.
+
+                        "#,
                     ),
-
-                    (
-                        title: "Skin Good 600",
-
-                        price: (18,50),
-                        book: "fr.wikipedia.org/wiki/Balakh_Sher_Mazari",
-                        description: "Ça c'est pas mal du tout je te promet.",
-                    )
-                ]
-            ),
-
-            (
-                title: "Les trucs plus cher",
+                ],
+            ),(
+                title: "rituels corps",
                 image: Some(("01.jpg", "un truc de spa")),
-
                 description: r#"
 
-Retrouvez ici les trucs chers et vraiment bien. Si vous avez des sous
-venez les dépenser chez moi, en plus je suis trop cool.
+                    Découvrez les différentes destination de nos soins
+                    corps.
 
-"#,
+                "#,
 
                 benefits: [
                     (
-                        title: "Skin Ultra 900",
+                        title: "Rite du hammam `1h30`",
                         image: Some(("08.jpg", "un truc de spa")),
+                        book: "localhost",
+                        price: (100,00),
+                        description: r#"
 
-                        price: (74,90),
-                        book: "fr.wikipedia.org/wiki/Mauro_Forghieri",
-                        description: "Presque le nec plus ultra mais pas tout à fait.",
-                    ),
+                            Exfoliation traditionnelle au savon noir
+                            avec gant de kessa et un modelage oriental
+                            à l'huile d'argan.
 
-                    (
-                        title: "Skin *Hyper* 950X",
+                        "#,
+                    ),(
+                        title: "Rituel Sabi Sabi en terre d'Afrique bio `1h45`",
                         image: Some(("09.jpg", "un truc de spa")),
+                        book: "localhost",
+                        price: (115,00),
+                        description: r#"
 
-                        price: (107,00),
-                        book: "fr.wikipedia.org/wiki/Francis_Rion",
-                        description: "Le nec plus ultra. C'est trop de la balle.",
-                    )
-                ]
-            )
-        ]
-    )
+                            Gommage aux graines de baobab,
+                            enveloppement aux huiles essentielles et
+                            modelage Sabi Sabi africain.
+
+                        "#,
+                    ),(
+                        title: "Croisière bien-être en Polynésie `1h45`",
+                        image: Some(("09.jpg", "un truc de spa")),
+                        book: "localhost",
+                        price: (115,00),
+                        description: r#"
+
+                            Gommage au sable fin de Bora Bora,
+                            enveloppement maori au beurre de mangue et
+                            modelage polynésien.
+
+                        "#,
+                    ),(
+                        title: "Rite holistic en Amazonie `1h45`",
+                        image: Some(("09.jpg", "un truc de spa")),
+                        book: "localhost",
+                        price: (115,00),
+                        description: r#"
+
+                            Gommage à la cassonade aux noix du Brésil,
+                            enveloppement anti-stress à l'acérola et
+                            modelage au bambou.
+
+                        "#,
+                    ),(
+                        title: "Hammam `30min`",
+                        image: Some(("09.jpg", "un truc de spa")),
+                        book: "localhost",
+                        price: (30,00),
+                        description: r#"
+
+                            Profiter des bien faits de la vapeur
+                            associé l'aromathérapie.
+
+                        "#,
+                    ),
+                ],
+            ),(
+                title: "modelages",
+                image: Some(("01.jpg", "un truc de spa")),
+                description: r#"
+
+                    Découvrez les différents modelages corps et/ou
+                    visage.
+
+                "#,
+
+                benefits: [
+                    (
+                        title: "Tour du monde en `90min`",
+                        image: Some(("08.jpg", "un truc de spa")),
+                        book: "localhost",
+                        price: (109,00),
+                        description: r#"
+
+                            Modelage signature corps et visage alliant
+                            plusieurs techniques de modelage du monde.
+
+                        "#,
+                    ),(
+                        title: "Modelage polynésien `60min`",
+                        image: Some(("09.jpg", "un truc de spa")),
+                        book: "localhost",
+                        price: (75,00),
+                        description: r#"
+
+                            Modelage relaxant et enveloppant suivant
+                            le rythme des vagues.
+
+                        "#,
+                    ),(
+                        title: "Modelage oriental `60min`",
+                        image: Some(("09.jpg", "un truc de spa")),
+                        book: "localhost",
+                        price: (75,00),
+                        description: r#"
+
+                            Modelage vivifiant dont les mouvements
+                            sont inspirés de la danse orientale.
+
+                        "#,
+                    ),(
+                        title: "Modelage africain `60min`",
+                        image: Some(("09.jpg", "un truc de spa")),
+                        book: "localhost",
+                        price: (75,00),
+                        description: r#"
+
+                            Détends les muscles et les tensions pour
+                            alléger le corps et l'esprit.
+
+                        "#,
+                    ),(
+                        title: "Modelage holistic au bambou `60min`",
+                        image: Some(("09.jpg", "un truc de spa")),
+                        book: "localhost",
+                        price: (78,00),
+                        description: r#"
+
+                            Modelage décontractant, défatiguant qui
+                            dissout les tensions physiques.
+
+                        "#,
+                    ),(
+                        title: "Escale bien-être `30min`",
+                        image: Some(("09.jpg", "un truc de spa")),
+                        book: "localhost",
+                        price: (39,00),
+                        description: r#"
+
+                            Modelage signature du dos.
+
+                        "#,
+                    ),
+                ],
+            ),(
+                title: "soins enfants et adolescents",
+                image: Some(("01.jpg", "un truc de spa")),
+                description: r#"
+
+                    Tout les soins adaptés pour les peaux jeunes et
+                    sensible des enfants, à partir de 6 ans.
+
+                "#,
+
+                benefits: [
+                    (
+                        title: "Ma mini escale bien être `20min`",
+                        image: Some(("08.jpg", "un truc de spa")),
+                        book: "localhost",
+                        price: (28,00),
+                        description: r#"
+
+                            Modelage en douceur du dos, pour les
+                            enfants à partir de 6 ans.
+
+                        "#,
+                    ),(
+                        title: "Soin du dos anti-stress `60min`",
+                        image: Some(("09.jpg", "un truc de spa")),
+                        book: "localhost",
+                        price: (60,00),
+                        description: r#"
+
+                            Soin du dos recommandé à partir de 12 ans,
+                            ce soin permet de détoxifier la peau en
+                            douceur avec un gommage et un
+                            enveloppement doux adapté à votre peau. Le
+                            soin se termine par un modelage du dos
+                            relaxant idéale lors de période stressante
+                            comme les examens ou le passage en classe
+                            supérieure. Ce soin est également adapté
+                            pour les pré-adultes, qui passe leurs
+                            derniers diplôme avant de rentrer dans la
+                            vie active.
+
+                        "#,
+                    ),(
+                        title: "Soin du visage détox `50min`",
+                        image: Some(("09.jpg", "un truc de spa")),
+                        book: "localhost",
+                        price: (59,00),
+                        description: r#"
+
+                            Soin détoxifiant pour retrouver un grain de
+                            peau plus lisse et des imperfections
+                            atténués. Nettoyage de peau en douceur dès
+                            12 ans.
+
+                        "#,
+                    ),
+                ],
+            ),(
+                title: "les épilations",
+                image: Some(("01.jpg", "un truc de spa")),
+                description: r#"
+
+                    Découvrez nos épilation réalisé avec de la cire à
+                    la résine de pins et au beurre de karité pour les
+                    peaux sensibles.
+
+                "#,
+
+                benefits: [
+                    (
+                        title: "Sourcils entretien",
+                        image: Some(("08.jpg", "un truc de spa")),
+                        book: "localhost",
+                        price: (9,00),
+                        description: "",
+
+                    ),(
+                        title: "Sourcils création de ligne",
+                        image: Some(("09.jpg", "un truc de spa")),
+                        book: "localhost",
+                        price: (15,00),
+                        description: r#"
+
+                            Après avoir pris les mesures de vos
+                            sourcils, nous venons épiler à la cire et
+                            à la pince les sourcils pour leurs
+                            redonner une ligne. Cette prestation
+                            permet d'embellir le regard et de corriger
+                            l'asymétrie de vos sourcils.
+
+                        "#,
+                    ),(
+                        title: "Lèvres supérieur",
+                        image: Some(("09.jpg", "un truc de spa")),
+                        book: "localhost",
+                        price: (9,00),
+                        description: "",
+
+                    ),(
+                        title: "Visage",
+                        image: Some(("09.jpg", "un truc de spa")),
+                        book: "localhost",
+                        price: (20,00),
+                        description: "",
+
+                    ),(
+                        title: "Aisselles",
+                        image: Some(("09.jpg", "un truc de spa")),
+                        book: "localhost",
+                        price: (13,00),
+                        description: "",
+
+                    ),(
+                        title: "Demi-jambes",
+                        image: Some(("09.jpg", "un truc de spa")),
+                        book: "localhost",
+                        price: (20,00),
+                        description: "",
+
+                    ),(
+                        title: "Jambes entières",
+                        image: Some(("09.jpg", "un truc de spa")),
+                        book: "localhost",
+                        price: (30,00),
+                        description: "",
+
+                    ),(
+                        title: "Maillot classique",
+                        image: Some(("09.jpg", "un truc de spa")),
+                        book: "localhost",
+                        price: (16,00),
+                        description: "",
+
+                    ),(
+                        title: "Maillot échancré ou brésilien",
+                        image: Some(("09.jpg", "un truc de spa")),
+                        book: "localhost",
+                        price: (20,00),
+                        description: "",
+
+                    ),(
+                        title: "Maillot semi-intégral ou intégral",
+                        image: Some(("09.jpg", "un truc de spa")),
+                        book: "localhost",
+                        price: (32,00),
+                        description: "",
+
+                    ),(
+                        title: "Bras",
+                        image: Some(("09.jpg", "un truc de spa")),
+                        book: "localhost",
+                        price: (20,00),
+                        description: "",
+
+                    ),(
+                        title: "Dos ou torse",
+                        image: Some(("09.jpg", "un truc de spa")),
+                        book: "localhost",
+                        price: (32,00),
+                        description: "",
+
+                    ),(
+                        title: "`FORFAIT` Sourcils et lèvres",
+                        image: Some(("09.jpg", "un truc de spa")),
+                        book: "localhost",
+                        price: (15,00),
+                        description: "",
+
+                    ),(
+                        title: "`FORFAIT` Demi-jambes, maillot et aisselles",
+                        image: Some(("09.jpg", "un truc de spa")),
+                        book: "localhost",
+                        price: (38,00),
+                        description: r#"
+
+                            Suplément maillot
+                            échancré ou bresilien `10€`. Suplément
+                            maillot semi-intégral ou intégral `15€`.
+
+                        "#,
+                    ),(
+                        title: "`FORFAIT` Jambes entières, maillot et aisselles",
+                        image: Some(("09.jpg", "un truc de spa")),
+                        book: "localhost",
+                        price: (47,00),
+                        description: r#"
+
+                            Suplément maillot
+                            échancré ou bresilien `10€`. Suplément
+                            maillot semi-intégral ou intégral `15€`.
+
+                        "#,
+                    ),
+                ],
+            ),
+        ],
+    ),
 )
