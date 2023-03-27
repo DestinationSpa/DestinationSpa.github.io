@@ -12,5 +12,5 @@ version = "1.0.143"
 features = ["derive"]
 
 [dependencies.tagger]
-git = "https://github.com/timjrd/tagger"
+git = "https://github.com/destinationspa/tagger"
 branch = "unwrap"
