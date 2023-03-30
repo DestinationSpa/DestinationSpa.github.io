@@ -33,11 +33,11 @@ Egalement des soins esthétiques comme des soins du visage bio spécialisés dan
 
         hours: (
             monday:    (None, None),
-            tuesday:   (Some((09,30, 19,00))),
-            wednesday: (Some((09,30, 19,00))),
-            thursday:  (Some((09,30, 19,00))),
-            friday:    (Some((09,30, 19,00))),
-            saturday:  (Some((09,30, 17,00))),
+            tuesday:   (Some((09,30, 99,99)), Some((99,99, 19,00))),
+            wednesday: (Some((09,30, 99,99)), Some((99,99, 19,00))),
+            thursday:  (Some((09,30, 99,99)), Some((99,99, 19,00))),
+            friday:    (Some((09,30, 99,99)), Some((99,99, 19,00))),
+            saturday:  (Some((09,30, 99,99)), Some((99,99, 17,00))),
             sunday:    (None, None),
         ),
 
@@ -114,7 +114,7 @@ Pesonalisables car aucune autre peau ressemble à la votre.
                         price: (39,00),
                         book: "https://booking.wavy.pro/destinationspa",
                         description: "Massage ancestral venant du Kerala. Des techniques anti-âge au massage cranien, il permet d'évacuer la fatigue et de lâcher prise",
-                    )
+                    ),
                     (
                         title: "Soin du regard flash 15 min",
                         image: Some(("Soinduvisage/soinregardflash.jpeg", "Soin regard flah")),
@@ -147,7 +147,7 @@ Découvrez les differentes destinations de nos soins corps.
                         price: (100,00),
                         book: "https://booking.wavy.pro/destinationspa",
                         description: "Exfoliation traditionnelle au savon nor avec gant de kessa et un modelage oriental à l'huile d'argan.",
-                    )
+                    ),
                     (
                         title: "Rituel Sabi Sabi en terre d'Afrique Bio 1h45",
                         image: Some(("Rituelcorps/ritesabisabi.jpeg", "Afrique")),
@@ -155,7 +155,7 @@ Découvrez les differentes destinations de nos soins corps.
                         price: (115,00),
                         book: "https://booking.wavy.pro/destinationspa",
                         description: "Gommage aux graines de baobab, enveloppement aux huiles essentielles et modelage sabi sabi Africain.",
-                    )
+                    ),
                     (
                         title: "Croisisère bien-être en Polynésie 1h45",
                         image: Some(("Rituelcorps/Croisiereenpolynesie.jpg", "Polynésie")),
@@ -163,7 +163,7 @@ Découvrez les differentes destinations de nos soins corps.
                         price: (115,00),
                         book: "https://booking.wavy.pro/destinationspa",
                         description: "Gommage au sable fin de Bora bora, enveloppement maori au beurre de mangue et modelage Polynésien.",
-                    )
+                    ),
                     (
                         title: "Rite holistic en Amazonie 1h45",
                         image: Some(("Rituelcorps/riteenAmazonie.jpg", "Amazonie")),
@@ -171,7 +171,7 @@ Découvrez les differentes destinations de nos soins corps.
                         price: (115,00),
                         book: "https://booking.wavy.pro/destinationspa",
                         description: "Gommage à la cassonade aux noix du Brésil, enveloppement anti-stress à l'acérola et modelage au bambou.",
-                    )
+                    ),
                     (
                         title: "Hammam 30min",
                         image: Some(("Rituelcorps/hammam.PNG", "Hammam")),
@@ -182,7 +182,7 @@ Découvrez les differentes destinations de nos soins corps.
                     )
                 ]
 
-            )
+            ),
             (
                 title: "Modelages",
                 image: Some(("Modelage/odelagecatégorie.jpg", "catégorie modelage")),
@@ -201,7 +201,7 @@ Découvrez les differentes modelges corps et ou visage.
                         price: (109,00),
                         book: "https://booking.wavy.pro/destinationspa",
                         description: "Modelage signature corps et visage, alliant plusieurs techniques de modelage du monde.",
-                    )
+                    ),
                     (
                         title: "Modelage Polynésien 60 min",
                         image: Some(("Modelage/modelagepolynésien.jpg", "Modelage Lomi Lomi")),
@@ -209,7 +209,7 @@ Découvrez les differentes modelges corps et ou visage.
                         price: (75,00),
                         book: "https://booking.wavy.pro/destinationspa",
                         description: "Modelage relaxant, enveloppant suivant le rythme des vagues.",
-                    )
+                    ),
                     (
                         title: "Modelage oriental 60 min",
                         image: Some(("Modelage/modelageoriental.jpg", "Modelage oriental")),
@@ -217,7 +217,7 @@ Découvrez les differentes modelges corps et ou visage.
                         price: (75,00),
                         book: "https://booking.wavy.pro/destinationspa",
                         description: "Modelage vivifiant dont les mouvements sont inspirés de la danse orientale",
-                    )
+                    ),
                     (
                         title: "Modelage Africain 60 min",
                         image: Some(("Modelage/modelagesabisabi.jpeg", "Modelage sabi Sabi")),
@@ -225,7 +225,7 @@ Découvrez les differentes modelges corps et ou visage.
                         price: (75,00),
                         book: "https://booking.wavy.pro/destinationspa",
                         description: "Détends les muscles et les tensions pour alleger le corps et l'esprit.",
-                    )
+                    ),
                     (
                         title: "Modelage holistic au bambou 60 min",
                         image: Some(("Modelage/massagebambou.jpg", "Modelage Holistic bambou")),
@@ -233,7 +233,7 @@ Découvrez les differentes modelges corps et ou visage.
                         price: (78,00),
                         book: "https://booking.wavy.pro/destinationspa",
                         description: "Modelage déonractat, défatiguant qui disout les tensions physiques.",
-                    )
+                    ),
                     (
                         title: "Escale Bien-être 30 min",
                         image: Some(("Modelage/escalebienetre.jpg", "Escale bien etre")),
@@ -241,7 +241,7 @@ Découvrez les differentes modelges corps et ou visage.
                         price: (39,00),
                         book: "https://booking.wavy.pro/destinationspa",
                         description: "Modelage signature du dos.",
-                    )
+                    ),
                     (
                         title: "Massage Traditionnel Indien du Visage 30 min",
                         image: Some(("Modelage/massageindien.jpg", "Masage Trad. Indien du visage")),
@@ -251,7 +251,7 @@ Découvrez les differentes modelges corps et ou visage.
                         description: "Massage ancestral venant du Kerala. Des techniques anti-âge au massage cranien, il permet d'évacuer la fatigue et de lâcher prise.",
                     )
                 ]
-            )
+            ),
             (
                 title: "Soins Enfants et Adolescents",
                 image: Some(("Soinenfantado/catégoriessoinenfant.png", "Visage enfant")),
@@ -270,7 +270,7 @@ Tout les soins adaptés pour les peaux jeunes et sensible des enfants, à partir
                         price: (28,00),
                         book: "https://booking.wavy.pro/destinationspa",
                         description: "Modelage en douceur du dos, pour les enfants à partir de 6 ans.",
-                    )
+                    ),
                     (
                         title: "Soin du dos anti-stress 60 min",
                         image: Some(("Soinenfantado/soindudos.jpg", "Fleur de frangipanier rose et blanches")),
@@ -281,7 +281,7 @@ Tout les soins adaptés pour les peaux jeunes et sensible des enfants, à partir
                         un enveloppement doux adapté à votre peau. Le soin se termne par un modelage du dos relaxant idéale lors pérode stressante 
                         comme les examens ou le passage en classe supérieure. Ce soin est également adapté pour les pré-adultes, qui passe leurs derniers
                         dîplome avant de rentré dans la vie active.",
-                    )
+                    ),
                     (
                         title: "Soin du visage Détox 50 min",
                         image: Some(("Soinenfantado/detox2.jpg", "Soin detox visage jeune Ekia")),
@@ -292,7 +292,7 @@ Tout les soins adaptés pour les peaux jeunes et sensible des enfants, à partir
                         Dès 12 ans.",
                     )
                 ]
-            )
+            ),
               (
                 title: "Les épilations",
                 image: Some(("catéorieepilation.png", "Epilation cire avec bande")),
@@ -310,7 +310,8 @@ Découvrez nos épilation réalisé avec de la cire à la résine de pins et au 
 
                         price: (9,00),
                         book: "https://booking.wavy.pro/destinationspa",
-                    )
+                        description: "",
+                    ),
                     (
                         title: "Sourcils création de ligne",
                         image: None,
@@ -319,84 +320,95 @@ Découvrez nos épilation réalisé avec de la cire à la résine de pins et au 
                         book: "https://booking.wavy.pro/destinationspa",
                         description: "Après avoir pris les mesures de vos sourcils, nous venons épiler à la cire et à la pince les sourcils pur leurs
                         redonner une ligne. Cette prestation permet d'embellir le regard et de corriger l'asymetrie de vos sourcils.",
-                    )
+                    ),
                     (
                         title: "Lèvres supérieur",
                         image: None,
 
                         price: (9,00),
                         book: "https://booking.wavy.pro/destinationspa",
-                    )
+                        description: "",
+                    ),
                     (
                         title: "Visage",
                         image: None,
 
                         price: (20,00),
                         book: "https://booking.wavy.pro/destinationspa",
-                    )
+                        description: "",
+                    ),
                     (
                         title: "Aisselles",
                         image: None,
 
                         price: (13,00),
                         book: "https://booking.wavy.pro/destinationspa",
-                    )
+                        description: "",
+                    ),
                     (
                         title: "1/2 jambes",
                         image: None,
 
                         price: (20,00),
                         book: "https://booking.wavy.pro/destinationspa",
-                    )
+                        description: "",
+                    ),
                     (
                         title: "Jambes entières",
                         image: None,
 
                         price: (30,00),
                         book: "https://booking.wavy.pro/destinationspa",
-                    )
+                        description: "",
+                    ),
                     (
                         title: "Maillot Classique",
                         image: None,
 
                         price: (16,00),
                         book: "https://booking.wavy.pro/destinationspa",
-                    )
+                        description: "",
+                    ),
                     (
                         title: "Maillot échancré/ brésilien",
                         image: None,
 
                         price: (20,00),
                         book: "https://booking.wavy.pro/destinationspa",
-                    )
+                        description: "",
+                    ),
                     (
                         title: "Maillot Semi-intégral / intégral",
                         image: None,
 
                         price: (32,00),
                         book: "https://booking.wavy.pro/destinationspa",
-                    )
+                        description: "",
+                    ),
                     (
                         title: "Bras",
                         image: None,
 
                         price: (20,00),
                         book: "https://booking.wavy.pro/destinationspa",
-                    )
+                        description: "",
+                    ),
                     (
                         title: "Dos ou Torse",
                         image: None,
 
                         price: (32,00),
                         book: "https://booking.wavy.pro/destinationspa",
-                    )
+                        description: "",
+                    ),
                     (
                         title: "Forfait : Sourcils + Lèvres",
                         image: None,
 
                         price: (15,00),
                         book: "https://booking.wavy.pro/destinationspa",
-                    )
+                        description: "",
+                    ),
                     (
                         title: "Forfait : 1/2 jambes + maillot + aisselles",
                         image: None,
@@ -406,7 +418,7 @@ Découvrez nos épilation réalisé avec de la cire à la résine de pins et au 
 
                         description: "Suplément maillot échancré/bresilien +10€
                         Suplément maillot semi-intégral/intégral +15€",
-                    )
+                    ),
                     (
                         title: "Forfait : Jambes entières + maillot + aisselles",
                         image: None,
