@@ -10,21 +10,28 @@
         text: r#"
 
 Marine, esthéticienne et créatrice de Destination Spa. 
-Après plusieurs expériences en tant que spa praticienne et esthéticienne, l'idée de créer de un centre de beauté ou 
-le bien-être est au centre des prioritées, sans injonctions et que toutes personnes puissent repartir avec le sourire
-à vu le jour en décembre 2022 à Beautiran.
+Après plusieurs expériences en tant que spa praticienne et esthéticienne, j'ai pu réaliser mon souhait de créer un centre de beauté où 
+le bien-être est au coeur des priorités afin que toute personne reparte avec le sourire.
 
-Destination Spa est un institut de beauté et Spa proposant  des moment de détentes au hammam, des voyages de 30 minutes à 1 heure 45
-avec diférentes destinations comme l'Inde, la Polynésie, L'afrique, l'Amazonie et l'Orient. 
-Egalement des soins esthétiques comme des soins du visage bio spécialisés dans le veillisement cutanés, des épilations et des soins enfants et adolescents.
 
+Destination Spa est un institut de beauté et Spa proposant des moments de détente au hammam, des voyages bien-être de 30 minutes à 1 heure 45
+avec diférentes destinations comme l'Inde, la Polynésie, l'Afrique, l'Amazonie et l'Orient. 
+Egalement, des soins esthétiques comme des soins du visage bio spécialisés dans le veillisement cutanés et des peaux ménopausées, 
+des soins enfants et adolescents, du maquillage pour toutes occasions et des épilations.
+
+Chaque personne est unique ! Un diagnostique sera réalisé ensemble afin d'apporter des conseils personalisés.
+
+Retrouvez dans votre institut de beauté, des produits naturels et/ou biologiques, de fabrication Française. 
+Tous ont été sélectionnés pour leurs efficacité et les engagements des marques partenaires.
+
+Reservez-vous un moment de détente entre les mains de votre esthéticienne diplomée d'état et passionée par son métier.
 "#,
 
         images: [
             ("marine.jpg", "esthéticienne"),
-            ("Logolotus.png", "Destination Spa"),
+            ("logolotus.png", "Destination Spa"),
             ("accueil.jpeg", "accueil"),
-            ("cabinedesoin.png", "cabine de soin"),
+            ("cabinedesoin.jpeg", "cabine de soin"),
         ],
     ),
 
@@ -72,39 +79,41 @@ Egalement des soins esthétiques comme des soins du visage bio spécialisés dan
 
                 description: r#"
 
-Soin du visage bio, Spécialisés en anti-age ave la marque Ekia. 
-Pesonalisables car aucune autre peau ressemble à la votre.
+Soin du visage bio, avec la marque Ekia l'experte des peaux ménauposées. 
+Personnalisables car aucune autre peau ressemble à la votre.
 
 "#,
 
                 benefits: [
                     (
                         title: "Soin Aboslu 1h10",
-                        image: Some(("Soinduvisage/soinabsolu.jpg", "soin visage absolu Ekia")),
+                        image: Some(("Soinduvisage/trois tetes.jpeg", "soin visage absolu Ekia")),
 
                         price: (89,00),
                         book: "https://booking.wavy.pro/destinationspa",
-                        description: r#"A chaque début de soin, un daignostic d peau est réalsé afin d'établir le soin le plus adapté à votre peau
-- Le stimulant : Peau déshydratée, rides d'expression peu marquées, manque déclat
-- Le Réparateur : Peau déshydratée avec zones de sécheresse, taches pigmentaires, rides de structures marquées.
-- Le revitalisant : Peau déshydradtée et trés sèche, taches pigmentaires, perte de tonicité, peau fine."#,
+                        description: r#"A chaque début de soin, un daignostic de peau est réalisé afin d'établir le soin le plus adapté à votre degré de maturité de peau.
+
+- Le stimulant : Effets des carences hormonales de la ménopause sur la peau. Débuts des effets et/ou préménopause. Signes de l’âge assez peu marqués, diagnostic révélant une peau mature préservée.
+- Le Réparateur : Peau marquée par les effets des carences hormonales de la ménopause. Signes de l’âge accentués, diagnostic révélant une peau mature fragilisée.
+- Le revitalisant :  Peau très marquée par les effets de la ménaupose. Signes de l’âge très visibles, diagnostic révélant une peau mature carencée."#,
                     ),
                     (
                         title: "Soin primordial 1h",
-                        image: Some(("Soinduvisage/soinprimordiale.jpeg", "Soin primodiale Ekia")),
+                        image: Some(("Soinduvisage/soin primordiale.jpeg", "Soin primodiale Ekia")),
 
                         price: (79,00),
                         book: "https://booking.wavy.pro/destinationspa",
-                        description: "Peau fatiguée, manque d'éclat, prmeières rides",
+                        description: "Manque d'éclat et apparition de premières rides. 
+                        Soin complet tout en 1 pour une peau régénerée et défatiguée",
                     ),
 
                     (
                         title: "Soin Détox 50min",
-                        image: Some(("Soinduvisage/soindetox", "soin detox Ekia")),
+                        image: Some(("Soinduvisage/soindetox.png", "soin detox Ekia")),
 
                         price: (59,00),
                         book: "https://booking.wavy.pro/destinationspa",
-                        description: "Peau inflammée avec imperfections, pores obstrués, marques de fatigue",
+                        description: "Soin pour les peaux inflammées avec imperfections, pores obstrués, marques de fatigue, avec un besoin de détoxifié et d'affiner le grain de peau.",
                     ),
 
                     (
@@ -114,6 +123,14 @@ Pesonalisables car aucune autre peau ressemble à la votre.
                         price: (39,00),
                         book: "https://booking.wavy.pro/destinationspa",
                         description: "Massage ancestral venant du Kerala. Des techniques anti-âge au massage cranien, il permet d'évacuer la fatigue et de lâcher prise",
+                    ),
+                    (
+                        title: "Soin défatiguant express 20min",
+                        image: Some(("Soinduvisage/soin flash eclat.jpeg", "visage femme sourire")),
+
+                        price: (29,00),
+                        book: "https://booking.wavy.pro/destinationspa",
+                        description: "Soin du visage express coup d'éclat, permetant de retrouver une peau en plein forme et une mine éclatante avec un gommage au pépins de kixi et un masque super vitaminé à base de guarana.",
                     ),
                     (
                         title: "Soin du regard flash 15 min",
@@ -135,7 +152,7 @@ Pesonalisables car aucune autre peau ressemble à la votre.
 
                 description: r#"
 
-Découvrez les differentes destinations de nos soins corps.
+Découvrez les differentes destinations de nos voyages bien-être. Un moment d'évasion unique.
 
 "#,
 
@@ -146,7 +163,8 @@ Découvrez les differentes destinations de nos soins corps.
 
                         price: (100,00),
                         book: "https://booking.wavy.pro/destinationspa",
-                        description: "Exfoliation traditionnelle au savon nor avec gant de kessa et un modelage oriental à l'huile d'argan.",
+                        description: "relaxation dans le hammam. L'exfoliation traditionnelle au savon noir avec gant de kessa se fait ensuite pour débarasser les cellules mortes.
+                        Puis le modelage Oriental est pratiqué avec le nectar de beauté enrici notamment à l'huile d'argan, pour relaxer le corps purifié.",
                     ),
                     (
                         title: "Rituel Sabi Sabi en terre d'Afrique Bio 1h45",
@@ -154,15 +172,20 @@ Découvrez les differentes destinations de nos soins corps.
 
                         price: (115,00),
                         book: "https://booking.wavy.pro/destinationspa",
-                        description: "Gommage aux graines de baobab, enveloppement aux huiles essentielles et modelage sabi sabi Africain.",
+                        description: "Les 3 produits de ce rituel sont certifiés Bio COSMOS ORGANIC. Les graines de baobab du gammoage éliminent impuretés et celllules mortes,
+                        permettant ainsi à la peau dabsorber les bienfaits des huiles essentielles relaxantes lors de la phase d'enveloppement.
+                        Puis, le bien-être physique et psychique est optimisé lors du modelage Africain Sabi Sabi pratiqué avec le nectar aux plantes d'Afrique.",
                     ),
                     (
                         title: "Croisisère bien-être en Polynésie 1h45",
-                        image: Some(("Rituelcorps/Croisiereenpolynesie.jpg", "Polynésie")),
+                        image: Some(("Rituelcorps/croisiereenpolynesie.jpg", "Polynésie")),
 
                         price: (115,00),
                         book: "https://booking.wavy.pro/destinationspa",
-                        description: "Gommage au sable fin de Bora bora, enveloppement maori au beurre de mangue et modelage Polynésien.",
+                        description: "ce rituel aux senteur divines de monoï, mangue et frangipanier démarre par une exfoliation en douceur au sable fin de bora bora, 
+                        puis se prolonge par une sieste de bien-être tropicale au beurre de mangue, extrêment relaxante pour les tensions physiques et pour l'esprit,
+                        mais aussi nourrissante pour la peau. 
+                        Enfin le modelage Polynésien Sweet Lomi, très ressouçant, est pratiqué avec le nectar de beauté à la fleur de frangipanier.",
                     ),
                     (
                         title: "Rite holistic en Amazonie 1h45",
@@ -170,7 +193,8 @@ Découvrez les differentes destinations de nos soins corps.
 
                         price: (115,00),
                         book: "https://booking.wavy.pro/destinationspa",
-                        description: "Gommage à la cassonade aux noix du Brésil, enveloppement anti-stress à l'acérola et modelage au bambou.",
+                        description: "le sucre roux du gommage, mélangé à l'huile de noix du Brésil, fond sur la peau pour élimine les cellules mortes et préparer l'épiderme à recevoir l'enveloppement anti-stress à l'acérola. 
+                        Puis le modelage holistic au bambou, intégrant des manoeuvres drainantes, est pratiqué avec le nectar aux effluves raffinées fruitée de mangue et fruit de la passion un corps relâché et trés léger !.",
                     ),
                     (
                         title: "Hammam 30min",
@@ -185,11 +209,12 @@ Découvrez les differentes destinations de nos soins corps.
             ),
             (
                 title: "Modelages",
-                image: Some(("Modelage/odelagecatégorie.jpg", "catégorie modelage")),
+                image: Some(("Modelage/odelagecategorie.jpg", "catégorie modelage")),
 
                 description: r#"
 
-Découvrez les differentes modelges corps et ou visage.
+Relaxant, drainant, décontractant...
+Découvrez les differents modelages corps et/ou visage. 
 
 "#,
 
@@ -204,11 +229,12 @@ Découvrez les differentes modelges corps et ou visage.
                     ),
                     (
                         title: "Modelage Polynésien 60 min",
-                        image: Some(("Modelage/modelagepolynésien.jpg", "Modelage Lomi Lomi")),
+                        image: Some(("Modelage/modelagepolynesien.jpg", "Modelage Lomi Lomi")),
 
                         price: (75,00),
                         book: "https://booking.wavy.pro/destinationspa",
-                        description: "Modelage relaxant, enveloppant suivant le rythme des vagues.",
+                        description: "Modelage relaxant, enveloppant suivant le rythme des vagues, procure une douce sensation de détente profonde,
+                        et de lacher prise absolu..",
                     ),
                     (
                         title: "Modelage oriental 60 min",
@@ -216,7 +242,7 @@ Découvrez les differentes modelges corps et ou visage.
 
                         price: (75,00),
                         book: "https://booking.wavy.pro/destinationspa",
-                        description: "Modelage vivifiant dont les mouvements sont inspirés de la danse orientale",
+                        description: "Modelage  dont les mouvements sont inspirés de la danse orientale",
                     ),
                     (
                         title: "Modelage Africain 60 min",
@@ -224,7 +250,7 @@ Découvrez les differentes modelges corps et ou visage.
 
                         price: (75,00),
                         book: "https://booking.wavy.pro/destinationspa",
-                        description: "Détends les muscles et les tensions pour alleger le corps et l'esprit.",
+                        description: "Ce modelage draine en profondeur et relance la circulation sanguine et lymphatique. Il raffrmit la peau, chasse les tensions musculaires, stimule l'énergies du corps, les snes et l'esprit..",
                     ),
                     (
                         title: "Modelage holistic au bambou 60 min",
@@ -232,7 +258,7 @@ Découvrez les differentes modelges corps et ou visage.
 
                         price: (78,00),
                         book: "https://booking.wavy.pro/destinationspa",
-                        description: "Modelage déonractat, défatiguant qui disout les tensions physiques.",
+                        description: "Modelage décontractant, défatiguant apporte légèreté, notamment au niveau des jambes avec les manoeuvres drainantes effectuées avec le bambou.",
                     ),
                     (
                         title: "Escale Bien-être 30 min",
@@ -240,7 +266,7 @@ Découvrez les differentes modelges corps et ou visage.
 
                         price: (39,00),
                         book: "https://booking.wavy.pro/destinationspa",
-                        description: "Modelage signature du dos.",
+                        description: "Modelage signature relaxant du dos.",
                     ),
                     (
                         title: "Massage Traditionnel Indien du Visage 30 min",
@@ -254,7 +280,7 @@ Découvrez les differentes modelges corps et ou visage.
             ),
             (
                 title: "Soins Enfants et Adolescents",
-                image: Some(("Soinenfantado/catégoriessoinenfant.png", "Visage enfant")),
+                image: Some(("Soinenfantado/categoriessoinenfant.png", "Visage enfant")),
 
                 description: r#"
 
@@ -265,7 +291,7 @@ Tout les soins adaptés pour les peaux jeunes et sensible des enfants, à partir
                 benefits: [
                     (
                         title: "Ma mini escale bien être 20 min",
-                        image: Some(("Soinenfantado/mniescalebienetre.jpg", "Bougie spa")),
+                        image: Some(("Soinenfantado/miniescalebienetre.jpg", "Bougie spa")),
 
                         price: (28,00),
                         book: "https://booking.wavy.pro/destinationspa",
@@ -284,7 +310,7 @@ Tout les soins adaptés pour les peaux jeunes et sensible des enfants, à partir
                     ),
                     (
                         title: "Soin du visage Détox 50 min",
-                        image: Some(("Soinenfantado/detox2.jpg", "Soin detox visage jeune Ekia")),
+                        image: Some(("Soinenfantado/detoxcitron.jpeg", "Rondelle de citron")),
 
                         price: (59,00),
                         book: "https://booking.wavy.pro/destinationspa",
@@ -295,11 +321,11 @@ Tout les soins adaptés pour les peaux jeunes et sensible des enfants, à partir
             ),
               (
                 title: "Les épilations",
-                image: Some(("catéorieepilation.png", "Epilation cire avec bande")),
+                image: Some(("categorieepilation.png", "Epilation cire avec bande")),
 
                 description: r#"
 
-Découvrez nos épilation réalisé avec de la cire à la résine de pins et au beurre de karité pour les peaux sensibles.
+Découvrez nos épilation réalisées avec de la cire à la résine de pins et au beurre de karité adaptée pour les peaux sensibles.
 
 "#,
 
@@ -318,8 +344,8 @@ Découvrez nos épilation réalisé avec de la cire à la résine de pins et au 
 
                         price: (15,00),
                         book: "https://booking.wavy.pro/destinationspa",
-                        description: "Après avoir pris les mesures de vos sourcils, nous venons épiler à la cire et à la pince les sourcils pur leurs
-                        redonner une ligne. Cette prestation permet d'embellir le regard et de corriger l'asymetrie de vos sourcils.",
+                        description: "Après avoir pris les mesures de vos sourcils, nous épilons à la cire et à la pince les sourcils pour leurs
+                        redonner une ligne. Cette prestation permet d'embellir le regard et de corriger l'asymétrie de vos sourcils.",
                     ),
                     (
                         title: "Lèvres supérieur",
