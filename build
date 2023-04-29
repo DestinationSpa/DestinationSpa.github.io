@@ -4,10 +4,10 @@
 set -e
 cargo run
 
-cp res/style.{css,tmp}
-runhaskell downscale.hs 80 140 >> res/style.tmp
-lightningcss --minify --bundle --targets '> 0%' --output-file res/style.{min.css,tmp}
-rm res/style.tmp
+cp res/style/{source.css,tmp}
+runhaskell downscale.hs 80 140 >> res/style/tmp
+lightningcss --minify --bundle --targets '> 0%' --output-file res/style/{minified.css,tmp}
+rm res/style/tmp
 
 rm -rf res/images/low_res
 mkdir res/images/low_res

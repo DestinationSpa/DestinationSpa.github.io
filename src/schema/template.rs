@@ -50,7 +50,7 @@ impl Website {
 
                 r.single("link", |r| {
                     r.attr("rel", "stylesheet");
-                    r.attr("href", "./res/style.min.css");
+                    r.attr("href", "./res/style/minified.css");
                 });
             });
 
