@@ -39,6 +39,7 @@ in pkgs.mkShell {
 
     pkgs.nodePackages.prettier
     pkgs.lightningcss
+    pkgs.imagemagick
     pkgs.php
     pkgs.ghc
   ];

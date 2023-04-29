@@ -8,3 +8,7 @@ cp res/style.{css,tmp}
 runhaskell downscale.hs 80 140 >> res/style.tmp
 lightningcss --minify --bundle --targets '> 0%' --output-file res/style.{min.css,tmp}
 rm res/style.tmp
+
+rm -rf res/images/low_res
+mkdir res/images/low_res
+mogrify -resize 'x500>' -quality 85 -format webp -auto-orient -path res/images/{low_res,hi_res/*}

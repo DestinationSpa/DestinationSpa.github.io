@@ -28,10 +28,10 @@ Reservez-vous un moment de détente entre les mains de votre esthéticienne dipl
 "#,
 
         images: [
-            ("marine.jpg", "esthéticienne"),
-            ("Logolotus.png", "Destination Spa"),
-            ("accueil.jpeg", "accueil"),
-            ("cabinedesoin.jpeg", "cabine de soin"),
+            ("PRES_marine", "esthéticienne"),
+            ("PRES_logo", "Destination Spa"),
+            ("PRES_accueil", "accueil"),
+            ("PRES_cabine_soin", "cabine de soin"),
         ],
     ),
 
@@ -75,7 +75,7 @@ Reservez-vous un moment de détente entre les mains de votre esthéticienne dipl
         categories: [
             (
                 title: "Soin du visage Bio",
-                image: Some(("Soinduvisage/catégoriesoinvisage.png", "soin du visage")),
+                image: Some(("SVGE_0", "soin du visage")),
 
                 description: r#"
 
@@ -87,7 +87,7 @@ Personnalisables car aucune autre peau ressemble à la votre.
                 benefits: [
                     (
                         title: "Soin Aboslu 1h10",
-                        image: Some(("Soinduvisage/trois tetes.jpeg", "soin visage absolu Ekia")),
+                        image: Some(("SVGE_absolu", "soin visage absolu Ekia")),
 
                         price: (89,00),
                         book: "https://booking.wavy.pro/destinationspa",
@@ -99,7 +99,7 @@ Personnalisables car aucune autre peau ressemble à la votre.
                     ),
                     (
                         title: "Soin primordial 1h",
-                        image: Some(("Soinduvisage/soin primordial.jpeg", "Soin primodiale Ekia")),
+                        image: Some(("SVGE_primordial", "Soin primodiale Ekia")),
 
                         price: (79,00),
                         book: "https://booking.wavy.pro/destinationspa",
@@ -109,7 +109,7 @@ Personnalisables car aucune autre peau ressemble à la votre.
 
                     (
                         title: "Soin Détox 50min",
-                        image: Some(("Soinduvisage/soindetox.png", "soin detox Ekia")),
+                        image: Some(("SVGE_detox", "soin detox Ekia")),
 
                         price: (59,00),
                         book: "https://booking.wavy.pro/destinationspa",
@@ -118,7 +118,7 @@ Personnalisables car aucune autre peau ressemble à la votre.
 
                     (
                         title: "Massage traditionnel Indien du visage 30min",
-                        image: Some(("Soinduvisage/Soinduvisage.jpeg", "Massage indien")),
+                        image: Some(("SVGE_indien", "Massage indien")),
 
                         price: (39,00),
                         book: "https://booking.wavy.pro/destinationspa",
@@ -126,7 +126,7 @@ Personnalisables car aucune autre peau ressemble à la votre.
                     ),
                     (
                         title: "Soin défatiguant express 20min",
-                        image: Some(("Soinduvisage/soin flash eclat.jpeg", "visage femme sourire")),
+                        image: Some(("SVGE_express", "visage femme sourire")),
 
                         price: (29,00),
                         book: "https://booking.wavy.pro/destinationspa",
@@ -134,7 +134,7 @@ Personnalisables car aucune autre peau ressemble à la votre.
                     ),
                     (
                         title: "Soin du regard flash 15 min",
-                        image: Some(("Soinduvisage/soinregardflash.jpeg", "Soin regard flah")),
+                        image: Some(("SVGE_flash", "Soin regard flah")),
 
                         price: (15,00),
                         book: "https://booking.wavy.pro/destinationspa",
@@ -148,7 +148,7 @@ Personnalisables car aucune autre peau ressemble à la votre.
 
             (
                 title: "Rituels corps",
-                image: Some(("Rituelcorps/rituelscorps.png", "catégorie soin corps")),
+                image: Some(("RICO_0", "catégorie soin corps")),
 
                 description: r#"
 
@@ -159,7 +159,7 @@ Découvrez les differentes destinations de nos voyages bien-être. Un moment d'�
                 benefits: [
                     (
                         title: "Rite du Hammam 1h30",
-                        image: Some(("Rituelcorps/Riteduhammam .jpg", "Rite du Hammam Equatoria")),
+                        image: Some(("RICO_rite_hammam", "Rite du Hammam Equatoria")),
 
                         price: (100,00),
                         book: "https://booking.wavy.pro/destinationspa",
@@ -168,7 +168,7 @@ Découvrez les differentes destinations de nos voyages bien-être. Un moment d'�
                     ),
                     (
                         title: "Rituel Sabi Sabi en terre d'Afrique Bio 1h45",
-                        image: Some(("Rituelcorps/ritesabisabi.jpeg", "Afrique")),
+                        image: Some(("RICO_sabi_sabi", "Afrique")),
 
                         price: (115,00),
                         book: "https://booking.wavy.pro/destinationspa",
@@ -178,7 +178,7 @@ Découvrez les differentes destinations de nos voyages bien-être. Un moment d'�
                     ),
                     (
                         title: "Croisisère bien-être en Polynésie 1h45",
-                        image: Some(("Rituelcorps/Croisiereenpolynesie.jpg", "Polynésie")),
+                        image: Some(("RICO_polynesie", "Polynésie")),
 
                         price: (115,00),
                         book: "https://booking.wavy.pro/destinationspa",
@@ -189,7 +189,7 @@ Découvrez les differentes destinations de nos voyages bien-être. Un moment d'�
                     ),
                     (
                         title: "Rite holistic en Amazonie 1h45",
-                        image: Some(("Rituelcorps/riteenAmazonie.jpg", "Amazonie")),
+                        image: Some(("RICO_amazonie", "Amazonie")),
 
                         price: (115,00),
                         book: "https://booking.wavy.pro/destinationspa",
@@ -198,7 +198,7 @@ Découvrez les differentes destinations de nos voyages bien-être. Un moment d'�
                     ),
                     (
                         title: "Hammam 30min",
-                        image: Some(("Rituelcorps/hammam.PNG", "Hammam")),
+                        image: Some(("RICO_hammam", "Hammam")),
 
                         price: (30,00),
                         book: "https://booking.wavy.pro/destinationspa",
@@ -209,7 +209,7 @@ Découvrez les differentes destinations de nos voyages bien-être. Un moment d'�
             ),
             (
                 title: "Modelages",
-                image: Some(("Modelage/modelagecategorie.jpg", "catégorie modelage")),
+                image: Some(("MODG_0", "catégorie modelage")),
 
                 description: r#"
 
@@ -221,7 +221,7 @@ Découvrez les differents modelages corps et/ou visage.
                 benefits: [
                     (
                         title: "Tour du monde en 90 minutes",
-                        image: Some(("Modelage/tourdumondeen90min.jpg", "Tour du monde en 90 min")),
+                        image: Some(("MODG_tour_du_monde", "Tour du monde en 90 min")),
 
                         price: (109,00),
                         book: "https://booking.wavy.pro/destinationspa",
@@ -229,7 +229,7 @@ Découvrez les differents modelages corps et/ou visage.
                     ),
                     (
                         title: "Modelage Polynésien 60 min",
-                        image: Some(("Modelage/modelagepolynesien.jpg", "Modelage Lomi Lomi")),
+                        image: Some(("MODG_polynesien", "Modelage Lomi Lomi")),
 
                         price: (75,00),
                         book: "https://booking.wavy.pro/destinationspa",
@@ -238,7 +238,7 @@ Découvrez les differents modelages corps et/ou visage.
                     ),
                     (
                         title: "Modelage oriental 60 min",
-                        image: Some(("Modelage/modelageoriental.jpg", "Modelage oriental")),
+                        image: Some(("MODG_oriental", "Modelage oriental")),
 
                         price: (75,00),
                         book: "https://booking.wavy.pro/destinationspa",
@@ -246,7 +246,7 @@ Découvrez les differents modelages corps et/ou visage.
                     ),
                     (
                         title: "Modelage Africain 60 min",
-                        image: Some(("Modelage/modelagesabisabi.jpeg", "Modelage sabi Sabi")),
+                        image: Some(("MODG_sabi_sabi", "Modelage sabi Sabi")),
 
                         price: (75,00),
                         book: "https://booking.wavy.pro/destinationspa",
@@ -254,7 +254,7 @@ Découvrez les differents modelages corps et/ou visage.
                     ),
                     (
                         title: "Modelage holistic au bambou 60 min",
-                        image: Some(("Modelage/massagebambou.jpg", "Modelage Holistic bambou")),
+                        image: Some(("MODG_bambou", "Modelage Holistic bambou")),
 
                         price: (78,00),
                         book: "https://booking.wavy.pro/destinationspa",
@@ -262,7 +262,7 @@ Découvrez les differents modelages corps et/ou visage.
                     ),
                     (
                         title: "Escale Bien-être 30 min",
-                        image: Some(("Modelage/escalebienetre.jpg", "Escale bien etre")),
+                        image: Some(("MODG_escale", "Escale bien etre")),
 
                         price: (39,00),
                         book: "https://booking.wavy.pro/destinationspa",
@@ -270,7 +270,7 @@ Découvrez les differents modelages corps et/ou visage.
                     ),
                     (
                         title: "Massage Traditionnel Indien du Visage 30 min",
-                        image: Some(("Modelage/massageindien.jpg", "Masage Trad. Indien du visage")),
+                        image: Some(("MODG_indien", "Masage Trad. Indien du visage")),
 
                         price: (39,00),
                         book: "https://booking.wavy.pro/destinationspa",
@@ -280,7 +280,7 @@ Découvrez les differents modelages corps et/ou visage.
             ),
             (
                 title: "Soins Enfants et Adolescents",
-                image: Some(("Soinenfantado/categoriesoinenfant.png", "Visage enfant")),
+                image: Some(("SEEA_0", "Visage enfant")),
 
                 description: r#"
 
@@ -291,7 +291,7 @@ Tout les soins adaptés pour les peaux jeunes et sensible des enfants, à partir
                 benefits: [
                     (
                         title: "Ma mini escale bien être 20 min",
-                        image: Some(("Soinenfantado/miniescalebienetre.jpg", "Bougie spa")),
+                        image: Some(("SEEA_escale", "Bougie spa")),
 
                         price: (28,00),
                         book: "https://booking.wavy.pro/destinationspa",
@@ -299,7 +299,7 @@ Tout les soins adaptés pour les peaux jeunes et sensible des enfants, à partir
                     ),
                     (
                         title: "Soin du dos anti-stress 60 min",
-                        image: Some(("Soinenfantado/soindudos.jpg", "Fleur de frangipanier rose et blanches")),
+                        image: Some(("SEEA_dos", "Fleur de frangipanier rose et blanches")),
 
                         price: (60,00),
                         book: "https://booking.wavy.pro/destinationspa",
@@ -310,7 +310,7 @@ Tout les soins adaptés pour les peaux jeunes et sensible des enfants, à partir
                     ),
                     (
                         title: "Soin du visage Détox 50 min",
-                        image: Some(("Soinenfantado/detoxcitron.jpeg", "Rondelle de citron")),
+                        image: Some(("SEEA_detox", "Rondelle de citron")),
 
                         price: (59,00),
                         book: "https://booking.wavy.pro/destinationspa",
@@ -321,7 +321,7 @@ Tout les soins adaptés pour les peaux jeunes et sensible des enfants, à partir
             ),
               (
                 title: "Les épilations",
-                image: Some(("categorieepilation.png", "Epilation cire avec bande")),
+                image: Some(("EPIL_0", "Epilation cire avec bande")),
 
                 description: r#"
 

@@ -39,7 +39,13 @@ impl Website {
                 r.single("link", |r| {
                     r.attr("rel", "preload");
                     r.attr("as", "image");
-                    r.attr("href", "./res/images/back.hover.svg");
+                    r.attr("href", "./res/images/vector/back.svg");
+                });
+
+                r.single("link", |r| {
+                    r.attr("rel", "preload");
+                    r.attr("as", "image");
+                    r.attr("href", "./res/images/vector/back.hover.svg");
                 });
 
                 r.single("link", |r| {
@@ -187,7 +193,7 @@ impl Social {
                 })
                 .build(|r| {
                     r.single("img", |r| {
-                        r.attr("src", format!("./res/images/{}.svg", name));
+                        r.attr("src", format!("./res/images/vector/{}.svg", name));
                         r.attr("alt", format!("page {}", name));
                     })
                 });
@@ -353,7 +359,7 @@ impl Image {
     fn render(&self, r: &mut Renderer, caption: bool) {
         r.elem("figure", no_attr()).build(|r| {
             r.single("img", |r| {
-                r.attr("src", format!("./res/images/{}", self.0 .0));
+                r.attr("src", format!("./res/images/low_res/{}.webp", self.0 .0));
                 r.attr("alt", &self.0 .1);
             });
 
