@@ -29,7 +29,7 @@ Reservez-vous un moment de détente entre les mains de votre esthéticienne dipl
 
         images: [
             ("marine.jpg", "esthéticienne"),
-            ("logolotus.png", "Destination Spa"),
+            ("Logolotus.png", "Destination Spa"),
             ("accueil.jpeg", "accueil"),
             ("cabinedesoin.jpeg", "cabine de soin"),
         ],
@@ -99,7 +99,7 @@ Personnalisables car aucune autre peau ressemble à la votre.
                     ),
                     (
                         title: "Soin primordial 1h",
-                        image: Some(("Soinduvisage/soin primordiale.jpeg", "Soin primodiale Ekia")),
+                        image: Some(("Soinduvisage/soin primordial.jpeg", "Soin primodiale Ekia")),
 
                         price: (79,00),
                         book: "https://booking.wavy.pro/destinationspa",
@@ -178,7 +178,7 @@ Découvrez les differentes destinations de nos voyages bien-être. Un moment d'�
                     ),
                     (
                         title: "Croisisère bien-être en Polynésie 1h45",
-                        image: Some(("Rituelcorps/croisiereenpolynesie.jpg", "Polynésie")),
+                        image: Some(("Rituelcorps/Croisiereenpolynesie.jpg", "Polynésie")),
 
                         price: (115,00),
                         book: "https://booking.wavy.pro/destinationspa",
@@ -209,7 +209,7 @@ Découvrez les differentes destinations de nos voyages bien-être. Un moment d'�
             ),
             (
                 title: "Modelages",
-                image: Some(("Modelage/odelagecategorie.jpg", "catégorie modelage")),
+                image: Some(("Modelage/modelagecategorie.jpg", "catégorie modelage")),
 
                 description: r#"
 
@@ -280,7 +280,7 @@ Découvrez les differents modelages corps et/ou visage.
             ),
             (
                 title: "Soins Enfants et Adolescents",
-                image: Some(("Soinenfantado/categoriessoinenfant.png", "Visage enfant")),
+                image: Some(("Soinenfantado/categoriesoinenfant.png", "Visage enfant")),
 
                 description: r#"
 
