@@ -129,12 +129,12 @@ header {
 }
 
 header > div > h1 {
-  font-size: 420%;
+  font-size: 410%;
   color: var(--d0);
 }
 
 header > div > h2 {
-  font-size: 220%;
+  font-size: 170%;
   margin-top: 0.3cm;
   color: var(--d5);
 }
@@ -152,7 +152,7 @@ header > div > .note {
 
 header > div > .note code {
   font-weight: bold;
-  text-shadow: 0 0 15px var(--l9);
+  text-shadow: 0 0 10px var(--l2);
 }
 
 main {
