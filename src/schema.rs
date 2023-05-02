@@ -72,11 +72,7 @@ struct Hours {
 
 #[derive(Deserialize)]
 #[serde(transparent)]
-struct Day((HalfDay, HalfDay));
-
-#[derive(Deserialize)]
-#[serde(transparent)]
-struct HalfDay(Option<(u8, u8, u8, u8)>);
+struct Day(Option<(u8, u8, u8, u8)>);
 
 #[derive(Deserialize)]
 struct Benefits {

@@ -1,52 +1,72 @@
 (
     home: (
         title: "Destination Spa",
-        subtitle: "Institut de beauté - Spa à Beautiran",
-        note: Some("`Fêtes des mères`Offrez un billet cadeau"),
+        subtitle: "Institut de Beauté & Spa à Beautiran",
+        note: Some("`FÊTES DES MÈRES` Offrez un billet cadeau !"),
     ),
 
     introduction: (
-        title: "L'institut",
+        title: "L'Institut",
         text: r#"
 
-Marine, esthéticienne et créatrice de Destination Spa. 
-Après plusieurs expériences en tant que spa praticienne et esthéticienne, l'idée de créer de un centre de beauté ou 
-le bien-être est au centre des prioritées, sans injonctions et que toutes personnes puissent repartir avec le sourire
-à vu le jour en décembre 2022 à Beautiran.
+            __*Marine*, esthéticienne et créatrice de *Destination
+            Spa* :__
 
-Destination Spa est un institut de beauté et Spa proposant  des moment de détentes au hammam, des voyages de 30 minutes à 1 heure 45
-avec diférentes destinations comme l'Inde, la Polynésie, L'afrique, l'Amazonie et l'Orient. 
-Egalement des soins esthétiques comme des soins du visage bio spécialisés dans le veillisement cutanés, des épilations et des soins enfants et adolescents.
+            Après plusieurs expériences en tant que spa praticienne et
+            esthéticienne, j'ai pu réaliser mon souhait de créer un
+            centre de beauté où le bien-être est au cœur des priorités
+            afin que toute personne reparte avec le sourire.
 
-"#,
+            *Destination Spa* est un institut de beauté et Spa
+            proposant des moments de détente au hammam, des voyages
+            bien-être de 30 minutes à 1 heure 45 avec différentes
+            destinations comme l'Inde, la Polynésie, l'Afrique,
+            l'Amazonie et l'Orient. Également, des soins esthétiques
+            comme des soins du visage bio spécialisés dans le
+            vieillissement cutanés et des peaux ménopausées, des soins
+            enfants et adolescents, du maquillage pour toutes
+            occasions et des épilations.
+
+            Chaque personne est unique ! Un diagnostique sera réalisé
+            ensemble afin d'apporter des conseils personnalisés.
+
+            Retrouvez dans votre institut de beauté, des produits
+            naturels et/ou biologiques, de fabrication Française.
+            Tous ont été sélectionnés pour leurs efficacité et les
+            engagements des marques partenaires.
+
+            Réservez-vous un moment de détente entre les mains de
+            votre esthéticienne diplômée d'état et passionnée par son
+            métier.
+
+        "#,
 
         images: [
-            ("marine.jpg", "esthéticienne"),
-            ("Logolotus.png", "Destination Spa"),
-            ("accueil.jpeg", "accueil"),
-            ("cabinedesoin.png", "cabine de soin"),
+            ("PRES_marine", "Marine, votre esthéticienne"),
+            ("PRES_logo", "logo de l'institut"),
+            ("PRES_accueil", "l'accueil"),
+            ("PRES_cabine_soin", "la cabine de soin"),
         ],
     ),
 
     infos: (
         title: "Horaires & Contacts",
-
         hours: (
-            monday:    (None, None),
-            tuesday:   (Some((09,30, 99,99)), Some((99,99, 19,00))),
-            wednesday: (Some((09,30, 99,99)), Some((99,99, 19,00))),
-            thursday:  (Some((09,30, 99,99)), Some((99,99, 19,00))),
-            friday:    (Some((09,30, 99,99)), Some((99,99, 19,00))),
-            saturday:  (Some((09,30, 99,99)), Some((99,99, 17,00))),
-            sunday:    (None, None),
+            monday:    None,
+            tuesday:   Some((09,30, 19,00)),
+            wednesday: Some((09,30, 19,00)),
+            thursday:  Some((09,30, 19,00)),
+            friday:    Some((09,30, 19,00)),
+            saturday:  Some((09,30, 17,00)),
+            sunday:    None,
         ),
 
         contacts: (
-            phone: "+33 5 57 54 87 23",
+            phone: "05 57 54 87 23",
             email: "destinationspa.beautiran@gmail.com",
 
             location: (
-                address: "62 route nationale 113",
+                address: "62 ROUTE NATIONALE 113",
                 postcode: "33640",
                 city: "BEAUTIRAN",
 
@@ -56,381 +76,518 @@ Egalement des soins esthétiques comme des soins du visage bio spécialisés dan
             ),
 
             socials: (
-                facebook: Some("https://www.facebook.com/DestinationSpa.InstitutdeBeaute"),
-                instagram: Some("https://www.instagram.com/destinationspa33/"),
+                facebook: Some("facebook.com/DestinationSpa.InstitutdeBeaute"),
+                instagram: Some("instagram.com/destinationspa33"),
             ),
         ),
     ),
 
     benefits: (
         title: "Les Soins",
-
         categories: [
             (
-                title: "Soin du visage Bio",
-                image: Some(("Soinduvisage/catégoriesoinvisage.png", "soin du visage")),
-
+                title: "Soins du Visage Bio",
+                image: Some(("SVGE_0", "TODO")),
                 description: r#"
 
-Soin du visage bio, Spécialisés en anti-age ave la marque Ekia. 
-Pesonalisables car aucune autre peau ressemble à la votre.
+                    Soins du visage bio, avec la marque *Ekia*,
+                    l'experte des peaux ménopausées Personnalisables
+                    car aucune peau ne ressemble à la votre.
 
-"#,
+                "#,
 
                 benefits: [
                     (
-                        title: "Soin Aboslu 1h10",
-                        image: Some(("Soinduvisage/soinabsolu.jpg", "soin visage absolu Ekia")),
-
+                        title: "Soin Absolu `1h10`",
+                        book: "booking.wavy.pro/destinationspa",
+                        image: Some(("SVGE_absolu", "TODO")),
                         price: (89,00),
-                        book: "https://booking.wavy.pro/destinationspa",
-                        description: r#"A chaque début de soin, un daignostic d peau est réalsé afin d'établir le soin le plus adapté à votre peau
-- Le stimulant : Peau déshydratée, rides d'expression peu marquées, manque déclat
-- Le Réparateur : Peau déshydratée avec zones de sécheresse, taches pigmentaires, rides de structures marquées.
-- Le revitalisant : Peau déshydradtée et trés sèche, taches pigmentaires, perte de tonicité, peau fine."#,
-                    ),
-                    (
-                        title: "Soin primordial 1h",
-                        image: Some(("Soinduvisage/soinprimordiale.jpeg", "Soin primodiale Ekia")),
+                        description: r#"
 
+                            À chaque début de soin, un diagnostic de
+                            peau est réalisé afin d'établir le soin le
+                            plus adapté à votre degré de maturité de
+                            peau :
+
+                            `LE STIMULANT` Effets des carences
+                            hormonales de la ménopause sur la
+                            peau. Débuts des effets et/ou
+                            pré-ménopause Signes de l’âge assez peu
+                            marqués, diagnostic révélant une peau
+                            mature préservée.
+
+                            `LE RÉPARATEUR` Peau marquée par les
+                            effets des carences hormonales de la
+                            ménopause. Signes de l’âge accentués,
+                            diagnostic révélant une peau mature
+                            fragilisée.
+
+                            `LE REVITALISANT` Peau très marquée par
+                            les effets de la ménopause Signes de
+                            l’âge très visibles, diagnostic révélant
+                            une peau mature carencée.
+
+                        "#,
+                    ),(
+                        title: "Soin Primordial `1h`",
+                        book: "booking.wavy.pro/destinationspa",
+                        image: Some(("SVGE_primordial", "TODO")),
                         price: (79,00),
-                        book: "https://booking.wavy.pro/destinationspa",
-                        description: "Peau fatiguée, manque d'éclat, prmeières rides",
-                    ),
+                        description: r#"
 
-                    (
-                        title: "Soin Détox 50min",
-                        image: Some(("Soinduvisage/soindetox", "soin detox Ekia")),
+                            Manque d'éclat et apparition de premières
+                            rides. Soin complet tout en un pour une
+                            peau régénérée et défatiguée.
 
+                        "#,
+                    ),(
+                        title: "Soin Détox `50min`",
+                        book: "booking.wavy.pro/destinationspa",
+                        image: Some(("SVGE_detox", "TODO")),
                         price: (59,00),
-                        book: "https://booking.wavy.pro/destinationspa",
-                        description: "Peau inflammée avec imperfections, pores obstrués, marques de fatigue",
-                    ),
+                        description: r#"
 
-                    (
-                        title: "Massage traditionnel Indien du visage 30min",
-                        image: Some(("Soinduvisage/Soinduvisage.jpeg", "Massage indien")),
+                            Soin pour les peaux inflammées avec
+                            imperfections, pores obstrués, marques de
+                            fatigue, avec un besoin de détoxifié et
+                            d'affiner le grain de peau.
 
+                        "#,
+                    ),(
+                        title: "Massage Traditionnel Indien du Visage `30min`",
+                        book: "booking.wavy.pro/destinationspa",
+                        image: Some(("SVGE_indien", "TODO")),
                         price: (39,00),
-                        book: "https://booking.wavy.pro/destinationspa",
-                        description: "Massage ancestral venant du Kerala. Des techniques anti-âge au massage cranien, il permet d'évacuer la fatigue et de lâcher prise",
-                    ),
-                    (
-                        title: "Soin du regard flash 15 min",
-                        image: Some(("Soinduvisage/soinregardflash.jpeg", "Soin regard flah")),
+                        description: r#"
 
+                            Massage ancestral venant du Kerala. Des
+                            techniques anti-âge au massage crânien, il
+                            permet d'évacuer la fatigue et de lâcher
+                            prise.
+
+                        "#,
+                    ),(
+                        title: "Soin Défatiguant Express `20min`",
+                        book: "booking.wavy.pro/destinationspa",
+                        image: Some(("SVGE_express", "TODO")),
+                        price: (29,00),
+                        description: r#"
+
+                            Soin du visage express coup d'éclat,
+                            permettant de retrouver une peau en plein
+                            forme et une mine éclatante avec un
+                            gommage au pépins de kiwi et un masque
+                            super vitaminé à base de guarana.
+
+                        "#,
+                    ),(
+                        title: "Soin du Regard Flash `15min`",
+                        book: "booking.wavy.pro/destinationspa",
+                        image: Some(("SVGE_flash", "TODO")),
                         price: (15,00),
-                        book: "https://booking.wavy.pro/destinationspa",
-                        description: "Un soin flash qui ilumine, apaise et rafraichit le contour de l'oeil en 15 minutes. Ce soin peut être réalisé
-                        pendant une épilation ou un soin du corps",
-                    )
-                
+                        description: r#"
 
-                ]
-            ),
+                            Un soin flash qui illumine, apaise et
+                            rafraichit le contour de l’œil en 15
+                            minutes. Ce soin peut être réalisé pendant
+                            une épilation ou un soin du corps
 
-            (
-                title: "Rituels corps",
-                image: Some(("Rituelcorps/rituelscorps.png", "catégorie soin corps")),
-
+                        "#,
+                    ),
+                ],
+            ),(
+                title: "Rituels Corps",
+                image: Some(("RICO_0", "TODO")),
                 description: r#"
 
-Découvrez les differentes destinations de nos soins corps.
+                    Découvrez les différentes destinations de nos
+                    voyages bien-être. Un moment d'évasion unique.
 
-"#,
-
+                "#,
                 benefits: [
                     (
-                        title: "Rite du Hammam 1h30",
-                        image: Some(("Rituelcorps/Riteduhammam .jpg", "Rite du Hammam Equatoria")),
-
+                        title: "Rite du Hammam `1h30`",
+                        book: "booking.wavy.pro/destinationspa",
+                        image: Some(("RICO_rite_hammam", "TODO")),
                         price: (100,00),
-                        book: "https://booking.wavy.pro/destinationspa",
-                        description: "Exfoliation traditionnelle au savon nor avec gant de kessa et un modelage oriental à l'huile d'argan.",
-                    ),
-                    (
-                        title: "Rituel Sabi Sabi en terre d'Afrique Bio 1h45",
-                        image: Some(("Rituelcorps/ritesabisabi.jpeg", "Afrique")),
+                        description: r#"
 
+                            Relaxation dans le hammam. L'exfoliation
+                            traditionnelle au savon noir avec gant de
+                            kessa se fait ensuite pour débarrasser les
+                            cellules mortes. Puis le modelage Oriental
+                            est pratiqué avec le nectar de beauté
+                            enrichi notamment à l'huile d'argan, pour
+                            relaxer le corps purifié.
+
+                        "#,
+                    ),(
+                        title: "Rituel Sabi Sabi en Terre d'Afrique Bio `1h45`",
+                        book: "booking.wavy.pro/destinationspa",
+                        image: Some(("RICO_sabi_sabi", "TODO")),
                         price: (115,00),
-                        book: "https://booking.wavy.pro/destinationspa",
-                        description: "Gommage aux graines de baobab, enveloppement aux huiles essentielles et modelage sabi sabi Africain.",
-                    ),
-                    (
-                        title: "Croisisère bien-être en Polynésie 1h45",
-                        image: Some(("Rituelcorps/Croisiereenpolynesie.jpg", "Polynésie")),
+                        description: r#"
 
+                            Les 3 produits de ce rituel sont certifiés
+                            Bio COSMOS ORGANIC. Les graines de baobab
+                            du gommage éliminent impuretés et cellules
+                            mortes, permettant ainsi à la peau
+                            d’absorber les bienfaits des huiles
+                            essentielles relaxantes lors de la phase
+                            d'enveloppement. Puis, le bien-être
+                            physique et psychique est optimisé lors du
+                            modelage Africain Sabi Sabi pratiqué avec
+                            le nectar aux plantes d'Afrique.
+
+                        "#,
+                    ),(
+                        title: "Croisière bien-être en Polynésie `1h45`",
+                        book: "booking.wavy.pro/destinationspa",
+                        image: Some(("RICO_polynesie", "TODO")),
                         price: (115,00),
-                        book: "https://booking.wavy.pro/destinationspa",
-                        description: "Gommage au sable fin de Bora bora, enveloppement maori au beurre de mangue et modelage Polynésien.",
-                    ),
-                    (
-                        title: "Rite holistic en Amazonie 1h45",
-                        image: Some(("Rituelcorps/riteenAmazonie.jpg", "Amazonie")),
+                        description: r#"
 
+                            Ce rituel aux senteur divines de monoï,
+                            mangue et frangipanier démarre par une
+                            exfoliation en douceur au sable fin de
+                            bora bora, puis se prolonge par une sieste
+                            de bien-être tropicale au beurre de
+                            mangue, extrêmement relaxante pour les
+                            tensions physiques et pour l'esprit, mais
+                            aussi nourrissante pour la peau. Enfin le
+                            modelage Polynésien Sweet Lomi, très
+                            ressourçant, est pratiqué avec le nectar de
+                            beauté à la fleur de frangipanier.
+
+                        "#,
+                    ),(
+                        title: "Rite Holistic en Amazonie `1h45`",
+                        book: "booking.wavy.pro/destinationspa",
+                        image: Some(("RICO_amazonie", "TODO")),
                         price: (115,00),
-                        book: "https://booking.wavy.pro/destinationspa",
-                        description: "Gommage à la cassonade aux noix du Brésil, enveloppement anti-stress à l'acérola et modelage au bambou.",
-                    ),
-                    (
-                        title: "Hammam 30min",
-                        image: Some(("Rituelcorps/hammam.PNG", "Hammam")),
+                        description: r#"
 
+                            Le sucre roux du gommage, mélangé à
+                            l'huile de noix du Brésil, fond sur la
+                            peau pour élimine les cellules mortes et
+                            préparer l'épiderme à recevoir
+                            l'enveloppement anti-stress à l'acérola.
+                            Puis le modelage holistic au bambou,
+                            intégrant des manœuvres drainantes, est
+                            pratiqué avec le nectar aux effluves
+                            raffinées fruitée de mangue et fruit de la
+                            passion un corps relâché et très léger !
+
+                        "#,
+                    ),(
+                        title: "Hammam `30min`",
+                        book: "booking.wavy.pro/destinationspa",
+                        image: Some(("RICO_hammam", "TODO")),
                         price: (30,00),
-                        book: "https://booking.wavy.pro/destinationspa",
-                        description: "Profiter des bien faits de la vapeur associé l'aromathérapie.",
-                    )
-                ]
+                        description: r#"
 
-            ),
-            (
+                            Profiter des bien faits de la vapeur
+                            associé l'aromathérapie.
+
+                        "#,
+                    ),
+                ],
+            ),(
                 title: "Modelages",
-                image: Some(("Modelage/odelagecatégorie.jpg", "catégorie modelage")),
-
+                image: Some(("MODG_0", "TODO")),
                 description: r#"
 
-Découvrez les differentes modelges corps et ou visage.
+                    Relaxant, drainant, décontractant... Découvrez les
+                    différents modelages corps et/ou visage.
 
-"#,
-
+                "#,
                 benefits: [
                     (
-                        title: "Tour du monde en 90 minutes",
-                        image: Some(("Modelage/tourdumondeen90min.jpg", "Tour du monde en 90 min")),
-
+                        title: "Tour du Monde en `90min`",
+                        book: "booking.wavy.pro/destinationspa",
+                        image: Some(("MODG_tour_du_monde", "TODO")),
                         price: (109,00),
-                        book: "https://booking.wavy.pro/destinationspa",
-                        description: "Modelage signature corps et visage, alliant plusieurs techniques de modelage du monde.",
-                    ),
-                    (
-                        title: "Modelage Polynésien 60 min",
-                        image: Some(("Modelage/modelagepolynésien.jpg", "Modelage Lomi Lomi")),
+                        description: r#"
 
+                            Modelage signature corps et visage,
+                            alliant plusieurs techniques de modelage
+                            du monde.
+
+                        "#,
+                    ),(
+                        title: "Modelage Polynésien `60min`",
+                        book: "booking.wavy.pro/destinationspa",
+                        image: Some(("MODG_polynesien", "TODO")),
                         price: (75,00),
-                        book: "https://booking.wavy.pro/destinationspa",
-                        description: "Modelage relaxant, enveloppant suivant le rythme des vagues.",
-                    ),
-                    (
-                        title: "Modelage oriental 60 min",
-                        image: Some(("Modelage/modelageoriental.jpg", "Modelage oriental")),
+                        description: r#"
 
+                            Modelage relaxant, enveloppant suivant le
+                            rythme des vagues, procure une douce
+                            sensation de détente profonde, et de
+                            lâcher prise absolu..
+
+                        "#,
+                    ),(
+                        title: "Modelage Oriental `60min`",
+                        book: "booking.wavy.pro/destinationspa",
+                        image: Some(("MODG_oriental", "TODO")),
                         price: (75,00),
-                        book: "https://booking.wavy.pro/destinationspa",
-                        description: "Modelage vivifiant dont les mouvements sont inspirés de la danse orientale",
-                    ),
-                    (
-                        title: "Modelage Africain 60 min",
-                        image: Some(("Modelage/modelagesabisabi.jpeg", "Modelage sabi Sabi")),
+                        description: r#"
 
+                            Modelage dont les mouvements sont inspirés
+                            de la danse orientale.
+
+                        "#,
+                    ),(
+                        title: "Modelage Africain `60min`",
+                        book: "booking.wavy.pro/destinationspa",
+                        image: Some(("MODG_sabi_sabi", "TODO")),
                         price: (75,00),
-                        book: "https://booking.wavy.pro/destinationspa",
-                        description: "Détends les muscles et les tensions pour alleger le corps et l'esprit.",
-                    ),
-                    (
-                        title: "Modelage holistic au bambou 60 min",
-                        image: Some(("Modelage/massagebambou.jpg", "Modelage Holistic bambou")),
+                        description: r#"
 
+                            Ce modelage draine en profondeur et
+                            relance la circulation sanguine et
+                            lymphatique. Il raffermit la peau, chasse
+                            les tensions musculaires, stimule
+                            l’énergie du corps, les sens et
+                            l'esprit...
+
+                        "#,
+                    ),(
+                        title: "Modelage Holistic au Bambou `60min`",
+                        book: "booking.wavy.pro/destinationspa",
+                        image: Some(("MODG_bambou", "TODO")),
                         price: (78,00),
-                        book: "https://booking.wavy.pro/destinationspa",
-                        description: "Modelage déonractat, défatiguant qui disout les tensions physiques.",
-                    ),
-                    (
-                        title: "Escale Bien-être 30 min",
-                        image: Some(("Modelage/escalebienetre.jpg", "Escale bien etre")),
+                        description: r#"
 
-                        price: (39,00),
-                        book: "https://booking.wavy.pro/destinationspa",
-                        description: "Modelage signature du dos.",
-                    ),
-                    (
-                        title: "Massage Traditionnel Indien du Visage 30 min",
-                        image: Some(("Modelage/massageindien.jpg", "Masage Trad. Indien du visage")),
+                            Modelage décontractant, défatiguant
+                            apporte légèreté, notamment au niveau des
+                            jambes avec les manœuvres drainantes
+                            effectuées avec le bambou.
 
+                        "#,
+                    ),(
+                        title: "Escale Bien-être `30min`",
+                        book: "booking.wavy.pro/destinationspa",
+                        image: Some(("MODG_escale", "TODO")),
                         price: (39,00),
-                        book: "https://booking.wavy.pro/destinationspa",
-                        description: "Massage ancestral venant du Kerala. Des techniques anti-âge au massage cranien, il permet d'évacuer la fatigue et de lâcher prise.",
-                    )
-                ]
-            ),
-            (
+                        description: r#"
+
+                            Modelage signature relaxant du dos.
+
+                        "#,
+                    ),(
+                        title: "Massage Traditionnel Indien du Visage `30min`",
+                        book: "booking.wavy.pro/destinationspa",
+                        image: Some(("MODG_indien", "TODO")),
+                        price: (39,00),
+                        description: r#"
+
+                            Massage ancestral venant du Kerala. Des
+                            techniques anti-âge au massage crânien, il
+                            permet d'évacuer la fatigue et de lâcher
+                            prise.
+
+                        "#,
+                    ),
+                ],
+            ),(
                 title: "Soins Enfants et Adolescents",
-                image: Some(("Soinenfantado/catégoriessoinenfant.png", "Visage enfant")),
-
+                image: Some(("SEEA_0", "TODO")),
                 description: r#"
 
-Tout les soins adaptés pour les peaux jeunes et sensible des enfants, à partir de 6 ans.
+                    Tout les soins adaptés pour les peaux jeunes et
+                    sensible des enfants, à partir de 6 ans.
 
-"#,
-
+                "#,
                 benefits: [
                     (
-                        title: "Ma mini escale bien être 20 min",
-                        image: Some(("Soinenfantado/mniescalebienetre.jpg", "Bougie spa")),
-
+                        title: "Ma Mini-escale Bien-être `20min`",
+                        book: "booking.wavy.pro/destinationspa",
+                        image: Some(("SEEA_escale", "TODO")),
                         price: (28,00),
-                        book: "https://booking.wavy.pro/destinationspa",
-                        description: "Modelage en douceur du dos, pour les enfants à partir de 6 ans.",
-                    ),
-                    (
-                        title: "Soin du dos anti-stress 60 min",
-                        image: Some(("Soinenfantado/soindudos.jpg", "Fleur de frangipanier rose et blanches")),
+                        description: r#"
 
+                            Modelage en douceur du dos, pour les
+                            enfants à partir de 6 ans.
+
+                        "#,
+                    ),(
+                        title: "Soin du Dos Anti-stress `60min`",
+                        book: "booking.wavy.pro/destinationspa",
+                        image: Some(("SEEA_dos", "TODO")),
                         price: (60,00),
-                        book: "https://booking.wavy.pro/destinationspa",
-                        description: "Soin du dos recommandé à partir de 12 ans, ce soin permet de détoxfié la peau en douceur avec un gommage et
-                        un enveloppement doux adapté à votre peau. Le soin se termne par un modelage du dos relaxant idéale lors pérode stressante 
-                        comme les examens ou le passage en classe supérieure. Ce soin est également adapté pour les pré-adultes, qui passe leurs derniers
-                        dîplome avant de rentré dans la vie active.",
-                    ),
-                    (
-                        title: "Soin du visage Détox 50 min",
-                        image: Some(("Soinenfantado/detox2.jpg", "Soin detox visage jeune Ekia")),
+                        description: r#"
 
+                            Soin du dos recommandé à partir de 12 ans,
+                            ce soin permet de détoxifié la peau en
+                            douceur avec un gommage et un
+                            enveloppement doux adapté à votre peau. Le
+                            soin se termine par un modelage du dos
+                            relaxant idéale lors de périodes
+                            stressantes comme les examens ou le
+                            passage en classe supérieure. Ce soin est
+                            également adapté pour les pré-adultes, qui
+                            passe leurs derniers diplôme avant de
+                            rentrer dans la vie active.
+
+                        "#,
+                    ),(
+                        title: "Soin du Visage Détox `50min`",
+                        book: "booking.wavy.pro/destinationspa",
+                        image: Some(("SEEA_detox", "TODO")),
                         price: (59,00),
-                        book: "https://booking.wavy.pro/destinationspa",
-                        description: "Soin détoxfiant pour retrouver un grain de peau plus lisse et des imperfections atténués. Nettoyage de peau en douceur
-                        Dès 12 ans.",
-                    )
-                ]
-            ),
-              (
-                title: "Les épilations",
-                image: Some(("catéorieepilation.png", "Epilation cire avec bande")),
+                        description: r#"
 
+                            Soin détoxifiant pour retrouver un grain de
+                            peau plus lisse et des imperfections
+                            atténués. Nettoyage de peau en douceur Dès
+                            12 ans.
+
+                        "#,
+                    ),
+                ],
+            ),(
+                title: "Les Épilations",
+                image: Some(("EPIL_0", "TODO")),
                 description: r#"
 
-Découvrez nos épilation réalisé avec de la cire à la résine de pins et au beurre de karité pour les peaux sensibles.
+                    Découvrez nos épilation réalisées avec de la cire
+                    à la résine de pins et au beurre de karité adaptée
+                    pour les peaux sensibles.
 
-"#,
-
+                "#,
                 benefits: [
                     (
-                        title: "Sourcils entretien",
+                        title: "Sourcils Entretien",
+                        book: "booking.wavy.pro/destinationspa",
                         image: None,
-
                         price: (9,00),
-                        book: "https://booking.wavy.pro/destinationspa",
                         description: "",
-                    ),
-                    (
-                        title: "Sourcils création de ligne",
-                        image: None,
 
+                    ),(
+                        title: "Sourcils Création de Ligne",
+                        book: "booking.wavy.pro/destinationspa",
+                        image: None,
                         price: (15,00),
-                        book: "https://booking.wavy.pro/destinationspa",
-                        description: "Après avoir pris les mesures de vos sourcils, nous venons épiler à la cire et à la pince les sourcils pur leurs
-                        redonner une ligne. Cette prestation permet d'embellir le regard et de corriger l'asymetrie de vos sourcils.",
-                    ),
-                    (
-                        title: "Lèvres supérieur",
-                        image: None,
+                        description: r#"
 
+                            Après avoir pris les mesures de vos
+                            sourcils, nous épilons à la cire et à la
+                            pince les sourcils pour leurs redonner une
+                            ligne. Cette prestation permet d'embellir
+                            le regard et de corriger l'asymétrie de
+                            vos sourcils.
+
+                        "#,
+                    ),(
+                        title: "Lèvres Supérieur",
+                        book: "booking.wavy.pro/destinationspa",
+                        image: None,
                         price: (9,00),
-                        book: "https://booking.wavy.pro/destinationspa",
                         description: "",
-                    ),
-                    (
+
+                    ),(
                         title: "Visage",
+                        book: "booking.wavy.pro/destinationspa",
                         image: None,
-
                         price: (20,00),
-                        book: "https://booking.wavy.pro/destinationspa",
                         description: "",
-                    ),
-                    (
+
+                    ),(
                         title: "Aisselles",
+                        book: "booking.wavy.pro/destinationspa",
                         image: None,
-
                         price: (13,00),
-                        book: "https://booking.wavy.pro/destinationspa",
                         description: "",
-                    ),
-                    (
-                        title: "1/2 jambes",
-                        image: None,
 
+                    ),(
+                        title: "1/2 Jambes",
+                        book: "booking.wavy.pro/destinationspa",
+                        image: None,
                         price: (20,00),
-                        book: "https://booking.wavy.pro/destinationspa",
                         description: "",
-                    ),
-                    (
-                        title: "Jambes entières",
-                        image: None,
 
+                    ),(
+                        title: "Jambes Entières",
+                        book: "booking.wavy.pro/destinationspa",
+                        image: None,
                         price: (30,00),
-                        book: "https://booking.wavy.pro/destinationspa",
                         description: "",
-                    ),
-                    (
+
+                    ),(
                         title: "Maillot Classique",
+                        book: "booking.wavy.pro/destinationspa",
                         image: None,
-
                         price: (16,00),
-                        book: "https://booking.wavy.pro/destinationspa",
                         description: "",
-                    ),
-                    (
-                        title: "Maillot échancré/ brésilien",
-                        image: None,
 
+                    ),(
+                        title: "Maillot Échancré/Brésilien",
+                        book: "booking.wavy.pro/destinationspa",
+                        image: None,
                         price: (20,00),
-                        book: "https://booking.wavy.pro/destinationspa",
                         description: "",
-                    ),
-                    (
-                        title: "Maillot Semi-intégral / intégral",
-                        image: None,
 
+                    ),(
+                        title: "Maillot Semi-intégral/Intégral",
+                        book: "booking.wavy.pro/destinationspa",
+                        image: None,
                         price: (32,00),
-                        book: "https://booking.wavy.pro/destinationspa",
                         description: "",
-                    ),
-                    (
+
+                    ),(
                         title: "Bras",
+                        book: "booking.wavy.pro/destinationspa",
                         image: None,
-
                         price: (20,00),
-                        book: "https://booking.wavy.pro/destinationspa",
                         description: "",
-                    ),
-                    (
+
+                    ),(
                         title: "Dos ou Torse",
+                        book: "booking.wavy.pro/destinationspa",
                         image: None,
-
                         price: (32,00),
-                        book: "https://booking.wavy.pro/destinationspa",
                         description: "",
-                    ),
-                    (
-                        title: "Forfait : Sourcils + Lèvres",
-                        image: None,
 
+                    ),(
+                        title: "`FORFAIT` Sourcils + Lèvres",
+                        book: "booking.wavy.pro/destinationspa",
+                        image: None,
                         price: (15,00),
-                        book: "https://booking.wavy.pro/destinationspa",
                         description: "",
-                    ),
-                    (
-                        title: "Forfait : 1/2 jambes + maillot + aisselles",
-                        image: None,
 
+                    ),(
+                        title: "`FORFAIT` 1/2 Jambes + Maillot + Aisselles",
+                        book: "booking.wavy.pro/destinationspa",
+                        image: None,
                         price: (38,00),
-                        book: "https://booking.wavy.pro/destinationspa",
+                        description: r#"
 
-                        description: "Suplément maillot échancré/bresilien +10€
-                        Suplément maillot semi-intégral/intégral +15€",
-                    ),
-                    (
-                        title: "Forfait : Jambes entières + maillot + aisselles",
+                            `10€` en supplément pour un maillot
+                            échancré/brésilien
+
+                            `15€` en supplément pour un maillot
+                            semi-intégral/intégral
+
+                        "#,
+                    ),(
+                        title: "`FORFAIT` Jambes Entières + Maillot + Aisselles",
+                        book: "booking.wavy.pro/destinationspa",
                         image: None,
-
                         price: (47,00),
-                        book: "https://booking.wavy.pro/destinationspa",
+                        description: r#"
 
-                        description: "Suplément maillot échancré/bresilien +10€
-                        Suplément maillot semi-intégral/intégral +15€",
-                    )
-                ]
-            )
-        ]
-    )
+                            `10€` en supplément pour un maillot
+                            échancré/brésilien
+
+                            `15€` en supplément pour un maillot
+                            semi-intégral/intégral
+
+                        "#,
+                    ),
+                ],
+            ),
+        ],
+    ),
 )

@@ -39,12 +39,18 @@ impl Website {
                 r.single("link", |r| {
                     r.attr("rel", "preload");
                     r.attr("as", "image");
-                    r.attr("href", "./res/images/back.hover.svg");
+                    r.attr("href", "./res/images/vector/back.svg");
+                });
+
+                r.single("link", |r| {
+                    r.attr("rel", "preload");
+                    r.attr("as", "image");
+                    r.attr("href", "./res/images/vector/back.hover.svg");
                 });
 
                 r.single("link", |r| {
                     r.attr("rel", "stylesheet");
-                    r.attr("href", "./res/style.min.css");
+                    r.attr("href", "./res/style/minified.css");
                 });
             });
 
@@ -187,7 +193,7 @@ impl Social {
                 })
                 .build(|r| {
                     r.single("img", |r| {
-                        r.attr("src", format!("./res/images/{}.svg", name));
+                        r.attr("src", format!("./res/images/vector/{}.svg", name));
                         r.attr("alt", format!("page {}", name));
                     })
                 });
@@ -200,16 +206,6 @@ impl Hours {
     fn render(&self, r: &mut Renderer) {
         r.elem("table", no_attr()).build(|r| {
             r.elem("tbody", no_attr()).build(|r| {
-                r.elem("tr", no_attr()).build(|r| {
-                    r.single("th", no_attr());
-                    r.elem("th", no_attr()).build(|r| {
-                        r.put_raw("matin");
-                    });
-                    r.elem("th", no_attr()).build(|r| {
-                        r.put_raw("après-midi");
-                    });
-                });
-
                 self.monday.render(r, "lundi");
                 self.tuesday.render(r, "mardi");
                 self.wednesday.render(r, "mercredi");
@@ -228,22 +224,16 @@ impl Day {
             r.elem("th", no_attr()).build(|r| {
                 r.put_raw(day);
             });
-            self.0 .0.render(r);
-            self.0 .1.render(r);
-        });
-    }
-}
 
-impl HalfDay {
-    fn render(&self, r: &mut Renderer) {
-        r.elem("td", no_attr()).build(|r| {
-            if let Some((oh, om, ch, cm)) = self.0 {
-                r.put_raw(format!("{oh:02}h{om:02} - {ch:02}h{cm:02}"));
-            } else {
-                r.elem("span", no_attr()).build(|r| {
-                    r.put_raw("fermé");
-                });
-            }
+            r.elem("td", no_attr()).build(|r| {
+                if let Some((oh, om, ch, cm)) = self.0 {
+                    r.put_raw(format!("{oh:02}h{om:02} à {ch:02}h{cm:02}"));
+                } else {
+                    r.elem("span", no_attr()).build(|r| {
+                        r.put_raw("fermé");
+                    });
+                }
+            });
         });
     }
 }
@@ -353,7 +343,7 @@ impl Image {
     fn render(&self, r: &mut Renderer, caption: bool) {
         r.elem("figure", no_attr()).build(|r| {
             r.single("img", |r| {
-                r.attr("src", format!("./res/images/{}", self.0 .0));
+                r.attr("src", format!("./res/images/low_res/{}.webp", self.0 .0));
                 r.attr("alt", &self.0 .1);
             });
 
