@@ -369,7 +369,9 @@ table {
 }
 
 tbody {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   box-shadow: 0 0 2cm var(--l7);
   background-color: var(--l2);
@@ -378,6 +380,10 @@ tbody {
   padding-top: 0.55cm;
 
   border-radius: 0.6cm;
+}
+
+tr {
+  width: 8.1cm;
 }
 
 td,
@@ -392,14 +398,11 @@ td {
 }
 
 th {
+  width: 2.5cm;
   font-size: 90%;
   font-weight: bold;
   text-align: right;
   text-transform: uppercase;
-}
-
-tr:first-child th {
-  text-align: left;
 }
 
 td span {
