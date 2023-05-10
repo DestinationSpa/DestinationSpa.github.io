@@ -42,10 +42,10 @@
         "#,
 
         images: [
-            ("PRES_marine", "Marine, votre esthéticienne"),
-            ("PRES_logo", "logo de l'institut"),
-            ("PRES_accueil", "l'accueil"),
-            ("PRES_cabine_soin", "la cabine de soin"),
+            ("PRES_marine", "TODO"),
+            ("PRES_logo", "TODO"),
+            ("PRES_accueil", "TODO"),
+            ("PRES_cabine_soin", "TODO"),
         ],
     ),
 
@@ -86,12 +86,12 @@
         title: "Les Soins",
         categories: [
             (
-                title: "Soins du Visage Bio",
+                title: "Soins du\\\nVisage Bio",
                 image: Some(("SVGE_0", "TODO")),
                 description: r#"
 
                     Soins du visage bio, avec la marque *Ekia*,
-                    l'experte des peaux ménopausées Personnalisables
+                    l'experte des peaux ménopausées. Personnalisables
                     car aucune peau ne ressemble à la votre.
 
                 "#,
@@ -392,7 +392,7 @@
                     ),
                 ],
             ),(
-                title: "Soins Enfants et Adolescents",
+                title: "Soins Enfants\\\net Adolescents",
                 image: Some(("SEEA_0", "TODO")),
                 description: r#"
 

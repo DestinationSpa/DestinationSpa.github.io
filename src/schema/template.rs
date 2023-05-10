@@ -91,22 +91,20 @@ impl Introduction {
                 self.title.render(r, 3, Some(""));
             });
 
-            r.elem("div", no_attr()).build(|r| {
-                r.elem("div", |r| {
-                    r.attr("class", "left");
-                })
-                .build(|r| {
-                    for image in &self.images {
-                        image.render(r, true);
-                    }
-                });
+            r.elem("div", |r| {
+                r.attr("class", "left");
+            })
+            .build(|r| {
+                for image in &self.images {
+                    image.render(r, false);
+                }
+            });
 
-                r.elem("div", |r| {
-                    r.attr("class", "right");
-                })
-                .build(|r| {
-                    self.text.render(r);
-                });
+            r.elem("div", |r| {
+                r.attr("class", "right");
+            })
+            .build(|r| {
+                self.text.render(r);
             });
         });
     }
@@ -253,6 +251,9 @@ impl Benefits {
             });
 
             for (i, category) in self.categories.iter().enumerate() {
+                if i % 2 == 0 && i > 0 {
+                    r.single("br", no_attr());
+                }
                 category.render(r, i);
             }
         });
@@ -280,7 +281,10 @@ impl Category {
                     self.description.render(r);
                 });
             });
-            for benefit in &self.benefits {
+            for (i, benefit) in self.benefits.iter().enumerate() {
+                if i % 2 == 0 && i > 0 {
+                    r.single("br", no_attr());
+                }
                 benefit.render(r);
             }
         });

@@ -252,7 +252,6 @@ section:target {
   border-color: var(--de);
 }
 
-section:target > a,
 section:target > a {
   display: block;
   text-align: center;
@@ -267,7 +266,7 @@ section:target > a {
 
 h3,
 h4 {
-  font-size: 180%;
+  font-size: 175%;
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -290,58 +289,48 @@ section:target > a h4 > span {
   border-bottom: 4px solid var(--lf);
 }
 
-#introduction:target > div {
-  display: block;
-  max-width: 40cm;
-  margin: auto;
+#introduction:target {
+  text-align: center;
 }
 
-#introduction:target .left {
-  display: inline-block;
-  vertical-align: top;
-  text-align: right;
-  width: 40%;
-}
-
+#introduction:target .left,
 #introduction:target .right {
   display: inline-block;
   vertical-align: top;
-  width: 60%;
+  box-sizing: border-box;
+  width: 12.7cm;
+  margin: 0.65cm;
 }
 
 #introduction:target .right > p {
-  text-align: justify;
-  margin-left: 2cm;
-  margin-right: 2cm;
+  font-size: 125%;
+  text-align: left;
   margin-bottom: 0.5cm;
-  font-size: 150%;
+}
+
+#introduction:target .right > p:last-child {
+  margin-bottom: 0;
+}
+
+#introduction:target .left {
+  border-radius: 0.6cm;
+  overflow: hidden;
+  text-align: left;
+}
+
+#introduction:target img,
+#introduction:target figure {
+  width: 6.35cm;
+  height: 6.35cm;
 }
 
 #introduction:target img {
   object-fit: cover;
-  width: 6cm;
-  height: 6cm;
-
-  border-radius: 0.6cm;
-  box-shadow: 0 0 25px var(--l8);
 }
 
 #introduction:target figure {
-  margin: 1cm;
-  margin-top: 0;
-  margin-right: 0;
-
   display: inline-block;
-  text-align: center;
-}
-
-#introduction:target figure figcaption {
-  padding-top: 6px;
-  text-align: center;
-  color: var(--da);
-  font-weight: bold;
-  font-size: 100%;
-  text-transform: uppercase;
+  vertical-align: top;
 }
 
 /*****************************************
@@ -357,14 +346,14 @@ section:target > a h4 > span {
 #infos:target table,
 #infos:target address {
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: top;
   box-sizing: border-box;
   width: 12.7cm;
   margin: 0.65cm;
 }
 
 table {
-  font-size: 125%;
+  font-size: 140%;
   text-align: right;
 }
 
@@ -383,13 +372,13 @@ tbody {
 }
 
 tr {
-  width: 8.1cm;
+  width: 8.9cm;
 }
 
 td,
 th {
   padding-right: 0.95cm;
-  padding-bottom: 0.55cm;
+  padding-bottom: 0.35cm;
 }
 
 td {
@@ -398,7 +387,7 @@ td {
 }
 
 th {
-  width: 2.5cm;
+  width: 2.8cm;
   font-size: 90%;
   font-weight: bold;
   text-align: right;
@@ -474,6 +463,10 @@ address a:hover {
   text-align: center;
 }
 
+#benefits:target > br {
+  display: initial;
+}
+
 #benefits:target > section h4 {
   line-height: 140%;
 }
@@ -517,12 +510,11 @@ address a:hover {
   padding: 15px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 
 #benefits:target > section > .row:first-child > div > p {
+  margin-top: 8px;
   font-size: 105%;
-  text-align: justify;
 }
 
 /*****************************************
@@ -541,6 +533,10 @@ address a:hover {
 
 [id^="category"]:target {
   text-align: center;
+}
+
+[id^="category"]:target > br {
+  display: initial;
 }
 
 [id^="category"]:target div.row {
