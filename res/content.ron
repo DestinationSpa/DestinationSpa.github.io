@@ -42,10 +42,12 @@
         "#,
 
         images: [
-            ("PRES_marine", "TODO"),
             ("PRES_logo", "TODO"),
+            ("PRES_marine", "TODO"),
             ("PRES_accueil", "TODO"),
             ("PRES_cabine_soin", "TODO"),
+            ("PRES_salle_attente", "TODO"),
+            ("PRES_hammam", "TODO"),
         ],
     ),
 
