@@ -11,4 +11,4 @@ rm res/style/tmp
 
 rm -rf res/images/low_res
 mkdir res/images/low_res
-mogrify -resize 'x500>' -quality 85 -format webp -auto-orient -path res/images/{low_res,hi_res/*}
+mogrify -resize 'x555>' -quality 88 -format webp -auto-orient -path res/images/{low_res,hi_res/*}

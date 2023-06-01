@@ -303,9 +303,30 @@ impl Benefit {
 
             r.elem("div", no_attr()).build(|r| {
                 self.title.render(r, 5, None);
-                self.description.render(r);
 
-                r.elem("div", no_attr()).build(|r| {
+                r.elem("div", |r| {
+                    r.attr("class", "description");
+                })
+                .build(|r| {
+                    r.elem("div", |r| {
+                        r.attr("class", "more");
+                    })
+                    .build(|r| {
+                        r.put_raw("+ voir plus");
+                    });
+
+                    r.elem("div", |r| {
+                        r.attr("class", "content");
+                    })
+                    .build(|r| {
+                        self.description.render(r);
+                    });
+                });
+
+                r.elem("div", |r| {
+                    r.attr("class", "price_book");
+                })
+                .build(|r| {
                     r.elem("div", no_attr()).build(|r| {
                         self.price.render(r);
                         self.book.render(r);

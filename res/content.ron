@@ -100,7 +100,7 @@
 
                 benefits: [
                     (
-                        title: "Soin Absolu `1h10`",
+                        title: "Soin Absolu `01:10`",
                         book: "booking.wavy.pro/destinationspa",
                         image: Some(("SVGE_absolu", "TODO")),
                         price: (89,00),
@@ -131,7 +131,7 @@
 
                         "#,
                     ),(
-                        title: "Soin Primordial `1h`",
+                        title: "Soin Primordial `01:00`",
                         book: "booking.wavy.pro/destinationspa",
                         image: Some(("SVGE_primordial", "TODO")),
                         price: (79,00),
@@ -143,7 +143,7 @@
 
                         "#,
                     ),(
-                        title: "Soin Détox `50min`",
+                        title: "Soin Détox `00:50`",
                         book: "booking.wavy.pro/destinationspa",
                         image: Some(("SVGE_detox", "TODO")),
                         price: (59,00),
@@ -156,7 +156,7 @@
 
                         "#,
                     ),(
-                        title: "Massage Traditionnel Indien du Visage `30min`",
+                        title: "Massage Traditionnel Indien du Visage `00:30`",
                         book: "booking.wavy.pro/destinationspa",
                         image: Some(("SVGE_indien", "TODO")),
                         price: (39,00),
@@ -169,7 +169,7 @@
 
                         "#,
                     ),(
-                        title: "Soin Défatiguant Express `20min`",
+                        title: "Soin Défatiguant Express `00:20`",
                         book: "booking.wavy.pro/destinationspa",
                         image: Some(("SVGE_express", "TODO")),
                         price: (29,00),
@@ -183,7 +183,7 @@
 
                         "#,
                     ),(
-                        title: "Soin du Regard Flash `15min`",
+                        title: "Soin du Regard\\\nFlash `00:15`",
                         book: "booking.wavy.pro/destinationspa",
                         image: Some(("SVGE_flash", "TODO")),
                         price: (15,00),
@@ -208,7 +208,7 @@
                 "#,
                 benefits: [
                     (
-                        title: "Rite du Hammam `1h30`",
+                        title: "Rite du\\\nHammam `01:30`",
                         book: "booking.wavy.pro/destinationspa",
                         image: Some(("RICO_rite_hammam", "TODO")),
                         price: (100,00),
@@ -224,7 +224,7 @@
 
                         "#,
                     ),(
-                        title: "Rituel Sabi Sabi en Terre d'Afrique Bio `1h45`",
+                        title: "Rituel Sabi Sabi en Terre d'Afrique `01:45`",
                         book: "booking.wavy.pro/destinationspa",
                         image: Some(("RICO_sabi_sabi", "TODO")),
                         price: (115,00),
@@ -243,7 +243,7 @@
 
                         "#,
                     ),(
-                        title: "Croisière bien-être en Polynésie `1h45`",
+                        title: "Croisière bien-être\\\nen Polynésie `01:45`",
                         book: "booking.wavy.pro/destinationspa",
                         image: Some(("RICO_polynesie", "TODO")),
                         price: (115,00),
@@ -263,7 +263,7 @@
 
                         "#,
                     ),(
-                        title: "Rite Holistic en Amazonie `1h45`",
+                        title: "Rite Holistic\\\nen Amazonie `01:45`",
                         book: "booking.wavy.pro/destinationspa",
                         image: Some(("RICO_amazonie", "TODO")),
                         price: (115,00),
@@ -282,7 +282,7 @@
 
                         "#,
                     ),(
-                        title: "Hammam `30min`",
+                        title: "Hammam `00:30`",
                         book: "booking.wavy.pro/destinationspa",
                         image: Some(("RICO_hammam", "TODO")),
                         price: (30,00),
@@ -305,7 +305,7 @@
                 "#,
                 benefits: [
                     (
-                        title: "Tour du Monde en `90min`",
+                        title: "Tour du Monde\\\nen `01:30`",
                         book: "booking.wavy.pro/destinationspa",
                         image: Some(("MODG_tour_du_monde", "TODO")),
                         price: (109,00),
@@ -317,7 +317,7 @@
 
                         "#,
                     ),(
-                        title: "Modelage Polynésien `60min`",
+                        title: "Modelage\\\nPolynésien `01:00`",
                         book: "booking.wavy.pro/destinationspa",
                         image: Some(("MODG_polynesien", "TODO")),
                         price: (75,00),
@@ -330,7 +330,7 @@
 
                         "#,
                     ),(
-                        title: "Modelage Oriental `60min`",
+                        title: "Modelage\\\nOriental `01:00`",
                         book: "booking.wavy.pro/destinationspa",
                         image: Some(("MODG_oriental", "TODO")),
                         price: (75,00),
@@ -341,7 +341,7 @@
 
                         "#,
                     ),(
-                        title: "Modelage Africain `60min`",
+                        title: "Modelage\\\nAfricain `01:00`",
                         book: "booking.wavy.pro/destinationspa",
                         image: Some(("MODG_sabi_sabi", "TODO")),
                         price: (75,00),
@@ -356,7 +356,7 @@
 
                         "#,
                     ),(
-                        title: "Modelage Holistic au Bambou `60min`",
+                        title: "Modelage Holistic\\\nau Bambou `01:00`",
                         book: "booking.wavy.pro/destinationspa",
                         image: Some(("MODG_bambou", "TODO")),
                         price: (78,00),
@@ -369,7 +369,7 @@
 
                         "#,
                     ),(
-                        title: "Escale Bien-être `30min`",
+                        title: "Escale Bien-être `00:30`",
                         book: "booking.wavy.pro/destinationspa",
                         image: Some(("MODG_escale", "TODO")),
                         price: (39,00),
@@ -379,7 +379,7 @@
 
                         "#,
                     ),(
-                        title: "Massage Traditionnel Indien du Visage `30min`",
+                        title: "Massage Traditionnel Indien du Visage `00:30`",
                         book: "booking.wavy.pro/destinationspa",
                         image: Some(("MODG_indien", "TODO")),
                         price: (39,00),
@@ -404,7 +404,7 @@
                 "#,
                 benefits: [
                     (
-                        title: "Ma Mini-escale Bien-être `20min`",
+                        title: "Ma Mini-escale Bien-être `00:20`",
                         book: "booking.wavy.pro/destinationspa",
                         image: Some(("SEEA_escale", "TODO")),
                         price: (28,00),
@@ -415,7 +415,7 @@
 
                         "#,
                     ),(
-                        title: "Soin du Dos Anti-stress `60min`",
+                        title: "Soin du Dos Anti-stress `01:00`",
                         book: "booking.wavy.pro/destinationspa",
                         image: Some(("SEEA_dos", "TODO")),
                         price: (60,00),
@@ -435,7 +435,7 @@
 
                         "#,
                     ),(
-                        title: "Soin du Visage Détox `50min`",
+                        title: "Soin du Visage Détox `00:50`",
                         book: "booking.wavy.pro/destinationspa",
                         image: Some(("SEEA_detox", "TODO")),
                         price: (59,00),
@@ -504,7 +504,7 @@
                         description: "",
 
                     ),(
-                        title: "1/2 Jambes",
+                        title: "Demi-jambes",
                         book: "booking.wavy.pro/destinationspa",
                         image: None,
                         price: (20,00),
@@ -553,14 +553,14 @@
                         description: "",
 
                     ),(
-                        title: "`FORFAIT` Sourcils + Lèvres",
+                        title: "Sourcils, Lèvres `FORFAIT`",
                         book: "booking.wavy.pro/destinationspa",
                         image: None,
                         price: (15,00),
                         description: "",
 
                     ),(
-                        title: "`FORFAIT` 1/2 Jambes + Maillot + Aisselles",
+                        title: "Demi-jambes, Maillot, Aisselles `FORFAIT`",
                         book: "booking.wavy.pro/destinationspa",
                         image: None,
                         price: (38,00),
@@ -574,7 +574,7 @@
 
                         "#,
                     ),(
-                        title: "`FORFAIT` Jambes Entières + Maillot + Aisselles",
+                        title: "Jambes Entières, Maillot, Aisselles `FORFAIT`",
                         book: "booking.wavy.pro/destinationspa",
                         image: None,
                         price: (47,00),

@@ -268,6 +268,7 @@ h3,
 h4 {
   font-size: 175%;
   font-weight: bold;
+  text-align: left;
   text-transform: uppercase;
 }
 
@@ -408,7 +409,6 @@ address {
 
 address > ul > li {
   margin-bottom: 0.6cm;
-  font-weight: bold;
   font-size: 160%;
 }
 
@@ -542,6 +542,7 @@ address a:hover {
 [id^="category"]:target div.row {
   display: inline-flex;
   width: 12.7cm;
+  height: 6cm;
 
   margin: 0.65cm;
   text-align: left;
@@ -553,6 +554,7 @@ address a:hover {
 [id^="category"]:target div.row figure {
   width: 6cm;
   height: 6cm;
+  z-index: 3;
 }
 
 [id^="category"]:target div.row img {
@@ -571,25 +573,68 @@ address a:hover {
 }
 
 [id^="category"]:target h5 {
-  font-size: 165%;
+  font-size: 130%;
+  font-weight: bold;
   padding: 0 20px;
   padding-top: 20px;
   padding-bottom: 10px;
 }
 
+[id^="category"]:target h5 code {
+  font-size: 90%;
+  font-family: monospace;
+  font-weight: normal;
+}
+
 [id^="category"]:target p {
   font-size: 105%;
-  margin-bottom: auto;
   padding: 0 20px;
   padding-bottom: 20px;
 }
 
-[id^="category"]:target div.row > div > div {
-  display: flex;
-  justify-content: flex-end;
+[id^="category"]:target .description {
+  position: relative;
+  flex: 1;
+  margin-bottom: auto;
+  overflow: hidden;
 }
 
-[id^="category"]:target div.row > div > div > div {
+[id^="category"]:target .description .content {
+  height: 0;
+}
+
+[id^="category"]:target .description .more {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: left;
+  background-color: white;
+  height: 2.2cm;
+  box-sizing: border-box;
+  padding-top: 1.55cm;
+  padding-left: 20px;
+  background: linear-gradient(
+    to bottom,
+    rgba(260, 260, 240, 0),
+    rgba(260, 260, 240, 1) 70%
+  );
+  font-weight: bold;
+  color: var(--db);
+  z-index: 1;
+}
+
+[id^="category"]:target .description .more:hover {
+  color: var(--df);
+  text-shadow: 0 0 15px var(--l7);
+}
+
+[id^="category"]:target .price_book {
+  display: flex;
+  justify-content: flex-end;
+  z-index: 2;
+}
+
+[id^="category"]:target .price_book > div {
   display: inline-flex;
   background-color: var(--l6);
   box-shadow: 0 0 30px var(--l6);
@@ -600,41 +645,50 @@ address a:hover {
 [id^="category"]:target .book {
   display: flex;
   align-items: center;
-  font-size: 110%;
+  font-size: 105%;
   font-weight: bold;
 
-  padding: 8px 16px;
+  padding: 6px 12px;
   border-radius: 0.6cm;
 
   color: var(--l3);
-  background-color: var(--dd);
+  background-color: var(--d7);
   box-shadow: 0 0 20px var(--la);
 }
 
 [id^="category"]:target a.book:hover {
-  color: var(--l5);
-  background-color: var(--df);
-  box-shadow: 0 0 25px var(--lc);
+  color: var(--d0);
+  background-color: var(--ld);
+  box-shadow: 0 0 30px var(--ld);
 }
 
 [id^="category"]:target .price {
-  padding: 8px 16px;
+  padding: 6px 12px;
 }
 
 [id^="category"]:target .price > :first-child {
-  font-size: 200%;
+  font-size: 165%;
+  font-weight: bold;
   color: var(--d3);
 }
 
 [id^="category"]:target .price > :nth-child(2) {
-  font-size: 130%;
-  font-weight: bold;
+  font-size: 115%;
   color: var(--d5);
   vertical-align: top;
 }
 
 [id^="category"]:target .price > :last-child {
-  font-size: 120%;
+  font-size: 105%;
   color: var(--d7);
   vertical-align: top;
+}
+
+[id^="category"]:target code {
+  display: inline-block;
+  padding: 2px 4px;
+  border-radius: 5px;
+  background-color: var(--l4);
+  color: var(--d0);
+  font-weight: bold;
 }
