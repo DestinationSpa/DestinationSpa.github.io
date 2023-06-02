@@ -94,6 +94,7 @@ struct Benefit {
     image: Option<Image>,
     price: Price,
     book: Book,
+    more: bool,
     description: Text,
 }
 

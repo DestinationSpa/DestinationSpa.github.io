@@ -104,6 +104,7 @@
                         book: "booking.wavy.pro/destinationspa",
                         image: Some(("SVGE_absolu", "TODO")),
                         price: (89,00),
+                        more: true,
                         description: r#"
 
                             À chaque début de soin, un diagnostic de
@@ -135,6 +136,7 @@
                         book: "booking.wavy.pro/destinationspa",
                         image: Some(("SVGE_primordial", "TODO")),
                         price: (79,00),
+                        more: false,
                         description: r#"
 
                             Manque d'éclat et apparition de premières
@@ -147,6 +149,7 @@
                         book: "booking.wavy.pro/destinationspa",
                         image: Some(("SVGE_detox", "TODO")),
                         price: (59,00),
+                        more: false,
                         description: r#"
 
                             Soin pour les peaux inflammées avec
@@ -160,6 +163,7 @@
                         book: "booking.wavy.pro/destinationspa",
                         image: Some(("SVGE_indien", "TODO")),
                         price: (39,00),
+                        more: false,
                         description: r#"
 
                             Massage ancestral venant du Kerala. Des
@@ -173,6 +177,7 @@
                         book: "booking.wavy.pro/destinationspa",
                         image: Some(("SVGE_express", "TODO")),
                         price: (29,00),
+                        more: false,
                         description: r#"
 
                             Soin du visage express coup d'éclat,
@@ -187,6 +192,7 @@
                         book: "booking.wavy.pro/destinationspa",
                         image: Some(("SVGE_flash", "TODO")),
                         price: (15,00),
+                        more: false,
                         description: r#"
 
                             Un soin flash qui illumine, apaise et
@@ -212,6 +218,7 @@
                         book: "booking.wavy.pro/destinationspa",
                         image: Some(("RICO_rite_hammam", "TODO")),
                         price: (100,00),
+                        more: true,
                         description: r#"
 
                             Relaxation dans le hammam. L'exfoliation
@@ -228,6 +235,7 @@
                         book: "booking.wavy.pro/destinationspa",
                         image: Some(("RICO_sabi_sabi", "TODO")),
                         price: (115,00),
+                        more: true,
                         description: r#"
 
                             Les 3 produits de ce rituel sont certifiés
@@ -247,6 +255,7 @@
                         book: "booking.wavy.pro/destinationspa",
                         image: Some(("RICO_polynesie", "TODO")),
                         price: (115,00),
+                        more: true,
                         description: r#"
 
                             Ce rituel aux senteur divines de monoï,
@@ -267,6 +276,7 @@
                         book: "booking.wavy.pro/destinationspa",
                         image: Some(("RICO_amazonie", "TODO")),
                         price: (115,00),
+                        more: true,
                         description: r#"
 
                             Le sucre roux du gommage, mélangé à
@@ -286,6 +296,7 @@
                         book: "booking.wavy.pro/destinationspa",
                         image: Some(("RICO_hammam", "TODO")),
                         price: (30,00),
+                        more: false,
                         description: r#"
 
                             Profiter des bien faits de la vapeur
@@ -309,6 +320,7 @@
                         book: "booking.wavy.pro/destinationspa",
                         image: Some(("MODG_tour_du_monde", "TODO")),
                         price: (109,00),
+                        more: false,
                         description: r#"
 
                             Modelage signature corps et visage,
@@ -321,6 +333,7 @@
                         book: "booking.wavy.pro/destinationspa",
                         image: Some(("MODG_polynesien", "TODO")),
                         price: (75,00),
+                        more: false,
                         description: r#"
 
                             Modelage relaxant, enveloppant suivant le
@@ -334,6 +347,7 @@
                         book: "booking.wavy.pro/destinationspa",
                         image: Some(("MODG_oriental", "TODO")),
                         price: (75,00),
+                        more: false,
                         description: r#"
 
                             Modelage dont les mouvements sont inspirés
@@ -345,6 +359,7 @@
                         book: "booking.wavy.pro/destinationspa",
                         image: Some(("MODG_sabi_sabi", "TODO")),
                         price: (75,00),
+                        more: false,
                         description: r#"
 
                             Ce modelage draine en profondeur et
@@ -360,6 +375,7 @@
                         book: "booking.wavy.pro/destinationspa",
                         image: Some(("MODG_bambou", "TODO")),
                         price: (78,00),
+                        more: false,
                         description: r#"
 
                             Modelage décontractant, défatiguant
@@ -373,6 +389,7 @@
                         book: "booking.wavy.pro/destinationspa",
                         image: Some(("MODG_escale", "TODO")),
                         price: (39,00),
+                        more: false,
                         description: r#"
 
                             Modelage signature relaxant du dos.
@@ -383,6 +400,7 @@
                         book: "booking.wavy.pro/destinationspa",
                         image: Some(("MODG_indien", "TODO")),
                         price: (39,00),
+                        more: false,
                         description: r#"
 
                             Massage ancestral venant du Kerala. Des
@@ -408,6 +426,7 @@
                         book: "booking.wavy.pro/destinationspa",
                         image: Some(("SEEA_escale", "TODO")),
                         price: (28,00),
+                        more: false,
                         description: r#"
 
                             Modelage en douceur du dos, pour les
@@ -419,6 +438,7 @@
                         book: "booking.wavy.pro/destinationspa",
                         image: Some(("SEEA_dos", "TODO")),
                         price: (60,00),
+                        more: true,
                         description: r#"
 
                             Soin du dos recommandé à partir de 12 ans,
@@ -439,6 +459,7 @@
                         book: "booking.wavy.pro/destinationspa",
                         image: Some(("SEEA_detox", "TODO")),
                         price: (59,00),
+                        more: false,
                         description: r#"
 
                             Soin détoxifiant pour retrouver un grain de
@@ -465,6 +486,7 @@
                         book: "booking.wavy.pro/destinationspa",
                         image: None,
                         price: (9,00),
+                        more: false,
                         description: "",
 
                     ),(
@@ -472,6 +494,7 @@
                         book: "booking.wavy.pro/destinationspa",
                         image: None,
                         price: (15,00),
+                        more: false,
                         description: r#"
 
                             Après avoir pris les mesures de vos
@@ -487,6 +510,7 @@
                         book: "booking.wavy.pro/destinationspa",
                         image: None,
                         price: (9,00),
+                        more: false,
                         description: "",
 
                     ),(
@@ -494,6 +518,7 @@
                         book: "booking.wavy.pro/destinationspa",
                         image: None,
                         price: (20,00),
+                        more: false,
                         description: "",
 
                     ),(
@@ -501,6 +526,7 @@
                         book: "booking.wavy.pro/destinationspa",
                         image: None,
                         price: (13,00),
+                        more: false,
                         description: "",
 
                     ),(
@@ -508,6 +534,7 @@
                         book: "booking.wavy.pro/destinationspa",
                         image: None,
                         price: (20,00),
+                        more: false,
                         description: "",
 
                     ),(
@@ -515,6 +542,7 @@
                         book: "booking.wavy.pro/destinationspa",
                         image: None,
                         price: (30,00),
+                        more: false,
                         description: "",
 
                     ),(
@@ -522,6 +550,7 @@
                         book: "booking.wavy.pro/destinationspa",
                         image: None,
                         price: (16,00),
+                        more: false,
                         description: "",
 
                     ),(
@@ -529,6 +558,7 @@
                         book: "booking.wavy.pro/destinationspa",
                         image: None,
                         price: (20,00),
+                        more: false,
                         description: "",
 
                     ),(
@@ -536,6 +566,7 @@
                         book: "booking.wavy.pro/destinationspa",
                         image: None,
                         price: (32,00),
+                        more: false,
                         description: "",
 
                     ),(
@@ -543,6 +574,7 @@
                         book: "booking.wavy.pro/destinationspa",
                         image: None,
                         price: (20,00),
+                        more: false,
                         description: "",
 
                     ),(
@@ -550,6 +582,7 @@
                         book: "booking.wavy.pro/destinationspa",
                         image: None,
                         price: (32,00),
+                        more: false,
                         description: "",
 
                     ),(
@@ -557,6 +590,7 @@
                         book: "booking.wavy.pro/destinationspa",
                         image: None,
                         price: (15,00),
+                        more: false,
                         description: "",
 
                     ),(
@@ -564,6 +598,7 @@
                         book: "booking.wavy.pro/destinationspa",
                         image: None,
                         price: (38,00),
+                        more: false,
                         description: r#"
 
                             `10€` en supplément pour un maillot
@@ -578,6 +613,7 @@
                         book: "booking.wavy.pro/destinationspa",
                         image: None,
                         price: (47,00),
+                        more: false,
                         description: r#"
 
                             `10€` en supplément pour un maillot

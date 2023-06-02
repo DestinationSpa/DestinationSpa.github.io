@@ -308,12 +308,14 @@ impl Benefit {
                     r.attr("class", "description");
                 })
                 .build(|r| {
-                    r.elem("div", |r| {
-                        r.attr("class", "more");
-                    })
-                    .build(|r| {
-                        r.put_raw("+ voir plus");
-                    });
+                    if self.more {
+                        r.elem("div", |r| {
+                            r.attr("class", "more");
+                        })
+                        .build(|r| {
+                            r.put_raw("+ voir plus");
+                        });
+                    }
 
                     r.elem("div", |r| {
                         r.attr("class", "content");
