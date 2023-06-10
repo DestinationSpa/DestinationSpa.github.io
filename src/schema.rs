@@ -82,6 +82,7 @@ struct Benefits {
 
 #[derive(Deserialize)]
 struct Category {
+    id: u32,
     title: Title,
     image: Option<Image>,
     description: Text,
@@ -90,6 +91,7 @@ struct Category {
 
 #[derive(Deserialize)]
 struct Benefit {
+    id: u32,
     title: Title,
     image: Option<Image>,
     price: Price,

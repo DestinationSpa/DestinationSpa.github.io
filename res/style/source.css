@@ -308,7 +308,7 @@ section:target > a h4 > span {
 }
 
 #introduction:target .right > p {
-  font-size: 125%;
+  font-size: 142%;
   text-align: left;
   margin-bottom: 0.5cm;
 }
@@ -518,7 +518,7 @@ address a:hover {
 
 #benefits:target > section > .row:first-child > div > p {
   margin-top: 8px;
-  font-size: 105%;
+  font-size: 110%;
 }
 
 /*****************************************
@@ -527,23 +527,27 @@ address a:hover {
 ******************************************
 *****************************************/
 
-[id^="category"]:target > a:first-child figure {
+[id^="category-"]:target > a:first-child figure {
   display: none;
 }
 
-[id^="category"]:target > a:first-child p {
+[id^="category-"]:target > a:first-child p {
   display: none;
 }
 
-[id^="category"]:target {
+[id^="category-"]:target {
   text-align: center;
 }
 
-[id^="category"]:target > br {
+[id^="category-"]:target > br {
   display: initial;
 }
 
-[id^="category"]:target div.row {
+[id^="category-"]:not(:target) div.row {
+  display: none;
+}
+
+div.row {
   display: inline-flex;
   width: 12.7cm;
   height: 6cm;
@@ -555,13 +559,13 @@ address a:hover {
   box-shadow: 0 0 40px var(--l6);
 }
 
-[id^="category"]:target div.row figure {
+div.row figure {
   width: 6cm;
   height: 6cm;
   z-index: 3;
 }
 
-[id^="category"]:target div.row img {
+div.row img {
   object-fit: cover;
   width: 6cm;
   height: 6cm;
@@ -570,13 +574,13 @@ address a:hover {
   box-shadow: 0 0 40px var(--l6);
 }
 
-[id^="category"]:target div.row > div {
+div.row > div {
   display: flex;
   flex-direction: column;
   flex: auto;
 }
 
-[id^="category"]:target h5 {
+div.row h5 {
   font-size: 130%;
   font-weight: bold;
   padding: 0 20px;
@@ -584,61 +588,62 @@ address a:hover {
   padding-bottom: 10px;
 }
 
-[id^="category"]:target h5 code {
+div.row h5 code {
   font-size: 90%;
   font-family: monospace;
   font-weight: normal;
 }
 
-[id^="category"]:target p {
-  font-size: 105%;
+div.row p {
+  font-size: 110%;
   padding: 0 20px;
   padding-bottom: 20px;
 }
 
-[id^="category"]:target .description {
+div.row .description {
   position: relative;
   flex: 1;
   margin-bottom: auto;
   overflow: hidden;
 }
 
-[id^="category"]:target .description .content {
+div.row .description .content {
   height: 0;
 }
 
-[id^="category"]:target .description .more {
+div.row .description .more {
+  font-size: 120%;
   position: absolute;
   bottom: 0;
   width: 100%;
   text-align: left;
   background-color: white;
-  height: 2.2cm;
+  height: 2.5cm;
   box-sizing: border-box;
-  padding-top: 1.55cm;
+  padding-top: 1.75cm;
   padding-left: 20px;
   background: linear-gradient(
     to bottom,
     rgba(260, 260, 240, 0),
-    rgba(260, 260, 240, 1) 70%
+    rgba(260, 260, 240, 1) 72.5%
   );
   font-weight: bold;
   color: var(--db);
   z-index: 1;
 }
 
-[id^="category"]:target .description .more:hover {
+div.row .description .more:hover {
   color: var(--df);
   text-shadow: 0 0 15px var(--l7);
 }
 
-[id^="category"]:target .price_book {
+div.row .price_book {
   display: flex;
   justify-content: flex-end;
   z-index: 2;
 }
 
-[id^="category"]:target .price_book > div {
+div.row .price_book > div {
   display: inline-flex;
   background-color: var(--l6);
   box-shadow: 0 0 30px var(--l6);
@@ -646,7 +651,7 @@ address a:hover {
   text-transform: uppercase;
 }
 
-[id^="category"]:target .book {
+div.row .book {
   display: flex;
   align-items: center;
   font-size: 105%;
@@ -660,39 +665,95 @@ address a:hover {
   box-shadow: 0 0 20px var(--la);
 }
 
-[id^="category"]:target a.book:hover {
+div.row a.book:hover {
   color: var(--d0);
   background-color: var(--ld);
   box-shadow: 0 0 30px var(--ld);
 }
 
-[id^="category"]:target .price {
+div.row .price {
   padding: 6px 12px;
 }
 
-[id^="category"]:target .price > :first-child {
+div.row .price > :first-child {
   font-size: 165%;
   font-weight: bold;
   color: var(--d3);
 }
 
-[id^="category"]:target .price > :nth-child(2) {
+div.row .price > :nth-child(2) {
   font-size: 115%;
   color: var(--d5);
   vertical-align: top;
 }
 
-[id^="category"]:target .price > :last-child {
+div.row .price > :last-child {
   font-size: 105%;
   color: var(--d7);
   vertical-align: top;
 }
 
-[id^="category"]:target code {
+div.row code {
   display: inline-block;
   padding: 2px 4px;
   border-radius: 5px;
   background-color: var(--l4);
   color: var(--d0);
   font-weight: bold;
+}
+
+/*****************************************
+******************************************
+****************************************** SEE MORE
+******************************************
+*****************************************/
+
+.all-benefits {
+  width: 0;
+  height: 0;
+}
+
+.all-benefits section {
+  text-align: center;
+}
+
+.all-benefits section > a {
+  background-color: var(--l0);
+  box-shadow: none;
+  margin-bottom: 0;
+}
+
+.all-benefits .back {
+  position: relative;
+  left: 28px;
+}
+
+.all-benefits div.row .description .content {
+  height: initial;
+}
+
+.all-benefits div.row {
+  min-width: 12.7cm;
+  max-width: 15.1cm;
+  width: initial;
+  height: initial;
+
+  margin-top: 8.8cm;
+}
+
+.all-benefits section:target div.row figure {
+  position: absolute;
+  top: 179px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.all-benefits div.row img {
+  box-shadow: 0 0 30px var(--l9);
+}
+
+.all-benefits div.row figure,
+.all-benefits div.row img {
+  height: 7.5cm;
+  width: 7.5cm;
 }

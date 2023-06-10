@@ -72,6 +72,30 @@ impl Website {
                         });
                     });
                 });
+
+                r.elem("div", |r| {
+                    r.attr("class", "all-benefits");
+                })
+                .build(|r| {
+                    for category in &self.benefits.categories {
+                        for benefit in &category.benefits {
+                            r.elem("section", |r| {
+                                r.attr("id", format!("benefit-{}-{}", category.id, benefit.id));
+                            })
+                            .build(|r| {
+                                r.elem("a", no_attr()).build(|r| {
+                                    Title(Inline(String::new())).render(
+                                        r,
+                                        4,
+                                        Some(&format!("category-{}", category.id)),
+                                    );
+                                });
+
+                                benefit.render(r, None);
+                            });
+                        }
+                    }
+                });
             });
         });
     }
@@ -254,15 +278,15 @@ impl Benefits {
                 if i % 2 == 0 && i > 0 {
                     r.single("br", no_attr());
                 }
-                category.render(r, i);
+                category.render(r);
             }
         });
     }
 }
 
 impl Category {
-    fn render(&self, r: &mut Renderer, i: usize) {
-        let id = format!("category{}", i);
+    fn render(&self, r: &mut Renderer) {
+        let id = format!("category-{}", self.id);
         r.elem("section", |r| {
             r.attr("id", &id);
         })
@@ -285,14 +309,14 @@ impl Category {
                 if i % 2 == 0 && i > 0 {
                     r.single("br", no_attr());
                 }
-                benefit.render(r);
+                benefit.render(r, Some(self.id));
             }
         });
     }
 }
 
 impl Benefit {
-    fn render(&self, r: &mut Renderer) {
+    fn render(&self, r: &mut Renderer, category_id: Option<u32>) {
         r.elem("div", |r| {
             r.attr("class", "row");
         })
@@ -309,12 +333,15 @@ impl Benefit {
                 })
                 .build(|r| {
                     if self.more {
-                        r.elem("div", |r| {
-                            r.attr("class", "more");
-                        })
-                        .build(|r| {
-                            r.put_raw("+ voir plus");
-                        });
+                        if let Some(category_id) = category_id {
+                            r.elem("a", |r| {
+                                r.attr("class", "more");
+                                r.attr("href", format!("#benefit-{}-{}", category_id, self.id));
+                            })
+                            .build(|r| {
+                                r.put_raw("+ voir plus");
+                            });
+                        }
                     }
 
                     r.elem("div", |r| {

@@ -2,7 +2,12 @@
     home: (
         title: "Destination Spa",
         subtitle: "Institut de Beauté & Spa à Beautiran",
-        note: Some("`FÊTES DES MÈRES` Offrez un billet cadeau !"),
+        note: Some(r#"
+
+            [Retrouvez toute l'actualité de votre institut](#infos)\
+	    [sur **Facebook** et **Instagram** !](#infos)
+
+        "#),
     ),
 
     introduction: (
@@ -10,7 +15,7 @@
         text: r#"
 
             __*Marine*, esthéticienne et créatrice de *Destination
-            Spa* :__
+            Spa*__
 
             Après plusieurs expériences en tant que spa praticienne et
             esthéticienne, j'ai pu réaliser mon souhait de créer un
@@ -88,6 +93,7 @@
         title: "Les Soins",
         categories: [
             (
+                id: 100,
                 title: "Soins du\\\nVisage Bio",
                 image: Some(("SVGE_0", "TODO")),
                 description: r#"
@@ -100,8 +106,9 @@
 
                 benefits: [
                     (
+                        id: 100,
                         title: "Soin Absolu `01:10`",
-                        book: "booking.wavy.pro/destinationspa",
+                        book: "planity.com/destination-spa-33640-beautiran",
                         image: Some(("SVGE_absolu", "TODO")),
                         price: (89,00),
                         more: true,
@@ -132,8 +139,9 @@
 
                         "#,
                     ),(
+                        id: 150,
                         title: "Soin Primordial `01:00`",
-                        book: "booking.wavy.pro/destinationspa",
+                        book: "planity.com/destination-spa-33640-beautiran",
                         image: Some(("SVGE_primordial", "TODO")),
                         price: (79,00),
                         more: false,
@@ -145,11 +153,12 @@
 
                         "#,
                     ),(
+                        id: 200,
                         title: "Soin Détox `00:50`",
-                        book: "booking.wavy.pro/destinationspa",
+                        book: "planity.com/destination-spa-33640-beautiran",
                         image: Some(("SVGE_detox", "TODO")),
                         price: (59,00),
-                        more: false,
+                        more: true,
                         description: r#"
 
                             Soin pour les peaux inflammées avec
@@ -159,11 +168,12 @@
 
                         "#,
                     ),(
+                        id: 250,
                         title: "Massage Traditionnel Indien du Visage `00:30`",
-                        book: "booking.wavy.pro/destinationspa",
+                        book: "planity.com/destination-spa-33640-beautiran",
                         image: Some(("SVGE_indien", "TODO")),
                         price: (39,00),
-                        more: false,
+                        more: true,
                         description: r#"
 
                             Massage ancestral venant du Kerala. Des
@@ -173,11 +183,12 @@
 
                         "#,
                     ),(
+                        id: 300,
                         title: "Soin Défatiguant Express `00:20`",
-                        book: "booking.wavy.pro/destinationspa",
+                        book: "planity.com/destination-spa-33640-beautiran",
                         image: Some(("SVGE_express", "TODO")),
                         price: (29,00),
-                        more: false,
+                        more: true,
                         description: r#"
 
                             Soin du visage express coup d'éclat,
@@ -188,11 +199,12 @@
 
                         "#,
                     ),(
+                        id: 350,
                         title: "Soin du Regard\\\nFlash `00:15`",
-                        book: "booking.wavy.pro/destinationspa",
+                        book: "planity.com/destination-spa-33640-beautiran",
                         image: Some(("SVGE_flash", "TODO")),
                         price: (15,00),
-                        more: false,
+                        more: true,
                         description: r#"
 
                             Un soin flash qui illumine, apaise et
@@ -204,6 +216,7 @@
                     ),
                 ],
             ),(
+                id: 150,
                 title: "Rituels Corps",
                 image: Some(("RICO_0", "TODO")),
                 description: r#"
@@ -214,8 +227,9 @@
                 "#,
                 benefits: [
                     (
+                        id: 100,
                         title: "Rite du\\\nHammam `01:30`",
-                        book: "booking.wavy.pro/destinationspa",
+                        book: "planity.com/destination-spa-33640-beautiran",
                         image: Some(("RICO_rite_hammam", "TODO")),
                         price: (100,00),
                         more: true,
@@ -231,8 +245,9 @@
 
                         "#,
                     ),(
+                        id: 150,
                         title: "Rituel Sabi Sabi en Terre d'Afrique `01:45`",
-                        book: "booking.wavy.pro/destinationspa",
+                        book: "planity.com/destination-spa-33640-beautiran",
                         image: Some(("RICO_sabi_sabi", "TODO")),
                         price: (115,00),
                         more: true,
@@ -251,8 +266,9 @@
 
                         "#,
                     ),(
+                        id: 200,
                         title: "Croisière bien-être\\\nen Polynésie `01:45`",
-                        book: "booking.wavy.pro/destinationspa",
+                        book: "planity.com/destination-spa-33640-beautiran",
                         image: Some(("RICO_polynesie", "TODO")),
                         price: (115,00),
                         more: true,
@@ -272,8 +288,9 @@
 
                         "#,
                     ),(
+                        id: 250,
                         title: "Rite Holistic\\\nen Amazonie `01:45`",
-                        book: "booking.wavy.pro/destinationspa",
+                        book: "planity.com/destination-spa-33640-beautiran",
                         image: Some(("RICO_amazonie", "TODO")),
                         price: (115,00),
                         more: true,
@@ -292,8 +309,9 @@
 
                         "#,
                     ),(
+                        id: 300,
                         title: "Hammam `00:30`",
-                        book: "booking.wavy.pro/destinationspa",
+                        book: "planity.com/destination-spa-33640-beautiran",
                         image: Some(("RICO_hammam", "TODO")),
                         price: (30,00),
                         more: false,
@@ -306,6 +324,7 @@
                     ),
                 ],
             ),(
+                id: 200,
                 title: "Modelages",
                 image: Some(("MODG_0", "TODO")),
                 description: r#"
@@ -316,8 +335,9 @@
                 "#,
                 benefits: [
                     (
+                        id: 100,
                         title: "Tour du Monde\\\nen `01:30`",
-                        book: "booking.wavy.pro/destinationspa",
+                        book: "planity.com/destination-spa-33640-beautiran",
                         image: Some(("MODG_tour_du_monde", "TODO")),
                         price: (109,00),
                         more: false,
@@ -329,11 +349,12 @@
 
                         "#,
                     ),(
+                        id: 150,
                         title: "Modelage\\\nPolynésien `01:00`",
-                        book: "booking.wavy.pro/destinationspa",
+                        book: "planity.com/destination-spa-33640-beautiran",
                         image: Some(("MODG_polynesien", "TODO")),
                         price: (75,00),
-                        more: false,
+                        more: true,
                         description: r#"
 
                             Modelage relaxant, enveloppant suivant le
@@ -343,8 +364,9 @@
 
                         "#,
                     ),(
+                        id: 200,
                         title: "Modelage\\\nOriental `01:00`",
-                        book: "booking.wavy.pro/destinationspa",
+                        book: "planity.com/destination-spa-33640-beautiran",
                         image: Some(("MODG_oriental", "TODO")),
                         price: (75,00),
                         more: false,
@@ -355,11 +377,12 @@
 
                         "#,
                     ),(
+                        id: 250,
                         title: "Modelage\\\nAfricain `01:00`",
-                        book: "booking.wavy.pro/destinationspa",
+                        book: "planity.com/destination-spa-33640-beautiran",
                         image: Some(("MODG_sabi_sabi", "TODO")),
                         price: (75,00),
-                        more: false,
+                        more: true,
                         description: r#"
 
                             Ce modelage draine en profondeur et
@@ -371,11 +394,12 @@
 
                         "#,
                     ),(
+                        id: 300,
                         title: "Modelage Holistic\\\nau Bambou `01:00`",
-                        book: "booking.wavy.pro/destinationspa",
+                        book: "planity.com/destination-spa-33640-beautiran",
                         image: Some(("MODG_bambou", "TODO")),
                         price: (78,00),
-                        more: false,
+                        more: true,
                         description: r#"
 
                             Modelage décontractant, défatiguant
@@ -385,8 +409,9 @@
 
                         "#,
                     ),(
+                        id: 350,
                         title: "Escale Bien-être `00:30`",
-                        book: "booking.wavy.pro/destinationspa",
+                        book: "planity.com/destination-spa-33640-beautiran",
                         image: Some(("MODG_escale", "TODO")),
                         price: (39,00),
                         more: false,
@@ -396,11 +421,12 @@
 
                         "#,
                     ),(
+                        id: 400,
                         title: "Massage Traditionnel Indien du Visage `00:30`",
-                        book: "booking.wavy.pro/destinationspa",
+                        book: "planity.com/destination-spa-33640-beautiran",
                         image: Some(("MODG_indien", "TODO")),
                         price: (39,00),
-                        more: false,
+                        more: true,
                         description: r#"
 
                             Massage ancestral venant du Kerala. Des
@@ -412,6 +438,7 @@
                     ),
                 ],
             ),(
+                id: 250,
                 title: "Soins Enfants\\\net Adolescents",
                 image: Some(("SEEA_0", "TODO")),
                 description: r#"
@@ -422,8 +449,9 @@
                 "#,
                 benefits: [
                     (
-                        title: "Ma Mini-escale Bien-être `00:20`",
-                        book: "booking.wavy.pro/destinationspa",
+                        id: 100,
+                        title: "Ma Mini-escale\\\nBien-être `00:20`",
+                        book: "planity.com/destination-spa-33640-beautiran",
                         image: Some(("SEEA_escale", "TODO")),
                         price: (28,00),
                         more: false,
@@ -434,8 +462,9 @@
 
                         "#,
                     ),(
-                        title: "Soin du Dos Anti-stress `01:00`",
-                        book: "booking.wavy.pro/destinationspa",
+                        id: 150,
+                        title: "Soin du Dos\\\nAnti-stress `01:00`",
+                        book: "planity.com/destination-spa-33640-beautiran",
                         image: Some(("SEEA_dos", "TODO")),
                         price: (60,00),
                         more: true,
@@ -455,11 +484,12 @@
 
                         "#,
                     ),(
-                        title: "Soin du Visage Détox `00:50`",
-                        book: "booking.wavy.pro/destinationspa",
+                        id: 200,
+                        title: "Soin du Visage\\\nDétox `00:50`",
+                        book: "planity.com/destination-spa-33640-beautiran",
                         image: Some(("SEEA_detox", "TODO")),
                         price: (59,00),
-                        more: false,
+                        more: true,
                         description: r#"
 
                             Soin détoxifiant pour retrouver un grain de
@@ -471,6 +501,7 @@
                     ),
                 ],
             ),(
+                id: 300,
                 title: "Les Épilations",
                 image: Some(("EPIL_0", "TODO")),
                 description: r#"
@@ -482,16 +513,18 @@
                 "#,
                 benefits: [
                     (
+                        id: 100,
                         title: "Sourcils Entretien",
-                        book: "booking.wavy.pro/destinationspa",
+                        book: "planity.com/destination-spa-33640-beautiran",
                         image: None,
                         price: (9,00),
                         more: false,
                         description: "",
 
                     ),(
+                        id: 150,
                         title: "Sourcils Création de Ligne",
-                        book: "booking.wavy.pro/destinationspa",
+                        book: "planity.com/destination-spa-33640-beautiran",
                         image: None,
                         price: (15,00),
                         more: false,
@@ -506,121 +539,134 @@
 
                         "#,
                     ),(
+                        id: 200,
                         title: "Lèvres Supérieur",
-                        book: "booking.wavy.pro/destinationspa",
+                        book: "planity.com/destination-spa-33640-beautiran",
                         image: None,
                         price: (9,00),
                         more: false,
                         description: "",
 
                     ),(
+                        id: 250,
                         title: "Visage",
-                        book: "booking.wavy.pro/destinationspa",
+                        book: "planity.com/destination-spa-33640-beautiran",
                         image: None,
                         price: (20,00),
                         more: false,
                         description: "",
 
                     ),(
+                        id: 300,
                         title: "Aisselles",
-                        book: "booking.wavy.pro/destinationspa",
+                        book: "planity.com/destination-spa-33640-beautiran",
                         image: None,
                         price: (13,00),
                         more: false,
                         description: "",
 
                     ),(
+                        id: 350,
                         title: "Demi-jambes",
-                        book: "booking.wavy.pro/destinationspa",
+                        book: "planity.com/destination-spa-33640-beautiran",
                         image: None,
                         price: (20,00),
                         more: false,
                         description: "",
 
                     ),(
+                        id: 400,
                         title: "Jambes Entières",
-                        book: "booking.wavy.pro/destinationspa",
+                        book: "planity.com/destination-spa-33640-beautiran",
                         image: None,
                         price: (30,00),
                         more: false,
                         description: "",
 
                     ),(
+                        id: 450,
                         title: "Maillot Classique",
-                        book: "booking.wavy.pro/destinationspa",
+                        book: "planity.com/destination-spa-33640-beautiran",
                         image: None,
                         price: (16,00),
                         more: false,
                         description: "",
 
                     ),(
-                        title: "Maillot Échancré/Brésilien",
-                        book: "booking.wavy.pro/destinationspa",
+                        id: 500,
+                        title: "Maillot Échancré ou Brésilien",
+                        book: "planity.com/destination-spa-33640-beautiran",
                         image: None,
                         price: (20,00),
                         more: false,
                         description: "",
 
                     ),(
-                        title: "Maillot Semi-intégral/Intégral",
-                        book: "booking.wavy.pro/destinationspa",
+                        id: 550,
+                        title: "Maillot Semi-intégral ou Intégral",
+                        book: "planity.com/destination-spa-33640-beautiran",
                         image: None,
                         price: (32,00),
                         more: false,
                         description: "",
 
                     ),(
+                        id: 600,
                         title: "Bras",
-                        book: "booking.wavy.pro/destinationspa",
+                        book: "planity.com/destination-spa-33640-beautiran",
                         image: None,
                         price: (20,00),
                         more: false,
                         description: "",
 
                     ),(
+                        id: 650,
                         title: "Dos ou Torse",
-                        book: "booking.wavy.pro/destinationspa",
+                        book: "planity.com/destination-spa-33640-beautiran",
                         image: None,
                         price: (32,00),
                         more: false,
                         description: "",
 
                     ),(
+                        id: 700,
                         title: "Sourcils, Lèvres `FORFAIT`",
-                        book: "booking.wavy.pro/destinationspa",
+                        book: "planity.com/destination-spa-33640-beautiran",
                         image: None,
                         price: (15,00),
                         more: false,
                         description: "",
 
                     ),(
+                        id: 750,
                         title: "Demi-jambes, Maillot, Aisselles `FORFAIT`",
-                        book: "booking.wavy.pro/destinationspa",
+                        book: "planity.com/destination-spa-33640-beautiran",
                         image: None,
                         price: (38,00),
                         more: false,
                         description: r#"
 
-                            `10€` en supplément pour un maillot
-                            échancré/brésilien
+                            `10€` en supplément pour\
+			    un maillot échancré ou brésilien
 
-                            `15€` en supplément pour un maillot
-                            semi-intégral/intégral
+                            `15€` en supplément pour\
+			    un maillot semi-intégral ou intégral
 
                         "#,
                     ),(
+                        id: 800,
                         title: "Jambes Entières, Maillot, Aisselles `FORFAIT`",
-                        book: "booking.wavy.pro/destinationspa",
+                        book: "planity.com/destination-spa-33640-beautiran",
                         image: None,
                         price: (47,00),
                         more: false,
                         description: r#"
 
-                            `10€` en supplément pour un maillot
-                            échancré/brésilien
+                            `10€` en supplément pour\
+			    un maillot échancré ou brésilien
 
-                            `15€` en supplément pour un maillot
-                            semi-intégral/intégral
+                            `15€` en supplément pour\
+			    un maillot semi-intégral ou intégral
 
                         "#,
                     ),
