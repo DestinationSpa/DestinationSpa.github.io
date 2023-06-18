@@ -439,7 +439,7 @@
                 ],
             ),(
                 id: 250,
-                title: "Soins Enfants et Adolescents",
+                title: "Soins Enfants\\\net Adolescents",
                 image: Some(("SEEA_0", "TODO")),
                 description: r#"
 
@@ -630,7 +630,7 @@
 
                     ),(
                         id: 700,
-                        title: "Sourcils & Lèvres `FORFAIT`",
+                        title: "Sourcils & Lèvres `FORFAIT`",
                         book: "www.planity.com/destination-spa-33640-beautiran",
                         image: None,
                         price: (15,00),
@@ -639,7 +639,7 @@
 
                     ),(
                         id: 750,
-                        title: "Demi-jambes & Maillot & Aisselles `FORFAIT`",
+                        title: "Demi-jambes & Maillot & Aisselles `FORFAIT`",
                         book: "www.planity.com/destination-spa-33640-beautiran",
                         image: None,
                         price: (38,00),
@@ -655,7 +655,7 @@
                         "#,
                     ),(
                         id: 800,
-                        title: "Jambes Entières & Maillot & Aisselles `FORFAIT`",
+                        title: "Jambes Entières & Maillot & Aisselles `FORFAIT`",
                         book: "www.planity.com/destination-spa-33640-beautiran",
                         image: None,
                         price: (47,00),
