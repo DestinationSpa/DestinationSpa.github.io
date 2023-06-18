@@ -14,8 +14,8 @@
         title: "L'Institut",
         text: r#"
 
-            __*Marine*, esthéticienne et créatrice de *Destination
-            Spa*__
+             __*Marine*, esthéticienne et créatrice__\
+             __de *Destination Spa*__
 
             Après plusieurs expériences en tant que spa praticienne et
             esthéticienne, j'ai pu réaliser mon souhait de créer un
@@ -37,7 +37,7 @@
 
             Retrouvez dans votre institut de beauté, des produits
             naturels et/ou biologiques, de fabrication Française.
-            Tous ont été sélectionnés pour leurs efficacité et les
+            Tous ont été sélectionnés pour leur efficacité et les
             engagements des marques partenaires.
 
             Réservez-vous un moment de détente entre les mains de
@@ -94,7 +94,7 @@
         categories: [
             (
                 id: 100,
-                title: "Soins du\\\nVisage Bio",
+                title: "Soins du Visage Bio",
                 image: Some(("SVGE_0", "TODO")),
                 description: r#"
 
@@ -107,7 +107,7 @@
                 benefits: [
                     (
                         id: 100,
-                        title: "Les Soins\\\nAbsolus `01:10`",
+                        title: "Les Soins Absolus `01:10`",
                         book: "www.planity.com/destination-spa-33640-beautiran",
                         image: Some(("SVGE_absolu", "TODO")),
                         price: (89,00),
@@ -140,7 +140,7 @@
                         "#,
                     ),(
                         id: 150,
-                        title: "Soin Primordial `01:00`",
+                        title: "Soin Primordial `01:00`",
                         book: "www.planity.com/destination-spa-33640-beautiran",
                         image: Some(("SVGE_primordial", "TODO")),
                         price: (79,00),
@@ -154,7 +154,7 @@
                         "#,
                     ),(
                         id: 200,
-                        title: "Soin Détox `00:50`",
+                        title: "Soin Détox `00:50`",
                         book: "www.planity.com/destination-spa-33640-beautiran",
                         image: Some(("SVGE_detox", "TODO")),
                         price: (59,00),
@@ -169,7 +169,7 @@
                         "#,
                     ),(
                         id: 250,
-                        title: "Massage Traditionnel Indien du Visage `00:30`",
+                        title: "Massage Traditionnel Indien du Visage `00:30`",
                         book: "www.planity.com/destination-spa-33640-beautiran",
                         image: Some(("SVGE_indien", "TODO")),
                         price: (39,00),
@@ -184,7 +184,7 @@
                         "#,
                     ),(
                         id: 300,
-                        title: "Soin Défatiguant Express `00:20`",
+                        title: "Soin Défatiguant Express `00:20`",
                         book: "www.planity.com/destination-spa-33640-beautiran",
                         image: Some(("SVGE_express", "TODO")),
                         price: (29,00),
@@ -200,7 +200,7 @@
                         "#,
                     ),(
                         id: 350,
-                        title: "Soin du Regard\\\nFlash `00:15`",
+                        title: "Soin du Regard Flash `00:15`",
                         book: "www.planity.com/destination-spa-33640-beautiran",
                         image: Some(("SVGE_flash", "TODO")),
                         price: (15,00),
@@ -217,7 +217,7 @@
                 ],
             ),(
                 id: 150,
-                title: "Rituels Corps",
+                title: "Rituels Corps",
                 image: Some(("RICO_0", "TODO")),
                 description: r#"
 
@@ -228,7 +228,7 @@
                 benefits: [
                     (
                         id: 100,
-                        title: "Rite du\\\nHammam `01:30`",
+                        title: "Rite du Hammam `01:30`",
                         book: "www.planity.com/destination-spa-33640-beautiran",
                         image: Some(("RICO_rite_hammam", "TODO")),
                         price: (100,00),
@@ -246,7 +246,7 @@
                         "#,
                     ),(
                         id: 150,
-                        title: "Rituel Sabi Sabi en Terre d'Afrique `01:45`",
+                        title: "Rituel Sabi Sabi en Terre d'Afrique `01:45`",
                         book: "www.planity.com/destination-spa-33640-beautiran",
                         image: Some(("RICO_sabi_sabi", "TODO")),
                         price: (115,00),
@@ -267,7 +267,7 @@
                         "#,
                     ),(
                         id: 200,
-                        title: "Croisière bien-être\\\nen Polynésie `01:45`",
+                        title: "Croisière bien‑être en Polynésie `01:45`",
                         book: "www.planity.com/destination-spa-33640-beautiran",
                         image: Some(("RICO_polynesie", "TODO")),
                         price: (115,00),
@@ -289,7 +289,7 @@
                         "#,
                     ),(
                         id: 250,
-                        title: "Rite Holistic\\\nen Amazonie `01:45`",
+                        title: "Rite Holistic en Amazonie `01:45`",
                         book: "www.planity.com/destination-spa-33640-beautiran",
                         image: Some(("RICO_amazonie", "TODO")),
                         price: (115,00),
@@ -310,7 +310,7 @@
                         "#,
                     ),(
                         id: 300,
-                        title: "Hammam `00:30`",
+                        title: "Hammam `00:30`",
                         book: "www.planity.com/destination-spa-33640-beautiran",
                         image: Some(("RICO_hammam", "TODO")),
                         price: (30,00),
@@ -336,7 +336,7 @@
                 benefits: [
                     (
                         id: 100,
-                        title: "Tour du Monde\\\nen 90 min `01:30`",
+                        title: "Tour du Monde en 90 min `01:30`",
                         book: "www.planity.com/destination-spa-33640-beautiran",
                         image: Some(("MODG_tour_du_monde", "TODO")),
                         price: (109,00),
@@ -350,7 +350,7 @@
                         "#,
                     ),(
                         id: 150,
-                        title: "Modelage\\\nPolynésien `01:00`",
+                        title: "Modelage Polynésien `01:00`",
                         book: "www.planity.com/destination-spa-33640-beautiran",
                         image: Some(("MODG_polynesien", "TODO")),
                         price: (75,00),
@@ -365,7 +365,7 @@
                         "#,
                     ),(
                         id: 200,
-                        title: "Modelage\\\nOriental `01:00`",
+                        title: "Modelage Oriental `01:00`",
                         book: "www.planity.com/destination-spa-33640-beautiran",
                         image: Some(("MODG_oriental", "TODO")),
                         price: (75,00),
@@ -378,7 +378,7 @@
                         "#,
                     ),(
                         id: 250,
-                        title: "Modelage\\\nAfricain `01:00`",
+                        title: "Modelage Africain `01:00`",
                         book: "www.planity.com/destination-spa-33640-beautiran",
                         image: Some(("MODG_sabi_sabi", "TODO")),
                         price: (75,00),
@@ -395,7 +395,7 @@
                         "#,
                     ),(
                         id: 300,
-                        title: "Modelage Holistic\\\nau Bambou `01:00`",
+                        title: "Modelage Holistic au Bambou `01:00`",
                         book: "www.planity.com/destination-spa-33640-beautiran",
                         image: Some(("MODG_bambou", "TODO")),
                         price: (78,00),
@@ -410,7 +410,7 @@
                         "#,
                     ),(
                         id: 350,
-                        title: "Escale Bien-être `00:30`",
+                        title: "Escale Bien‑être `00:30`",
                         book: "www.planity.com/destination-spa-33640-beautiran",
                         image: Some(("MODG_escale", "TODO")),
                         price: (39,00),
@@ -422,7 +422,7 @@
                         "#,
                     ),(
                         id: 400,
-                        title: "Massage Traditionnel Indien du Visage `00:30`",
+                        title: "Massage Traditionnel Indien du Visage `00:30`",
                         book: "www.planity.com/destination-spa-33640-beautiran",
                         image: Some(("MODG_indien", "TODO")),
                         price: (39,00),
@@ -439,7 +439,7 @@
                 ],
             ),(
                 id: 250,
-                title: "Soins Enfants\\\net Adolescents",
+                title: "Soins Enfants et Adolescents",
                 image: Some(("SEEA_0", "TODO")),
                 description: r#"
 
@@ -450,7 +450,7 @@
                 benefits: [
                     (
                         id: 100,
-                        title: "Ma Mini-escale\\\nBien-être `00:20`",
+                        title: "Ma Mini‑escale Bien‑être `00:20`",
                         book: "www.planity.com/destination-spa-33640-beautiran",
                         image: Some(("SEEA_escale", "TODO")),
                         price: (28,00),
@@ -463,7 +463,7 @@
                         "#,
                     ),(
                         id: 150,
-                        title: "Soin du Dos\\\nAnti-stress `01:00`",
+                        title: "Soin du Dos Anti‑stress `01:00`",
                         book: "www.planity.com/destination-spa-33640-beautiran",
                         image: Some(("SEEA_dos", "TODO")),
                         price: (60,00),
@@ -485,7 +485,7 @@
                         "#,
                     ),(
                         id: 200,
-                        title: "Soin du Visage\\\nDétox `00:50`",
+                        title: "Soin du Visage Détox `00:50`",
                         book: "www.planity.com/destination-spa-33640-beautiran",
                         image: Some(("SEEA_detox", "TODO")),
                         price: (59,00),
@@ -502,7 +502,7 @@
                 ],
             ),(
                 id: 300,
-                title: "Les Épilations",
+                title: "Les Épilations",
                 image: Some(("EPIL_0", "TODO")),
                 description: r#"
 
@@ -630,7 +630,7 @@
 
                     ),(
                         id: 700,
-                        title: "Sourcils, Lèvres `FORFAIT`",
+                        title: "Sourcils & Lèvres `FORFAIT`",
                         book: "www.planity.com/destination-spa-33640-beautiran",
                         image: None,
                         price: (15,00),
@@ -639,7 +639,7 @@
 
                     ),(
                         id: 750,
-                        title: "Demi-jambes, Maillot, Aisselles `FORFAIT`",
+                        title: "Demi-jambes & Maillot & Aisselles `FORFAIT`",
                         book: "www.planity.com/destination-spa-33640-beautiran",
                         image: None,
                         price: (38,00),
@@ -647,15 +647,15 @@
                         description: r#"
 
                             `10€` en supplément pour\
-			    un maillot échancré ou brésilien
+                            un maillot échancré ou brésilien
 
                             `15€` en supplément pour\
-			    un maillot semi-intégral ou intégral
+                            un maillot semi-intégral ou intégral
 
                         "#,
                     ),(
                         id: 800,
-                        title: "Jambes Entières, Maillot, Aisselles `FORFAIT`",
+                        title: "Jambes Entières & Maillot & Aisselles `FORFAIT`",
                         book: "www.planity.com/destination-spa-33640-beautiran",
                         image: None,
                         price: (47,00),
