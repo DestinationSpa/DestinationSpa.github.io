@@ -6,14 +6,14 @@ let
 
   nixpkgs = github {
     repo = "nixos/nixpkgs";
-    rev = "a45a891"; # nixos-22.11 @ 2023-02-13
-    sha256 = "1z4iyfgqsqs90g3xmh21n4ydv88p5s8s0klf1x1cbjx4r7q8h6wf";
+    rev = "c7ff1b9"; # nixos-23.05 @ 2023-06-16
+    sha256 = "sha256:0bq722ick80qwg1k1zv1021b2x7mlwsxv10y999mh22gk7vdfmi7";
   };
 
   nixpkgs-mozilla = github {
     repo = "mozilla/nixpkgs-mozilla";
-    rev = "85eb0ba"; # master @ 2023-02-02
-    sha256 = "15a7zd7nrnfgjzs8gq2cpkxg7l3c38jradkxxyaf136kkqhlc0k4";
+    rev = "e6ca26f"; # master @ 2023-05-19
+    sha256 = "sha256:15r06ddyx3i7fnnpz3kp68gq22hq87yl3pnwfbybm74drw80k5s9";
   };
 
   pkgs = import nixpkgs {
@@ -23,24 +23,21 @@ let
   cert = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
 
 in pkgs.mkShell {
-
   NIX_SSL_CERT_FILE = cert;
   SSL_CERT_FILE = cert;
   GIT_SSL_CAINFO = cert;
 
-  packages = [
+  nativeBuildInputs = [
     (pkgs.rustChannelOf {
-
       channel = "stable";
-      date = "2023-01-26"; # see https://forge.rust-lang.org
-      sha256 = "sha256-riZUc+R9V35c/9e8KJUE+8pzpXyl0lRXt3ZkKlxoY0g=";
-
+      date = "2023-06-01"; # see https://forge.rust-lang.org
+      sha256 = "sha256-gdYqng0y9iHYzYPAdkC/ka3DRny3La/S5G8ASj0Ayyc=";
     }).rust
 
     pkgs.nodePackages.prettier
-    pkgs.lightningcss
     pkgs.imagemagick
+    pkgs.minify
+    pkgs.ghc # 💖
     pkgs.php
-    pkgs.ghc
   ];
 }
