@@ -1,1 +1,1 @@
-<svg width="800mm" height="800mm" version="1.1" viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg"><g transform="translate(100,100)" fill="none" stroke="rgb(230, 185, 090)" stroke-linecap="round" stroke-linejoin="round" stroke-width="70"><path d="m200 450-150-150 150-150"/><path d="m50 300h500"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="800mm" height="800mm" viewBox="0 0 800 800"><path fill="none" stroke="#E6B95A" stroke-linecap="round" stroke-linejoin="round" stroke-width="70" d="M300 550 150 400l150-150M150 400h500"/></svg>
