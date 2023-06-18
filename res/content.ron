@@ -5,7 +5,7 @@
         note: Some(r#"
 
             [Retrouvez toute l'actualité de votre institut](#infos)\
-	    [sur **Facebook** et **Instagram** !](#infos)
+            [sur **Facebook** et **Instagram** !](#infos)
 
         "#),
     ),
@@ -14,8 +14,8 @@
         title: "L'Institut",
         text: r#"
 
-             __*Marine*, esthéticienne et créatrice__\
-             __de *Destination Spa*__
+            __*Marine*, esthéticienne et créatrice__\
+            __de *Destination Spa*__
 
             Après plusieurs expériences en tant que spa praticienne et
             esthéticienne, j'ai pu réaliser mon souhait de créer un
@@ -492,9 +492,9 @@
                         more: true,
                         description: r#"
 
-                            Soin détoxifiant pour retrouver un grain de
-                            peau plus lisse et des imperfections
-                            atténués. Nettoyage de peau en douceur Dès
+                            Soin détoxifiant pour retrouver un grain
+                            de peau plus lisse et des imperfections
+                            atténués. Nettoyage de peau en douceur dès
                             12 ans.
 
                         "#,
@@ -630,7 +630,7 @@
 
                     ),(
                         id: 700,
-                        title: "Sourcils & Lèvres `FORFAIT`",
+                        title: "Sourcils & Lèvres `FORFAIT`",
                         book: "www.planity.com/destination-spa-33640-beautiran",
                         image: None,
                         price: (15,00),
@@ -639,7 +639,7 @@
 
                     ),(
                         id: 750,
-                        title: "Demi-jambes & Maillot & Aisselles `FORFAIT`",
+                        title: "Demi-jambes & Maillot & Aisselles `FORFAIT`",
                         book: "www.planity.com/destination-spa-33640-beautiran",
                         image: None,
                         price: (38,00),
@@ -655,7 +655,7 @@
                         "#,
                     ),(
                         id: 800,
-                        title: "Jambes Entières & Maillot & Aisselles `FORFAIT`",
+                        title: "Jambes Entières & Maillot & Aisselles `FORFAIT`",
                         book: "www.planity.com/destination-spa-33640-beautiran",
                         image: None,
                         price: (47,00),

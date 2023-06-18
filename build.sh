@@ -3,7 +3,8 @@
 set -euo pipefail
 
 cargo run
-cat index.xhtml | minify --mime='application/xhtml+xml' > index.min
+cat index.xhtml | minify --mime='application/xhtml+xml' \
+                         --xml-keep-whitespace > index.min
 mv index.{min,xhtml}
 
 { cat res/style/source.css
