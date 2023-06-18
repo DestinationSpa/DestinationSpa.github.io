@@ -1,6 +1,6 @@
 #!/usr/bin/env nix-shell
 #!nix-shell --pure -i bash
-set -euxo pipefail
+set -euo pipefail
 
 cargo run
 cat index.xhtml | minify --mime='application/xhtml+xml' > index.min
@@ -10,7 +10,8 @@ mv index.{min,xhtml}
   runhaskell downscale.hs 80 140
 } | minify --mime='text/css' > res/style/minified.css
 
-new=($(cd res/images/hi_res; cat $(ls -1 | sort) | sha1sum))
+names=$(ls -1 res/images/hi_res | sort)
+new=($(cd res/images/hi_res; { echo $names; cat $names; } | sha1sum))
 old=$(cat res/images/low_res/originals.sha1 || true)
 if [[ "$new" != "$old" ]]; then
     rm -rf res/images/low_res
