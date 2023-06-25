@@ -266,7 +266,7 @@ section:target > a {
 
 h3,
 h4 {
-  font-size: 165%;
+  font-size: 160%;
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -528,8 +528,8 @@ address a:hover {
 }
 
 #benefits:target > section > .row:first-child > div > p {
-  margin-top: 8px;
-  font-size: 105%;
+  margin-top: 5px;
+  font-size: 100%;
 }
 
 /*****************************************
