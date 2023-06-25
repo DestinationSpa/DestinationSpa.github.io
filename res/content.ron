@@ -14,13 +14,13 @@
         title: "L'Institut",
         text: r#"
 
-            __*Marine*, esthéticienne et créatrice__\
+            __*Marine*, esthéticienne et fondatrice__\
             __de *Destination Spa*__
 
             Après plusieurs expériences en tant que spa praticienne et
             esthéticienne, j'ai pu réaliser mon souhait de créer un
             centre de beauté où le bien-être est au cœur des priorités
-            afin que toute personne reparte avec le sourire.
+            afin que chaque personne reparte avec le sourire.
 
             *Destination Spa* est un institut de beauté et Spa
             proposant des moments de détente au hammam, des voyages
@@ -32,7 +32,7 @@
             enfants et adolescents, du maquillage pour toutes
             occasions et des épilations.
 
-            Chaque personne est unique ! Un diagnostique sera réalisé
+            Chaque personne est unique ! Un diagnostic sera réalisé
             ensemble afin d'apporter des conseils personnalisés.
 
             Retrouvez dans votre institut de beauté, des produits
@@ -100,7 +100,7 @@
 
                     Soins du visage bio, avec la marque *Ekia*,
                     l'experte des peaux ménopausées. Personnalisables
-                    car aucune peau ne ressemble à la votre.
+                    car aucune peau ne ressemble à la vôtre.
 
                 "#,
 
@@ -163,7 +163,7 @@
 
                             Soin pour les peaux inflammées avec
                             imperfections, pores obstrués, marques de
-                            fatigue, avec un besoin de détoxifié et
+                            fatigue, avec un besoin de détoxifier et
                             d'affiner le grain de peau.
 
                         "#,
@@ -471,15 +471,15 @@
                         description: r#"
 
                             Soin du dos recommandé à partir de 12 ans,
-                            ce soin permet de détoxifié la peau en
+                            ce soin permet de détoxifier la peau en
                             douceur avec un gommage et un
                             enveloppement doux adapté à votre peau. Le
                             soin se termine par un modelage du dos
-                            relaxant idéale lors de périodes
+                            relaxant idéal lors de périodes
                             stressantes comme les examens ou le
                             passage en classe supérieure. Ce soin est
                             également adapté pour les pré-adultes, qui
-                            passe leurs derniers diplôme avant de
+                            passent leurs derniers diplôme avant de
                             rentrer dans la vie active.
 
                         "#,
