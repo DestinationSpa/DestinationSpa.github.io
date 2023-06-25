@@ -325,8 +325,8 @@ section:target > a h4 > span {
 
 #introduction:target img,
 #introduction:target figure {
-  width: 6.35cm;
-  height: 6.35cm;
+  width: 6.2249cm;
+  height: 6.2249cm;
 }
 
 #introduction:target img {
@@ -336,6 +336,17 @@ section:target > a h4 > span {
 #introduction:target figure {
   display: inline-block;
   vertical-align: top;
+
+  margin-top: 0.25cm;
+}
+
+#introduction:target figure:nth-child(1),
+#introduction:target figure:nth-child(2) {
+  margin-top: 0;
+}
+
+#introduction:target figure:nth-child(odd) {
+  margin-right: 0.25cm;
 }
 
 /*****************************************
