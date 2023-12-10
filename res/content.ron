@@ -4,8 +4,9 @@
         subtitle: "Institut de Beauté & Spa à Beautiran",
         note: Some(r#"
 
-            [Retrouvez toute l'actualité de votre institut](#infos)\
-            [sur **Facebook** et **Instagram** !](#infos)
+            Pour passer de belles fêtes de fin d’année,\
+            offrez un voyage bien-être avec nos
+            **[billets cadeaux](https://www.planity.com/destination-spa-33640-beautiran)** !
 
         "#),
     ),
@@ -31,6 +32,10 @@
             vieillissement cutanés et des peaux ménopausées, des soins
             enfants et adolescents, du maquillage pour toutes
             occasions et des épilations.
+
+            Également **experte en minceur personnalisée** et formée à
+            la **madérothérapie**, je saurai vous accompagner avec un
+            programme de soin minceur.
 
             Chaque personne est unique ! Un diagnostic sera réalisé
             ensemble afin d'apporter des conseils personnalisés.
@@ -438,6 +443,65 @@
                     ),
                 ],
             ),(
+                id: 220,
+                title: "Soins Minceur",
+                image: Some(("SNMC_0", "TODO")),
+                description: r#"
+
+                    Notre méthode vous accompagne en douceur vers la
+                    réussite de vos objectifs, avec un programme
+                    entièrement personnalisé selon votre morphologie,
+                    vos habitudes et vos besoins.
+
+                "#,
+                benefits: [
+                    (
+                        id: 100,
+                        title: "Bilan Minceur `01:00`",
+                        book: "www.planity.com/destination-spa-33640-beautiran",
+                        image: Some(("SNMC_bilan", "TODO")),
+                        price: (35,00),
+                        more: true,
+                        description: r#"
+
+                            Avant de débuter une cure Minceur Expert,
+                            j'effectue un bilan corporel personnalisé
+                            de 1 heure afin de comprendre votre
+                            problématique et d’établir le programme
+                            minceur le plus adapté. Ainsi nous
+                            pourrons déterminer votre type ou votre
+                            stade de cellulite, votre composition
+                            corporelle ou encore votre IMC, et une
+                            visibilité sur l'évolution de votre corps
+                            tout au long de la cure.
+
+                            **CURE MINCEUR PERSONNALISÉE** : *Prix et
+                            nombre de séances à prévoir en fonction du
+                            bilan minceur.*
+
+                            Chez *Destination Spa* chaque cure minceur
+                            est unique car chaque personne est unique,
+                            nous établissons une cure sur-mesure en
+                            fonction de vos attentes et de votre
+                            bilan.
+
+                        "#,
+                    ),(
+                        id: 150,
+                        title: "Madérothérapie\\\nJambes Légères `01:00`",
+                        book: "www.planity.com/destination-spa-33640-beautiran",
+                        image: Some(("SNMC_madero", "TODO")),
+                        price: (85,00),
+                        more: false,
+                        description: r#"
+
+                            Inspiré du modelage colombien amincissant,
+                            celui-ci va drainer et alléger vos jambes.
+
+                        "#,
+                    ),
+                ],
+            ),(
                 id: 250,
                 title: "Soins Enfants\\\net Adolescents",
                 image: Some(("SEEA_0", "TODO")),
@@ -496,6 +560,215 @@
                             de peau plus lisse et des imperfections
                             atténués. Nettoyage de peau en douceur dès
                             12 ans.
+
+                        "#,
+                    ),
+                ],
+            ),(
+                id: 260,
+                title: "Beauté\\\ndu Regard",
+                image: Some(("BTRG_0", "TODO")),
+                description: r#"
+
+                    Cils, Sourcils, soin contours des yeux, découvrez
+                    tous nos soins pour avoir un regard de biche.
+
+                "#,
+                benefits: [
+                    (
+                        id: 100,
+                        title: "Soin du Regard Flash `00:15`",
+                        book: "www.planity.com/destination-spa-33640-beautiran",
+                        image: Some(("SVGE_flash", "TODO")),
+                        price: (15,00),
+                        more: true,
+                        description: r#"
+
+                            Un soin flash qui illumine, apaise et
+                            rafraichit le contour de l’œil en 15
+                            minutes. Ce soin peut être réalisé pendant
+                            une épilation ou un soin du corps
+
+                        "#,
+                    ),(
+                        id: 150,
+                        title: "Réhaussement Cils `01:00`",
+                        book: "www.planity.com/destination-spa-33640-beautiran",
+                        image: Some(("BTRG_rehaussement", "TODO")),
+                        price: (50,00),
+                        more: true,
+                        description: r#"
+
+                            Pour ouvrir le regard, l’étape du mascara
+                            est souvent indispensable. Mais pour un
+                            résultat durable, il existe une technique
+                            innovante : le rehaussement de cils. Ce
+                            dernier permet de donner une belle
+                            courbure aux cils pendant plusieurs
+                            semaines. Cette méthode ouvre le regard
+                            dès la racine des cils. Associez-le à une
+                            teinture et un soin Lash Botox afin
+                            d'obtenir un résultat spectaculaire.
+
+                            `+15 min` · `10€` en supplément pour\
+                            un réhaussement de cils **avec teinture**
+
+                        "#,
+                    ),(
+                        id: 200,
+                        title: "Brown Lift `01:00`",
+                        book: "www.planity.com/destination-spa-33640-beautiran",
+                        image: Some(("BTRG_brown", "TODO")),
+                        price: (50,00),
+                        more: true,
+                        description: r#"
+
+                            Technique innovante permettant de
+                            rehausser les poils et discipliner les
+                            sourcils les plus rebelles. Idéal quand
+                            vos sourcils sont tombants ou frisés. Vous
+                            pouvez associer ce soin à une teinture de
+                            sourcils pour un meilleur résultat.
+
+                        "#,
+                    ),(
+                        id: 250,
+                        title: "Teinture Cils\\\nou Sourcils `00:30`",
+                        book: "www.planity.com/destination-spa-33640-beautiran",
+                        image: Some(("BTRG_teinture", "TODO")),
+                        price: (25,00),
+                        more: false,
+                        description: r#"
+
+                            Couleur adaptée en fonction de l’harmonie
+                            de votre visage. Masque contour des yeux
+                            inclus.
+
+                        "#,
+                    ),
+                ],
+            ),(
+                id: 270,
+                title: "Maquillage",
+                image: Some(("MAQU_0", "TODO")),
+                description: r#"
+
+                    Retrouvez toutes nos prestations pour vous mettre
+                    en valeur à toutes occasions avec le maquillage de
+                    la marque française 1944 Paris.
+
+                "#,
+                benefits: [
+                    (
+                        id: 100,
+                        title: "Maquillage Flash `00:30`",
+                        book: "www.planity.com/destination-spa-33640-beautiran",
+                        image: Some(("MAQU_flash", "TODO")),
+                        price: (15,00),
+                        more: false,
+                        description: r#"
+
+                            Profitez d’une remise en beauté après
+                            votre soin.
+
+                        "#,
+                    ),(
+                        id: 150,
+                        title: "Maquillage Jour `00:30`",
+                        book: "www.planity.com/destination-spa-33640-beautiran",
+                        image: Some(("MAQU_jour", "TODO")),
+                        price: (25,00),
+                        more: false,
+                        description: r#"
+
+                            Prestation comprenant maquillage léger et
+                            naturel du teint, des yeux et de la
+                            bouche.
+
+                        "#,
+                    ),(
+                        id: 200,
+                        title: "Maquillage Soirée `00:45`",
+                        book: "www.planity.com/destination-spa-33640-beautiran",
+                        image: Some(("MAQU_soiree", "TODO")),
+                        price: (40,00),
+                        more: false,
+                        description: r#"
+
+                            Maquillage personnalisé en fonction de vos
+                            habitudes, tenue et de votre soirée.
+
+                        "#,
+                    ),
+                ],
+            ),(
+                id: 280,
+                title: "Soin des Mains\\\net des Pieds",
+                image: Some(("SOMP_0", "TODO")),
+                description: r#"
+
+                    Découvrez toutes nos prestations pour chouchouter
+                    et embellir vos mains et vos pieds.
+
+                "#,
+                benefits: [
+                    (
+                        id: 100,
+                        title: "Soin des Ongles `00:30`",
+                        book: "www.planity.com/destination-spa-33640-beautiran",
+                        image: Some(("SOMP_ongles", "TODO")),
+                        price: (30,00),
+                        more: false,
+                        description: r#"
+
+                            Mise en forme de vos ongles, travail des
+                            cuticules, application d’huile
+                            nourrissante pour les ongles.
+
+                        "#,
+                    ),(
+                        id: 150,
+                        title: "Soin des Mains `00:45`",
+                        book: "www.planity.com/destination-spa-33640-beautiran",
+                        image: Some(("SOMP_mains", "TODO")),
+                        price: (45,00),
+                        more: false,
+                        description: r#"
+
+                            Véritable soin des mains avec mise en
+                            forme de vos ongles, gommage, masque et
+                            massage des mains.
+
+                        "#,
+                    ),(
+                        id: 200,
+                        title: "Soin des Pieds\\\nAnti-callosités `01:00`",
+                        book: "www.planity.com/destination-spa-33640-beautiran",
+                        image: Some(("SOMP_anti", "TODO")),
+                        price: (49,00),
+                        more: false,
+                        description: r#"
+
+                            Soin complet avec masque anti-callosités
+                            et modelage relaxant. Retrouvez des pieds
+                            doux et libérés.
+
+                        "#,
+                    ),(
+                        id: 250,
+                        title: "Vernis semi-permanent\\\nMains ou Pieds `00:45`",
+                        book: "www.planity.com/destination-spa-33640-beautiran",
+                        image: Some(("SOMP_vernis", "TODO")),
+                        price: (35,00),
+                        more: true,
+                        description: r#"
+
+                            Pose de vernis semi-permanent vegan et
+                            français de la marque française 1944
+                            Paris, tenue et brillance garantie 3
+                            semaines. Un large choix de couleurs vous
+                            attend à l’institut pour toutes les
+                            occasions et envies.
 
                         "#,
                     ),
