@@ -4,8 +4,8 @@
         subtitle: "Institut de Beauté & Spa à Beautiran",
         note: Some(r#"
 
-            Pour la fête des mères, offrez une pause bien-être\
-            inoubliable avec nos [**billets cadeaux**](https://www.planity.com/destination-spa-33640-beautiran) !
+            [Pour la fête des mères, offrez une pause bien-](https://www.planity.com/destination-spa-33640-beautiran)\
+            [être inoubliable avec nos billets cadeaux !](https://www.planity.com/destination-spa-33640-beautiran)
 
         "#),
     ),
