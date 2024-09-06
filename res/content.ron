@@ -111,6 +111,26 @@
                 benefits: [
                     (
                         id: 100,
+                        title: "Soin Signature `02:00`",
+                        book: "www.planity.com/destination-spa-33640-beautiran",
+                        image: Some(("soin_signature", "TODO")),
+                        price: (120,00),
+                        more: true,
+                        description: r#"
+
+                            Ce soin unique vous offre une prise en charge 
+                            globale pour un bien-être absolu. Plonger vos 
+                            pieds dans un bain aux huiles essentielles 
+                            anti-stress, poursuivez votre chemin avec un 
+                            nettoyage du visage adapté à votre maturité de 
+                            peau, relâchez tous vos muscles du visage avec 
+                            le massage Absolu Lift, terminez votre voyage 
+                            par un masque crème 100 % sur mesure. Votre 
+                            peau sera apaisée, raffermie et réhydratée.
+
+                        "#,
+                    ),(
+                        id: 150,
                         title: "Les Soins Absolus `01:10`",
                         book: "www.planity.com/destination-spa-33640-beautiran",
                         image: Some(("SVGE_absolu", "TODO")),
@@ -143,7 +163,7 @@
 
                         "#,
                     ),(
-                        id: 150,
+                        id: 200,
                         title: "Soin Primordial `01:00`",
                         book: "www.planity.com/destination-spa-33640-beautiran",
                         image: Some(("SVGE_primordial", "TODO")),
@@ -157,22 +177,37 @@
 
                         "#,
                     ),(
-                        id: 200,
-                        title: "Soin Détox `00:50`",
+                        id: 250,
+                        title: "Soin Précision `00:50`",
                         book: "www.planity.com/destination-spa-33640-beautiran",
                         image: Some(("SVGE_detox", "TODO")),
                         price: (59,00),
                         more: true,
                         description: r#"
 
-                            Soin pour les peaux inflammées avec
-                            imperfections, pores obstrués, marques de
-                            fatigue, avec un besoin de détoxifier et
-                            d'affiner le grain de peau.
+                            Soin visage 100% sur mesure, pouvant répondre à 
+                            un ou plusieurs objectifs : détox, hydation, nutrition, 
+                            éclat, tiraillements et tâches pigmentaires.
 
                         "#,
                     ),(
-                        id: 250,
+                        id: 300,
+                        title: "Absolu lift `01:00`",
+                        book: "www.planity.com/destination-spa-33640-beautiran",
+                        image: Some(("absolu_lift", "TODO")),
+                        price: (89,00),
+                        more: true,
+                        description: r#"
+
+                            Massage facialiste du visage permettant de redonner éclat, 
+                            fermeté et jeunesse à votre peau. Grâce à un travail en 
+                            profondeur des muscles faciaux, ce soin permet de définir 
+                            l'ovale du visage, de mettre en valeur les pommettes, 
+                            d'élargir le regard et d'atténuer les rides.
+
+                        "#,
+                    ),(
+                        id: 350,
                         title: "Massage Traditionnel Indien du Visage `00:30`",
                         book: "www.planity.com/destination-spa-33640-beautiran",
                         image: Some(("SVGE_indien", "TODO")),
@@ -187,7 +222,20 @@
 
                         "#,
                     ),(
-                        id: 300,
+                        id: 400,
+                        title: "Méthode coréenne `00:45`",
+                        book: "www.planity.com/destination-spa-33640-beautiran",
+                        image: Some(("methodecoreenne", "TODO")),
+                        price: (66,00),
+                        more: false,
+                        description: r#"
+
+                            Inspiré des rituels beauté coréen, votre peau retrouvera son 
+                            éclat, et une hydratation optimale pour un effet plumping immédiat.
+
+                        "#,
+                    ),(
+                        id: 450,
                         title: "Soin Défatiguant Express `00:20`",
                         book: "www.planity.com/destination-spa-33640-beautiran",
                         image: Some(("SVGE_express", "TODO")),
@@ -203,7 +251,7 @@
 
                         "#,
                     ),(
-                        id: 350,
+                        id: 500,
                         title: "Soin du Regard Flash `00:15`",
                         book: "www.planity.com/destination-spa-33640-beautiran",
                         image: Some(("SVGE_flash", "TODO")),
@@ -215,6 +263,20 @@
                             rafraichit le contour de l’œil en 15
                             minutes. Ce soin peut être réalisé pendant
                             une épilation ou un soin du corps
+
+                        "#,
+                    ),(
+                        id: 550,
+                        title: "Abonnement annuel soin visage `01:15`",
+                        book: "www.planity.com/destination-spa-33640-beautiran",
+                        image: Some(("soinvisageannuel", "TODO")),
+                        price: (960,00),
+                        more: false,
+                        description: r#"
+
+                            Profitez d’un abonnement de soin visage à l’année. 
+                            1 heure de soin visage par mois à 80€ au lieu de 89€, 
+                            personnalisé en fonction de l’état de votre peau au moment du soin. 
 
                         "#,
                     ),
@@ -235,7 +297,7 @@
                         title: "Rite du Hammam `01:30`",
                         book: "www.planity.com/destination-spa-33640-beautiran",
                         image: Some(("RICO_rite_hammam", "TODO")),
-                        price: (100,00),
+                        price: (115,00),
                         more: true,
                         description: r#"
 
@@ -253,7 +315,7 @@
                         title: "Rituel Sabi Sabi en Terre d'Afrique `01:45`",
                         book: "www.planity.com/destination-spa-33640-beautiran",
                         image: Some(("RICO_sabi_sabi", "TODO")),
-                        price: (115,00),
+                        price: (120,00),
                         more: true,
                         description: r#"
 
@@ -274,7 +336,7 @@
                         title: "Croisière bien‑être en Polynésie `01:45`",
                         book: "www.planity.com/destination-spa-33640-beautiran",
                         image: Some(("RICO_polynesie", "TODO")),
-                        price: (115,00),
+                        price: (120,00),
                         more: true,
                         description: r#"
 
@@ -296,7 +358,7 @@
                         title: "Rite Holistic en Amazonie `01:45`",
                         book: "www.planity.com/destination-spa-33640-beautiran",
                         image: Some(("RICO_amazonie", "TODO")),
-                        price: (115,00),
+                        price: (120,00),
                         more: true,
                         description: r#"
 
@@ -312,12 +374,70 @@
                             passion un corps relâché et très léger !
 
                         "#,
-                    ),(
+                    ),,(
                         id: 300,
+                        title: "Célébration Japonaise `00:60`",
+                        book: "www.planity.com/destination-spa-33640-beautiran",
+                        image: Some(("celebration_japonaise", "TODO")),
+                        price: (75,00),
+                        more: true,
+                        description: r#"
+
+                            Ce Rituel zen spécifique du dos, démarre avec un gommage 
+                            salé aux graines de sésame et lemongrass, puis se 
+                            prolonge par la douceur nourrissante  
+                            d’un enveloppement chaud très cocooning, au beurre de 
+                            karité parfumé au jasmin. Le soin se termine par le 
+                            massage impérial japonais du dos afin d’équilibrer 
+                            le corps et l’esprit.
+
+                        "#,
+                    ),(
+                        id: 350,
+                        title: "Sauna Japonais `00:30`",
+                        book: "www.planity.com/destination-spa-33640-beautiran",
+                        image: Some(("sauna_japonais", "TODO")),
+                        price: (35,00),
+                        more: true,
+                        description: r#"
+
+                            Le sauna infrarouges est depuis toujours 
+                            connu par les japonais pour ses vertus 
+                            apaisantes et détoxifiantes. Comme le soleil, 
+                            les deux dômes du sauna et le matelas 
+                            chauffant génèrent des infrarouges longs 
+                            dénués de rayons UV. Recommandé pour :
+
+                            `DETOX` Elimination des toxines et métaux 
+                            lourds 4x plus que le sauna traditionnel 
+
+                            `AMINCISSANT` Perte de 600 calories par 
+                            séances, meilleure qualité de peau, perte de 
+                            centimètres 
+
+                            `RELAXANT` Amélioration du sommeil, récupération 
+                            musculaire.
+
+                        "#,
+                    ),(
+                        id: 400,
+                        title: "Abonnement Sauna Japonais `00:30`",
+                        book: "www.planity.com/destination-spa-33640-beautiran",
+                        image: Some(("abonnementsauna", "TODO")),
+                        price: (350,00),
+                        more: false,
+                        description: r#"
+
+                            12 séances de 30 minutes dont 2 offertes.
+                    
+
+                        "#,
+                    ),(
+                        id: 450,
                         title: "Hammam `00:30`",
                         book: "www.planity.com/destination-spa-33640-beautiran",
                         image: Some(("RICO_hammam", "TODO")),
-                        price: (30,00),
+                        price: (35,00),
                         more: false,
                         description: r#"
 
@@ -340,10 +460,23 @@
                 benefits: [
                     (
                         id: 100,
+                        title: "Passeport`01:10`",
+                        book: "www.planity.com/destination-spa-33640-beautiran",
+                        image: Some(("passeport", "TODO")),
+                        price: (320,00),
+                        more: false,
+                        description: r#"
+
+                            Avec votre passeport profitez
+                            de 5 massage de 1 heure au chox pendant 1 an.
+
+                        "#,
+                    )(
+                        id: 150,
                         title: "Tour du Monde en 90 min `01:30`",
                         book: "www.planity.com/destination-spa-33640-beautiran",
                         image: Some(("MODG_tour_du_monde", "TODO")),
-                        price: (109,00),
+                        price: (115,00),
                         more: false,
                         description: r#"
 
@@ -353,11 +486,11 @@
 
                         "#,
                     ),(
-                        id: 150,
+                        id: 200,
                         title: "Modelage Polynésien `01:00`",
                         book: "www.planity.com/destination-spa-33640-beautiran",
                         image: Some(("MODG_polynesien", "TODO")),
-                        price: (75,00),
+                        price: (80,00),
                         more: true,
                         description: r#"
 
@@ -368,11 +501,11 @@
 
                         "#,
                     ),(
-                        id: 200,
+                        id: 250,
                         title: "Modelage Oriental `01:00`",
                         book: "www.planity.com/destination-spa-33640-beautiran",
                         image: Some(("MODG_oriental", "TODO")),
-                        price: (75,00),
+                        price: (80,00),
                         more: false,
                         description: r#"
 
@@ -381,11 +514,11 @@
 
                         "#,
                     ),(
-                        id: 250,
+                        id: 300,
                         title: "Modelage Africain `01:00`",
                         book: "www.planity.com/destination-spa-33640-beautiran",
                         image: Some(("MODG_sabi_sabi", "TODO")),
-                        price: (75,00),
+                        price: (80,00),
                         more: true,
                         description: r#"
 
@@ -398,11 +531,11 @@
 
                         "#,
                     ),(
-                        id: 300,
+                        id: 350,
                         title: "Modelage Holistic au Bambou `01:00`",
                         book: "www.planity.com/destination-spa-33640-beautiran",
                         image: Some(("MODG_bambou", "TODO")),
-                        price: (78,00),
+                        price: (80,00),
                         more: true,
                         description: r#"
 
@@ -413,11 +546,11 @@
 
                         "#,
                     ),(
-                        id: 350,
+                        id: 400,
                         title: "Escale Bien‑être `00:30`",
                         book: "www.planity.com/destination-spa-33640-beautiran",
                         image: Some(("MODG_escale", "TODO")),
-                        price: (39,00),
+                        price: (45,00),
                         more: false,
                         description: r#"
 
@@ -425,7 +558,7 @@
 
                         "#,
                     ),(
-                        id: 400,
+                        id: 450,
                         title: "Massage Traditionnel Indien du Visage `00:30`",
                         book: "www.planity.com/destination-spa-33640-beautiran",
                         image: Some(("MODG_indien", "TODO")),
@@ -437,6 +570,37 @@
                             techniques anti-âge au massage crânien, il
                             permet d'évacuer la fatigue et de lâcher
                             prise.
+
+                        "#,
+                    ),(
+                        id: 500,
+                        title: "Escale Japonaise `00:45`",
+                        book: "www.planity.com/destination-spa-33640-beautiran",
+                        image: Some(("escalejaponaise", "TODO")),
+                        price: (60,00),
+                        more: true,
+                        description: r#"
+
+                            Besoin de sérénité ? 
+                            Profitez d’un massage du ventre pour retrouver 
+                            du bien-être et un équilibre psychique. Ce soin 
+                            est suivi de 30 minutes de sauna japonais pour 
+                            favoriser la relaxation.
+
+
+                        "#,
+                    ),(
+                        id: 550,
+                        title: "Eté Indien`00:45`",
+                        book: "www.planity.com/destination-spa-33640-beautiran",
+                        image: Some(("eteindien", "TODO")),
+                        price: (50,00),
+                        more: true,
+                        description: r#"
+
+                            Relaxez vous dans le sauna dôme en profitant 
+                            du massage traditionnel indien du visage pour 
+                            un total lâcher prise.
 
                         "#,
                     ),
@@ -459,7 +623,7 @@
                         title: "Bilan Minceur `01:00`",
                         book: "www.planity.com/destination-spa-33640-beautiran",
                         image: Some(("SNMC_bilan", "TODO")),
-                        price: (35,00),
+                        price: (45,00),
                         more: true,
                         description: r#"
 
@@ -487,15 +651,38 @@
                         "#,
                     ),(
                         id: 150,
-                        title: "Madérothérapie\\\nJambes Légères `01:00`",
+                        title: "Madérothérapie Séance unique Ventre Jambes`01:00`",
                         book: "www.planity.com/destination-spa-33640-beautiran",
                         image: Some(("SNMC_madero", "TODO")),
-                        price: (85,00),
+                        price: (120,00),
                         more: false,
                         description: r#"
 
-                            Inspiré du modelage colombien amincissant,
-                            celui-ci va drainer et alléger vos jambes.
+                            Massage ancestral colombien, utilisant divers outils en bois
+                            pour réharmoniser la silouhette.
+
+                        "#,
+                    ),(
+                        id: 200,
+                        title: "Bioslimming Active Wrap`01:00`",
+                        book: "www.planity.com/destination-spa-33640-beautiran",
+                        image: Some(("bioslimming", "TODO")),
+                        price: (95,00),
+                        more: true,
+                        description: r#"
+
+                            Enveloppement amincissant innovant qui se concentre sur la réduction
+                             de la cellulite et de la graisse. Ce soin intègre une combinaison 
+                             d’ingrédients actifs puissants pour offrir des résultats exceptionnels 
+                             visibles dès la première séance. Sa formule unique est un mélange d’extraits 
+                             de plantes, caféine, huiles essentielles, extrait d’algues et agents thermiques 
+                             (chaud et froid). C’est une expérience revitalisante qui délivre une
+                             double sensation : une chaleur vivifiante et des energies rafraîchissantes. 
+                             Ce orocessus thermique stimule la micro-circulation et cible spécifiquement 
+                             les cellules graisseuses, améliore l’apparence de la cellulite et favorise 
+                             la perte de poids tout en gardant la peau ferme et tonifiée. 
+                             De plus, ce traitement contribue à soulager les jambes lourdes grâce à ces 
+                             propriétés anti-inflammatoires.
 
                         "#,
                     ),
@@ -551,7 +738,7 @@
                         title: "Soin du Visage Détox `00:50`",
                         book: "www.planity.com/destination-spa-33640-beautiran",
                         image: Some(("SEEA_detox", "TODO")),
-                        price: (59,00),
+                        price: (55,00),
                         more: true,
                         description: r#"
 
@@ -594,7 +781,7 @@
                         title: "Réhaussement Cils `01:00`",
                         book: "www.planity.com/destination-spa-33640-beautiran",
                         image: Some(("BTRG_rehaussement", "TODO")),
-                        price: (50,00),
+                        price: (60,00),
                         more: true,
                         description: r#"
 
@@ -615,10 +802,10 @@
                         "#,
                     ),(
                         id: 200,
-                        title: "Brown Lift `01:00`",
+                        title: "Brow Lift `01:00`",
                         book: "www.planity.com/destination-spa-33640-beautiran",
                         image: Some(("BTRG_brown", "TODO")),
-                        price: (50,00),
+                        price: (60,00),
                         more: true,
                         description: r#"
 
@@ -789,7 +976,7 @@
                         title: "Sourcils Entretien",
                         book: "www.planity.com/destination-spa-33640-beautiran",
                         image: None,
-                        price: (9,00),
+                        price: (10,00),
                         more: false,
                         description: "",
 
@@ -815,7 +1002,7 @@
                         title: "Lèvres Supérieur",
                         book: "www.planity.com/destination-spa-33640-beautiran",
                         image: None,
-                        price: (9,00),
+                        price: (10,00),
                         more: false,
                         description: "",
 
@@ -824,7 +1011,7 @@
                         title: "Visage",
                         book: "www.planity.com/destination-spa-33640-beautiran",
                         image: None,
-                        price: (20,00),
+                        price: (25,00),
                         more: false,
                         description: "",
 
@@ -842,7 +1029,7 @@
                         title: "Demi-jambes",
                         book: "www.planity.com/destination-spa-33640-beautiran",
                         image: None,
-                        price: (20,00),
+                        price: (22,00),
                         more: false,
                         description: "",
 
@@ -896,7 +1083,7 @@
                         title: "Dos ou Torse",
                         book: "www.planity.com/destination-spa-33640-beautiran",
                         image: None,
-                        price: (32,00),
+                        price: (30,00),
                         more: false,
                         description: "",
 
@@ -905,7 +1092,7 @@
                         title: "Sourcils & Lèvres `FORFAIT`",
                         book: "www.planity.com/destination-spa-33640-beautiran",
                         image: None,
-                        price: (15,00),
+                        price: (18,00),
                         more: false,
                         description: "",
 
@@ -921,7 +1108,7 @@
                             `10€` en supplément pour\
                             un maillot échancré ou brésilien
 
-                            `15€` en supplément pour\
+                            `20€` en supplément pour\
                             un maillot semi-intégral ou intégral
 
                         "#,
@@ -937,7 +1124,7 @@
                             `10€` en supplément pour\
                             un maillot échancré ou brésilien
 
-                            `15€` en supplément pour\
+                            `20€` en supplément pour\
                             un maillot semi-intégral ou intégral
 
                         "#,
