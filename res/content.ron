@@ -110,7 +110,7 @@
 
                 benefits: [
                     (
-                        id: 100,
+                        id: 0,
                         title: "Soin Signature `02:00`",
                         book: "www.planity.com/destination-spa-33640-beautiran",
                         image: Some(("soin_signature", "TODO")),
@@ -130,7 +130,7 @@
 
                         "#,
                     ),(
-                        id: 150,
+                        id: 100,
                         title: "Les Soins Absolus `01:10`",
                         book: "www.planity.com/destination-spa-33640-beautiran",
                         image: Some(("SVGE_absolu", "TODO")),
@@ -163,7 +163,7 @@
 
                         "#,
                     ),(
-                        id: 200,
+                        id: 150,
                         title: "Soin Primordial `01:00`",
                         book: "www.planity.com/destination-spa-33640-beautiran",
                         image: Some(("SVGE_primordial", "TODO")),
@@ -177,7 +177,7 @@
 
                         "#,
                     ),(
-                        id: 250,
+                        id: 200,
                         title: "Soin Précision `00:50`",
                         book: "www.planity.com/destination-spa-33640-beautiran",
                         image: Some(("SVGE_detox", "TODO")),
@@ -191,7 +191,7 @@
 
                         "#,
                     ),(
-                        id: 300,
+                        id: 0,
                         title: "Absolu lift `01:00`",
                         book: "www.planity.com/destination-spa-33640-beautiran",
                         image: Some(("absolu_lift", "TODO")),
@@ -207,7 +207,7 @@
 
                         "#,
                     ),(
-                        id: 350,
+                        id: 250,
                         title: "Massage Traditionnel Indien du Visage `00:30`",
                         book: "www.planity.com/destination-spa-33640-beautiran",
                         image: Some(("SVGE_indien", "TODO")),
@@ -222,7 +222,7 @@
 
                         "#,
                     ),(
-                        id: 400,
+                        id: 0,
                         title: "Méthode coréenne `00:45`",
                         book: "www.planity.com/destination-spa-33640-beautiran",
                         image: Some(("methodecoreenne", "TODO")),
@@ -235,7 +235,7 @@
 
                         "#,
                     ),(
-                        id: 450,
+                        id: 300,
                         title: "Soin Défatiguant Express `00:20`",
                         book: "www.planity.com/destination-spa-33640-beautiran",
                         image: Some(("SVGE_express", "TODO")),
@@ -251,7 +251,7 @@
 
                         "#,
                     ),(
-                        id: 500,
+                        id: 350,
                         title: "Soin du Regard Flash `00:15`",
                         book: "www.planity.com/destination-spa-33640-beautiran",
                         image: Some(("SVGE_flash", "TODO")),
@@ -266,7 +266,7 @@
 
                         "#,
                     ),(
-                        id: 550,
+                        id: 0,
                         title: "Abonnement annuel soin visage `01:15`",
                         book: "www.planity.com/destination-spa-33640-beautiran",
                         image: Some(("soinvisageannuel", "TODO")),
@@ -375,7 +375,7 @@
 
                         "#,
                     ),(
-                        id: 300,
+                        id: 0,
                         title: "Célébration Japonaise `00:60`",
                         book: "www.planity.com/destination-spa-33640-beautiran",
                         image: Some(("celebration_japonaise", "TODO")),
@@ -393,7 +393,7 @@
 
                         "#,
                     ),(
-                        id: 350,
+                        id: 0,
                         title: "Sauna Japonais `00:30`",
                         book: "www.planity.com/destination-spa-33640-beautiran",
                         image: Some(("sauna_japonais", "TODO")),
@@ -420,7 +420,7 @@
 
                         "#,
                     ),(
-                        id: 400,
+                        id: 0,
                         title: "Abonnement Sauna Japonais `00:30`",
                         book: "www.planity.com/destination-spa-33640-beautiran",
                         image: Some(("abonnementsauna", "TODO")),
@@ -433,7 +433,7 @@
 
                         "#,
                     ),(
-                        id: 450,
+                        id: 300,
                         title: "Hammam `00:30`",
                         book: "www.planity.com/destination-spa-33640-beautiran",
                         image: Some(("RICO_hammam", "TODO")),
@@ -459,7 +459,7 @@
                 "#,
                 benefits: [
                     (
-                        id: 100,
+                        id: 0,
                         title: "Passeport`01:10`",
                         book: "www.planity.com/destination-spa-33640-beautiran",
                         image: Some(("passeport", "TODO")),
@@ -472,7 +472,7 @@
 
                         "#,
                     ),(
-                        id: 150,
+                        id: 100,
                         title: "Tour du Monde en 90 min `01:30`",
                         book: "www.planity.com/destination-spa-33640-beautiran",
                         image: Some(("MODG_tour_du_monde", "TODO")),
@@ -486,7 +486,7 @@
 
                         "#,
                     ),(
-                        id: 200,
+                        id: 150,
                         title: "Modelage Polynésien `01:00`",
                         book: "www.planity.com/destination-spa-33640-beautiran",
                         image: Some(("MODG_polynesien", "TODO")),
@@ -501,7 +501,7 @@
 
                         "#,
                     ),(
-                        id: 250,
+                        id: 200,
                         title: "Modelage Oriental `01:00`",
                         book: "www.planity.com/destination-spa-33640-beautiran",
                         image: Some(("MODG_oriental", "TODO")),
@@ -514,7 +514,7 @@
 
                         "#,
                     ),(
-                        id: 300,
+                        id: 250,
                         title: "Modelage Africain `01:00`",
                         book: "www.planity.com/destination-spa-33640-beautiran",
                         image: Some(("MODG_sabi_sabi", "TODO")),
@@ -531,7 +531,7 @@
 
                         "#,
                     ),(
-                        id: 350,
+                        id: 300,
                         title: "Modelage Holistic au Bambou `01:00`",
                         book: "www.planity.com/destination-spa-33640-beautiran",
                         image: Some(("MODG_bambou", "TODO")),
@@ -546,7 +546,7 @@
 
                         "#,
                     ),(
-                        id: 400,
+                        id: 350,
                         title: "Escale Bien‑être `00:30`",
                         book: "www.planity.com/destination-spa-33640-beautiran",
                         image: Some(("MODG_escale", "TODO")),
@@ -558,7 +558,7 @@
 
                         "#,
                     ),(
-                        id: 450,
+                        id: 400,
                         title: "Massage Traditionnel Indien du Visage `00:30`",
                         book: "www.planity.com/destination-spa-33640-beautiran",
                         image: Some(("MODG_indien", "TODO")),
@@ -573,7 +573,7 @@
 
                         "#,
                     ),(
-                        id: 500,
+                        id: 0,
                         title: "Escale Japonaise `00:45`",
                         book: "www.planity.com/destination-spa-33640-beautiran",
                         image: Some(("escalejaponaise", "TODO")),
@@ -590,7 +590,7 @@
 
                         "#,
                     ),(
-                        id: 550,
+                        id: 0,
                         title: "Eté Indien`00:45`",
                         book: "www.planity.com/destination-spa-33640-beautiran",
                         image: Some(("eteindien", "TODO")),
@@ -663,7 +663,7 @@
 
                         "#,
                     ),(
-                        id: 200,
+                        id: 0,
                         title: "Bioslimming Active Wrap`01:00`",
                         book: "www.planity.com/destination-spa-33640-beautiran",
                         image: Some(("bioslimming", "TODO")),
