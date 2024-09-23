@@ -4,8 +4,8 @@
         subtitle: "Institut de Beauté & Spa à Beautiran",
         note: Some(r#"
 
-            [Pour la fête des mères, offrez une pause bien-](https://www.planity.com/destination-spa-33640-beautiran)\
-            [être inoubliable avec nos billets cadeaux !](https://www.planity.com/destination-spa-33640-beautiran)
+            [Offrez-vous une expérience bien-être](https://www.planity.com/destination-spa-33640-beautiran)\
+            [inoubliable avec nos billets cadeaux !](https://www.planity.com/destination-spa-33640-beautiran)
 
         "#),
     ),
@@ -460,7 +460,7 @@
                 benefits: [
                     (
                         id: 50,
-                        title: "Passeport`01:10`",
+                        title: "Passeport `01:10`",
                         book: "www.planity.com/destination-spa-33640-beautiran",
                         image: Some(("passeport", "TODO")),
                         price: (320,00),
@@ -591,11 +591,11 @@
                         "#,
                     ),(
                         id: 500,
-                        title: "Eté Indien`00:45`",
+                        title: "Eté Indien `00:45`",
                         book: "www.planity.com/destination-spa-33640-beautiran",
                         image: Some(("eteindien", "TODO")),
                         price: (50,00),
-                        more: true,
+                        more: false,
                         description: r#"
 
                             Relaxez vous dans le sauna dôme en profitant 
@@ -631,12 +631,7 @@
                             j'effectue un bilan corporel personnalisé
                             de 1 heure afin de comprendre votre
                             problématique et d’établir le programme
-                            minceur le plus adapté. Ainsi nous
-                            pourrons déterminer votre type ou votre
-                            stade de cellulite, votre composition
-                            corporelle ou encore votre IMC, et une
-                            visibilité sur l'évolution de votre corps
-                            tout au long de la cure.
+                            minceur le plus adapté.
 
                             **CURE MINCEUR PERSONNALISÉE** : *Prix et
                             nombre de séances à prévoir en fonction du
@@ -651,11 +646,11 @@
                         "#,
                     ),(
                         id: 150,
-                        title: "Madérothérapie Séance unique Ventre Jambes`01:00`",
+                        title: "Madérothérapie Séance unique Ventre ou Jambes `01:00`",
                         book: "www.planity.com/destination-spa-33640-beautiran",
                         image: Some(("SNMC_madero", "TODO")),
                         price: (120,00),
-                        more: false,
+                        more: true,
                         description: r#"
 
                             Massage ancestral colombien, utilisant divers outils en bois
@@ -664,7 +659,7 @@
                         "#,
                     ),(
                         id: 200,
-                        title: "Bioslimming Active Wrap`01:00`",
+                        title: "Bioslimming Active Wrap `01:00`",
                         book: "www.planity.com/destination-spa-33640-beautiran",
                         image: Some(("bioslimming", "TODO")),
                         price: (95,00),
