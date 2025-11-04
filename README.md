@@ -50,3 +50,6 @@ serve.sh` (you would short-circuit Nix).
 
 Go visit `http://localhost:8080/index.xhtml` and admire the beauty of
 this beauty salon's website.
+
+## Gandi
+DNS name location : https://account.gandi.net/
